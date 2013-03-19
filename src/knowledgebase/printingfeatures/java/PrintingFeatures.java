@@ -15,7 +15,7 @@ public class PrintingFeatures
         // The path to the documents directory...
         String dataDir = "src/knowledgebase/printingfeatures/data/";
 
-        // Display Status.
+        // Display Status..
         System.out.println("Printing example will be added soon.");
     }
 }
