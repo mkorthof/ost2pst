@@ -1,0 +1,467 @@
+Subject: New message created by Aspose.Email for Java(Aspose.Email Evaluation)
+From: "Sender Name" <from@domain.com>
+To: "Recipient 1" <to1@domain.com>, "Recipient 2" <to2@domain.com>
+Cc: "Recipient 3" <cc1@domain.com>, "Recipient 4" <cc2@domain.com>
+Date: 26 Feb 2013 15:02:29 +0500
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+ boundary="--_=_NextPart1_8ced63e5-84d1-4e81-9c07-346d7c51722a"
+
+
+----_=_NextPart1_8ced63e5-84d1-4e81-9c07-346d7c51722a
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<div class=3D'pageHeader'>Sender Name<hr/></div><span class=3D'headerLineTi=
+tle'>From:</span><span class=3D'headerLineText'>Sender Name</span><br/><spa=
+n class=3D'headerLineTitle'>Sent:</span><span class=3D'headerLineText'>26 F=
+eb 2013 15:02:29 +0500</span><br/><span class=3D'headerLineTitle'>To:</span=
+><span class=3D'headerLineText'>Recipient 1;Recipient 2</span><br/><span cl=
+ass=3D'headerLineTitle'>Cc:</span><span class=3D'headerLineText'>Recipient =
+3;Recipient 4</span><br/><span class=3D'headerLineTitle'>Subject:</span><sp=
+an class=3D'headerLineText'>New message created by Aspose=2EEmail for Java(=
+Aspose=2EEmail Evaluation)</span><br/><span class=3D'headerLineTitle'>Attac=
+hments:</span><span class=3D'headerLineText'>License=2Etxt</span><br/><b>Th=
+is line is in bold=2E</b> <br/> <br/><font color=3Dblue>This line is in blu=
+e color</font>
+----_=_NextPart1_8ced63e5-84d1-4e81-9c07-346d7c51722a
+Content-Type: application/octet-stream; name="License.txt"; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+ Date Revised: August 28th 2012
+
+PRODUCT LICENSE
+IMPORTANT: READ CAREFULLY: This Aspose End User License Agreement ("Agreeme=
+nt") is a legal agreement between You and Aspose Pty=2E Ltd=2E for the mate=
+rials accompanying this Agreement, which may include computer software, pri=
+nted materials, and "on line" or electronic documentation and resource file=
+s, project and solution files for Software=2E=20
+BY INSTALLING, DOWNLOADING, COPYING OR OTHERWISE USING THE PRODUCT, YOU AGR=
+EE TO BE BOUND BY THE TERMS OF THIS AGREEMENT=2E IF YOU DO NOT AGREE TO THE=
+ TERMS OF THIS AGREEMENT, DO NOT INSTALL, DOWNLOAD, COPY OR USE THE PRODUCT=
+=2E=20
+The Product is protected by copyright laws and international copyright trea=
+ties, as well as other intellectual property laws and treaties=2E Aspose or=
+ its suppliers own the title, copyright and other intellectual property rig=
+hts in the Product=2E The Product is licensed, not sold=2E
+1=2E DEFINITIONS=2E
+1=2E1=2E ?API? or ?Application Programming Interface? means a publicly acce=
+ssible interface defining the ways by which an application program may requ=
+est services from libraries and/or software=2E
+1=2E2=2E ?Confidential Information? is any information marked as confidenti=
+al=2E  Confidential Information does not include information:(a) which is p=
+ublicly known; (b)?which is disclosed to the other party without restrictio=
+n by a third party and without any breach of confidentiality by the third p=
+arty; or (c)?which is developed independently by the other party without re=
+liance on any of the discloser?s Confidential Information=2E
+1=2E3=2E ?Derived Works? means works based upon or using the Product=2E
+1=2E4=2E ?Enhanced Support? means any paid support package, including Prior=
+ity Support, Enterprise Support, and Sponsored Support=2E
+1=2E5=2E "Physical Location? means any physical address=2E For example, eac=
+h store and/or office with different address is a separate physical locatio=
+n=2E
+1=2E6=2E ?Product? means the Software licensed under this Agreement=2E
+1=2E7=2E ?Software? means computer software, associated media, printed mate=
+rials, and "on line" or electronic documentation provided under this Agreem=
+ent=2E
+1=2E8=2E ?SaaS? or ?Software as a Service? means a model of software deploy=
+ment whereby a provider licenses an application to customers for use as a s=
+ervice on demand=2E =20
+1=2E9=2E ?SDK? or ?Software Development Kit? means a set of development too=
+ls that allows a software engineer to create applications for a certain sof=
+tware package, software framework, hardware platform, computer system, vide=
+o game console, operating system, or similar platform=2E
+1=2E10=2E ?Subscription? means an agreement to purchase access to Software =
+Updates and Product fixes=2E
+1=2E11=2E "Updates? means technical support, new version or new release of =
+the Product and/or supplements to the Software and/or related information=
+=2E=20
+1=2E12=2E ?You? and ?Your? mean the purchaser, either an individual or a si=
+ngle entity=2E
+2=2E GRANT OF LICENSE=2EAspose grants You the rights described in this Agre=
+ement provided that You comply with all the terms and conditions of this Ag=
+reement:
+2=2E1=2E General Software License Grant=2EAspose grants use of the Product =
+according to one of the license types below as identified in the Product ti=
+tle=2E All software licenses are nonexclusive and nontransferable=2E=20
+2=2E1=2E1=2E Evaluation License and Temporary License=2EEvaluation and Temp=
+orary licenses are non-exclusive evaluation licenses to use the Product for=
+ evaluation purposes only=2E  With an evaluation license the Product is ful=
+ly functional except the results produced will include an Aspose watermark =
+or a feature limitation, specified by the Product documentation=2E  When us=
+ing an Evaluation License or a Temporary License, You MAY NOT use the Produ=
+ct to produce any Derived Works=2E  If you use the Product in any Derived W=
+orks, you must purchase the applicable license and you may be sued for coll=
+ection and punitive damages=2E If You do not agree to these terms, do not e=
+valuate the Product and remove it from Your computer immediately=2E Tempora=
+ry licenses are limited to three (3), thirty (30) day licenses per customer=
+ per twelve (12) month period=2E
+2=2E1=2E2=2E Developer Small Business License=2EA Developer Small Business =
+license permits one (1) developer to create an unlimited number of Derived =
+Works using the Product=2E One Developer license must be purchased for each=
+ developer using the Product to create Derived Works=2E  A Developer Small =
+Business license allows deployment of any number of Derived Works, not incl=
+uding SaaS, using the Product, to one (1) physical location=2E
+2=2E1=2E3=2E Developer OEM License=2EA Developer OEM license permits one (1=
+) developer to create an unlimited number of Derived Works using the Produc=
+t=2E One Developer OEM license must be purchased for each developer using t=
+he Product to create Derived Works=2E A Developer OEM license allows royalt=
+y-free deployment of any number of Derived Works, including SaaS, using the=
+ Product, to unlimited physical locations=2E
+2=2E1=2E4=2E Site Small Business License=2EA Site Small Business license pe=
+rmits up to ten (10) developers to create an unlimited number of Derived Wo=
+rks using the Product=2E A Site Small Business license allows deployment of=
+ any number of Derived Works, not including SaaS, using the Product, at up =
+to ten (10) physical locations=2E
+2=2E1=2E5=2E Site OEM License=2E A Site OEM license permits up to ten (10) =
+developers to create an unlimited number of Derived Works using the Product=
+=2E A Site OEM license allows royalty-free deployment of any number of Deri=
+ved Works, including SaaS, using the Product, to unlimited physical locatio=
+ns=2E
+2=2E2=2E Documentation=2E  You may make any number of copies of the electro=
+nic and other documentation provided with the Product or downloaded from th=
+e Aspose website, provided that all copies must be used only for internal p=
+urposes and may not be republished or distributed externally=2E=20
+2=2E3=2E Disassembly=2E You may not reverse engineer, decompile, disassembl=
+e or in any other way try to gain access to information regarding the const=
+ruction of the Software=2E=20
+2=2E4=2E Transfer=2E  You may not rent, lease, sub-license, sell, assign, t=
+ransfer or pledge the Product or this Agreement, on a temporary or permanen=
+t basis, without prior written consent from Aspose
+2=2E5=2E Reservation of Rights=2EAspose reserves all rights not expressly g=
+ranted herein=2E=20
+3=2E DESCRIPTION OF OTHER RIGHTS AND LIMITATIONS=2E
+3=2E1=2E Derived Works and Redistribution
+3=2E1=2E1=2E The Product may not be distributed in any form that allows it =
+to be reused by any application other than Your derived work=2E
+3=2E1=2E2=2E The Product may not be included as part of a SDK=2E=20
+3=2E1=2E3=2E The Product may not be used to develop Derived Works that offe=
+r similar or competing functionality as the Product, or expose features of =
+the Product through an API for use by an unlicensed third party=2E
+3=2E1=2E4=2E The Product may not be used to develop Derived Works that offe=
+r similar functionality as the Product for any development platform, includ=
+ing but not limited to =2ENET, Java, SQL Reporting Services, JasperReports,=
+ SharePoint, Microsoft Dynamics, Microsoft Azure, Amazon Web Services (?AWS=
+?) or Google App Engine=2E
+3=2E1=2E5=2E Aspose is not obligated to provide support for works derived f=
+rom the Product=2E=20
+3=2E1=2E6=2E Works derived from the Product may not be called "Aspose", nor=
+ may "Aspose" appear in their name, without prior written permission from A=
+spose=2E
+3=2E1=2E7=2E The name "Aspose" must not be used to endorse or promote produ=
+cts derived from the Product without prior written permission=2E For writte=
+n permission, please contact sales@aspose=2Ecom=2E=20
+3=2E2=2E Rental=2EYou may not rent, lease, or lend the Product without expr=
+ess written permission from Aspose=2E
+3=2E3=2E Termination=2EWithout prejudice to any other rights, Aspose may te=
+rminate this Agreement if You fail to comply with the terms and conditions =
+of this Agreement=2E In such event, You must destroy all copies of the Prod=
+uct, including but not limited to backups and all component parts and Deriv=
+ed Works=2E
+3=2E4=2E Survival=2EUnless by its nature a provision cannot survive this Ag=
+reement, the provisions of this Agreement shall survive the expiration or a=
+ny termination of this Agreement=2E
+3=2E5=2E Consideration=2EFor the rights and license granted in this Agreeme=
+nt, You will pay Aspose the currently published price available at Aspose=
+=2Ecom or another mutually agreed upon amount to appear on a valid invoice=
+=2E
+3=2E6=2E Term=2EThe term of this Agreement shall continue perpetually from =
+the date of purchase unless terminated according to Section 3=2E3=2E
+3=2E7=2E Consent to Use of Data=2EYou agree that Aspose and its affiliates =
+may collect and use technical information, excluding any Confidential Infor=
+mation, gathered as part of the Product support services provided to You=2E =
+Aspose may use this information solely to improve our products or to provid=
+e customized services or technologies to You=2E Aspose may disclose this in=
+formation, excluding any Confidential Information, to others but not in a f=
+orm that personally identifies You=2E
+4=2E SOFTWARE MAINTENANCE, UPDATES AND DISCONTINUATION=2E
+4=2E1=2E Subscription: A Subscription entitles the purchaser to Updates of =
+the Product and access to Product fixes for a period of one (1) year (365 d=
+ays) following the purchase of the Product=2E=20
+4=2E2=2E Updates: Aspose may, in its sole discretion, provide technical sup=
+port and/or Updates to You hereunder=2E
+4=2E3=2E Technical Support: Technical Support, whether free or through a pa=
+id Enhanced Support subscription is provided with the following conditions:=
+
+4=2E3=2E1=2E Technical support is provided only through Aspose Support Foru=
+ms=2E? You agree not to attempt to bypass the Support Forums via phone, ema=
+il, or other means=2E
+4=2E3=2E2=2E Aspose does not guarantee that any fix will be provided in any=
+ given time period=2E? Any estimates provided are estimates only and are no=
+t binding or enforceable=2E
+4=2E3=2E3=2E Updates and fix notifications are posted in the Aspose Support=
+ Forum; they are not provided directly to You=2E? You agree to check the re=
+levant Support Forum for Your Updates and fixes=2E
+4=2E3=2E4=2E Aspose will provide support status updates when You request th=
+em=2E
+4=2E3=2E5=2E Aspose will typically provide support for the Product througho=
+ut the license subscription period whether the Product has been discontinue=
+d or not=2E? However, Aspose reserves the right to cancel support, whether =
+provided for free or Enhanced Support for a fee, at any time and for any re=
+ason=2E?
+4=2E4=2E Enhanced Support: Enhanced Support services will be provided subst=
+antially as described in the description of services available at http://ww=
+w=2Easpose=2Ecom=2E In addition to the terms in Section 4=2E3, the followin=
+g shall apply:
+4=2E4=2E1=2E Aspose shall use reasonable efforts to solve problems identifi=
+ed by You; however, Aspose does not warrant that it will solve any particul=
+ar problem in a given timescale, or at all=2E=20
+4=2E4=2E2=2E Enhanced Support packages are subject to fair use policies as =
+described on the Enhanced Support product descriptions=2E
+4=2E5=2E Discontinuation of Product: Aspose reserves the right to discontin=
+ue the Product at any time, whether it is offered individually or as a part=
+ of a product suite=2E
+4=2E5=2E1=2E If Aspose discontinues the Product, they will announce product=
+ discontinuation through the Monthly Aspose Customer Newsletter, which You =
+may subscribe to or access at http://www=2Easpose=2Ecom=2E  It is Your resp=
+onsibility to check Newsletter contents for notice of product discontinuati=
+on=2E Notice will be given at least fifteen (15) days prior to the disconti=
+nuation of the Product=2E
+4=2E5=2E2=2E If for any reason, including insolvency or dissolution, Aspose=
+ is unable to remain in business and continue to offer its products either =
+under the Aspose name or another name they will provide the following remed=
+y to each license owner:
+a) Aspose will make a reasonable effort to notify You at least thirty (30) =
+days prior to close of business=2E
+b) You will be provided with the option of purchasing source code for the P=
+roduct for which You own current licenses at a cost of no more than the cos=
+t of a single Site OEM license at that time=2E  Source code for the Product=
+ shall not include source code to open, read and save files; however these =
+functions shall be provided in compiled form so that Source Code for the Pr=
+oduct will function correctly=2E=20
+5=2E SOFTWARE DELIVERY=2EThe Product and any associated materials are provi=
+ded in electronic format only=2E  You are responsible for downloading the P=
+roduct from the Aspose website: http://www=2Easpose=2Ecom=2E  Upon purchase=
+, Aspose shall deliver to You an electronic license file which will enable =
+the Product to function in the purchased license capacity=2E Previous versi=
+ons of the Product will only be available for a twelve (12) month period fr=
+om the date of publishing; access to previous versions once removed will on=
+ly be available to customers who hold a current subscription for the Produc=
+t=2E CUSTOMERS ARE ADVISED TO KEEP A BACKUP COPY OF ANY DOWNLOADED SOFTWARE=
+ FOR FUTURE USE=2E
+6=2E UPGRADES=2EIf this copy of the Product is an upgrade from an earlier v=
+ersion of the Product, it is provided to You on a license exchange basis=2E =
+You agree by Your installation and use of such copy of the Product to volun=
+tarily terminate Your earlier Agreement and that You will not continue to u=
+se the earlier version of the Product or transfer it to another person or e=
+ntity unless expressly permitted by Aspose in writing=2E
+7=2E INTELLECTUAL PROPERTY RIGHTS=2EAll title and intellectual property rig=
+hts in and to the Product (including but not limited to any images, photogr=
+aphs, animations, video, audio, music, text and "applets" incorporated into=
+ the Product and any copies of the Product that You are expressly permitted=
+ to make herein) are owned by Aspose or its suppliers=2E All title and inte=
+llectual property rights in and to the content which may be accessed throug=
+h use of the Product are the property of the respective content owner and m=
+ay be protected by applicable copyright or other intellectual property laws=
+ and treaties=2E This Agreement grants You no rights to use such content=2E =
+All title and intellectual property rights in and to Your modifications to =
+the Product are owned by You provided that such modifications are made avai=
+lable to Aspose free of charge and royalty-free for inclusion in later rele=
+ases of the Product=2E All rights not expressly granted are reserved by Asp=
+ose=2E
+8=2E NONDISCLOSURE=2EBoth Parties recognize that the other Party may obtain=
+ proprietary and/or Confidential Information in the course of their busines=
+s=2E Each Party agrees to protect each other?s Confidential Information as =
+follows:
+8=2E1=2E Time and Method=2EBoth during the term of this Agreement and for a=
+ period of 5 years after termination or expiration of this Agreement to hol=
+d each other?s Confidential Information in confidence and to protect the di=
+sclosed Confidential Information by using the same degree of care to preven=
+t the unauthorized use, dissemination or publication of the Confidential In=
+formation as they use to protect their own confidential information of a li=
+ke nature=2E =20
+8=2E2=2E Permitted Disclosure to Employees=2EEach Party agrees that it will=
+ only disclose Confidential Information to its responsible employees, contr=
+actors, professional advisors and similarly situated individuals who have a=
+ bona fide need to know and who are bound by agreement or by law to keep su=
+ch information confidential=2E
+8=2E3=2E Other Permitted Disclosures=2E  Each Party may disclose Confidenti=
+al Information (i) as authorized by the other Party in writing or (ii) to t=
+he extent required by applicable law, court, or government agency, provided=
+ that the Party required to disclose Confidential Information promptly noti=
+fies the other Party and cooperates with any efforts by the other Party, at=
+ the other Party?s expense, to limit such disclosure by means of seeking a =
+protective order or requesting confidential treatment=2E  Other than those =
+expressly allowed under this Section 10 of the Agreement, no other disclosu=
+res of Confidential Information are permitted=2E
+9=2E THIRD PARTY COMPONENTS
+9=2E1=2E Notice Requirements=2E  Some Aspose products contain ?Open Source?=
+ components that require users to provide notice of copyrights and/or licen=
+sing terms=2E  All required notices are included in the documentation to th=
+e Product=2E  If you utilize these components in Your Derived Work, You are=
+ obliged to provide these notices to Your customers=2E
+9=2E2=2E Links to Third Party Sites=2EThe Product documentation may include=
+ links to third party sites where You may access information about Open Sou=
+rce components=2E  The third party sites are not under the control of Aspos=
+e, and Aspose is not responsible for the contents of any third party sites,=
+ any links contained in third party sites, or any changes or updates to thi=
+rd party sites=2E Aspose is not responsible for webcasting or any other for=
+m of transmission received from any third party sites=2E Aspose is providin=
+g these links to third party sites to You only as a convenience, and the in=
+clusion of any link does not imply an endorsement by Aspose of the third pa=
+rty site=2E=20
+10=2E LIMITED WARRANTY AND DISCLAIMER=2E
+10=2E1=2E Except with respect to an evaluation version of the Product, Aspo=
+se warrants that, for a period of thirty (30) days from the date of deliver=
+y (as evidenced by a copy of Your receipt): (i) when used with a recommende=
+d hardware configuration, the Product will perform in substantial conforman=
+ce with the documentation supplied with the Product=2E  This warranty appli=
+es only on initial Product purchases and does not apply to Subscription ren=
+ewals or Updates=2E
+10=2E2=2E ASPOSE PROVIDES NO REMEDIES OR WARRANTIES, WHETHER EXPRESS OR IMP=
+LIED, FOR EVALUATION VERSIONS OF THE PRODUCT=2E THE EVALUATION VERSION OF T=
+HE PRODUCT IS PROVIDED "AS IS"=2E=20
+10=2E3=2E ASPOSE AND ITS SUPPLIERS DISCLAIM ALL OTHER WARRANTIES AND REPRES=
+ENTATIONS, WHETHER EXPRESS, IMPLIED, OR OTHERWISE, INCLUDING THE WARRANTIES=
+ OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE=2E ASPOSE DOES NOT =
+WARRANT THAT THE PRODUCT IS ERROR-FREE OR WILL OPERATE WITHOUT INTERRUPTION=
+=2E THE PRODUCT IS NOT DESIGNED, INTENDED OR LICENSED FOR USE IN HAZARDOUS =
+ENVIRONMENTS REQUIRING FAIL-SAFE CONTROLS, INCLUDING WITHOUT LIMITATION, TH=
+E DESIGN, CONSTRUCTION, MAINTENANCE OR OPERATION OF NUCLEAR FACILITIES, AIR=
+CRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, AND LIFE SU=
+PPORT OR WEAPONS SYSTEMS=2E ASPOSE SPECIFICALLY DISCLAIMS ANY EXPRESS OR IM=
+PLIED WARRANTY OF FITNESS FOR SUCH PURPOSES=2E=20
+10=2E4=2E IF APPLICABLE LAW REQUIRES ANY WARRANTIES WITH RESPECT TO THE PRO=
+DUCT, ALL SUCH WARRANTIES ARE LIMITED IN DURATION TO NINETY (90) DAYS FROM =
+THE DATE OF DELIVERY=2E=20
+10=2E5=2E NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY ASPOSE, ITS DEA=
+LERS, DISTRIBUTORS, AGENTS OR EMPLOYEES SHALL CREATE A WARRANTY OR IN ANY W=
+AY INCREASE THE SCOPE OF ANY WARRANTY PROVIDED HEREIN=2E=20
+11=2E EXCLUSIVE REMEDY=2EYour exclusive remedy for breach of warranty is to=
+ return the Product to the place You acquired it, with a copy of Your recei=
+pt and a description of the problem=2E If You report a breach of warranty t=
+o Aspose no more than thirty (30) days following delivery, then Aspose will=
+ use reasonable commercial efforts to supply You with a replacement copy of=
+ the Product that substantially conforms to the documentation, provide a re=
+placement for defective media, or refund to You Your purchase price for the=
+ Product, at its option=2E Aspose shall have no responsibility if the Produ=
+ct has been altered in any way, if the media has been damaged by misuse, ac=
+cident, abuse, modification or misapplication, or if the failure arises out=
+ of use of the Product with other than a recommended hardware configuration=
+=2E Any such misuse, accident, abuse, modification or misapplication of the=
+ Product will void all warranties=2E THIS REMEDY IS THE SOLE AND EXCLUSIVE =
+REMEDY AVAILABLE TO YOU FOR BREACH OF EXPRESS OR IMPLIED WARRANTIES WITH RE=
+SPECT TO THE PRODUCT=2E=20
+12=2E LIMITATION OF LIABILITY=2E Except with regard to: (i) breach of confi=
+dentiality obligations; and (ii) any costs associated with the defense chos=
+en by Aspose, and (iii) settlement, to the infringed upon party, of an inte=
+llectual property right claim or moral right claim, liability shall be limi=
+ted as follows:
+12=2E1=2E NEITHER ASPOSE NOR ITS SUPPLIERS SHALL BE LIABLE TO YOU OR ANY TH=
+IRD PARTY FOR ANY INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, COVER OR CONSEQU=
+ENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR THE INABILITY TO=
+ USE EQUIPMENT OR ACCESS DATA, LOSS OF BUSINESS, LOSS OF PROFITS, BUSINESS =
+INTERRUPTION OR THE LIKE), ARISING OUT OF THE USE OF, OR INABILITY TO USE, =
+THE PRODUCT AND BASED ON ANY THEORY OF LIABILITY INCLUDING BREACH OF CONTRA=
+CT, BREACH OF WARRANTY, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR O=
+THERWISE, EVEN IF ASPOSE OR ITS REPRESENTATIVES HAVE BEEN ADVISED OF THE PO=
+SSIBILITY OF SUCH DAMAGES AND EVEN IF A REMEDY SET FORTH HEREIN IS FOUND TO=
+ HAVE FAILED OF ITS ESSENTIAL PURPOSE=2E=20
+12=2E2=2E ASPOSE'S TOTAL LIABILITY TO YOU FOR ACTUAL DAMAGES, FOR ANY CAUSE=
+ WHATSOEVER WILL BE LIMITED TO THE AMOUNT PAID BY YOU FOR THE PRODUCT THAT =
+CAUSED SUCH DAMAGE=2E
+12=2E3=2E THE FOREGOING LIMITATIONS ON LIABILITY ARE INTENDED TO APPLY TO T=
+HE WARRANTIES AND DISCLAIMERS ABOVE AND ALL OTHER ASPECTS OF THIS AGREEMENT=
+=2E=20
+13=2E INDEMNITY=2EYou agree to hold Aspose and its affiliates and subsidiar=
+ies harmless against, and at Your expense handle and defend, any claim and =
+defend any third party suit brought against You based upon an allegation th=
+at any software developed by You and included in Derived Works produced usi=
+ng the Product constitutes an infringement of any international patent, or =
+any copyright or other proprietary or intellectual property right=2E You sh=
+all pay all damages and costs awarded in such suit=2E
+Aspose will indemnify, defend and hold You, and Your affiliates and subsidi=
+aries harmless against any claims, legal actions, losses and other expenses=
+ arising out of or in connection with any claims that the Product and/or re=
+lated documentation infringes or violates any intellectual property right o=
+f any third party ("Claim"), on the condition that You notify Aspose prompt=
+ly of the Claim and give Aspose sole control of the defense and negotiation=
+s for its settlement or compromise=2E If You become, or may become, prohibi=
+ted from continued use of the Software and/or the Product by reason of an a=
+ctual or anticipated Claim, Aspose will use its reasonable efforts to do th=
+e following: (a)obtain for You the right to use the Software and/or the Pro=
+duct, or (b) replace or modify such Software and/or the Product so that it =
+is no longer subject to a Claim, but performs the same functions in an equi=
+valent manner=2E =20
+In the event that Aspose determines, in its sole discretion, that neither (=
+A) nor (B) is commercially reasonable, Aspose shall refund the residual val=
+ue of the license fees paid by You for the infringing Product or Software, =
+depreciated using a straight line method of depreciation over a forty-eight=
+ month period from the date of delivery of the Product to You=2E
+14=2E TAXES=2EThe license fees and any other amounts payable pursuant to th=
+e terms and conditions herein are exclusive of all national, state, regiona=
+l, local municipal or other taxes and fees including, but not limited to, e=
+xcise, sales, use, property, ad valorem, intangibles, goods and services an=
+d value added taxes, customers duties and registration fees, now in force o=
+r enacted in the future, and all such taxes and fees, except taxes based on=
+ Aspose?s net worth, capital or net income, shall be paid directly by You, =
+or if paid by Aspose, You will reimburse Aspose=2E
+15=2E NO WAIVER=2E No action taken by either party pursuant to this Agreeme=
+nt, and no waiver by either party, whether express or implied, of any provi=
+sion or right in this Agreement or any breach thereof, and no failure of ei=
+ther party to exercise or enforce any of its rights under this Agreement, w=
+ill constitute a continuing waiver with respect to such provision or right =
+or as a breach or waiver or any other provision or right, whether or not si=
+milar=2E
+16=2E SEVERABILITY=2EIf any covenant or provision of the Agreement is deter=
+mined to be void or unenforceable in whole or part, then such void or unenf=
+orceable covenant or provision shall be deleted from this Agreement and sha=
+ll not effect or impair the enforceability or validity of any other covenan=
+t or provision of this Agreement or any part thereof=2E
+17=2E GOVERNING LAW=2E
+17=2E1=2E Arbitration: All disputes arising out of or in connection with th=
+e present contract shall be finally settled under the Rules of Arbitration =
+of the International Chamber of Commerce by one or more arbitrators appoint=
+ed in accordance with the said Rules=2E? Arbitration shall be held in San F=
+rancisco, CA, USA and shall be held in English=2E?=20
+17=2E2=2E Injunctive relief: As an alternative or supplement to arbitration=
+ Aspose, at its option, may obtain in any court of competent jurisdiction a=
+ny injunctive relief, including temporary restraining orders and preliminar=
+y injunctions, against conduct or threatened conduct for which no adequate =
+remedy at law may be available or which may cause Aspose irreparable harm=
+=2E
+17=2E3=2E Choice of Law: This Agreement shall be governed by the laws of Ne=
+w South Wales, Australia=2E  The United National Convention on Contracts fo=
+r the International Sale of Goods shall not apply to this Agreement=2E
+18=2E FURTHER INSTRUMENTS=2EExcept as otherwise expressly provided in this =
+Agreement, each party shall furnish to the other (and shall deliver and cau=
+se to be executed, acknowledged and delivered to the other) any further ins=
+truments, which such other party may reasonably require or deem necessary f=
+rom time to time to evidence, establish, protect, enforce, defend or secure=
+ to such other party any or all of its rights hereunder or to more effectua=
+te or carry out the purposes, provisions or intent of this Agreement=2E
+19=2E CAPTIONS=2EAll indexes, titles, subject headings, section titles, and=
+ similar items are provide for the purpose of reference and convenience and=
+ are not intended to be inclusive, definitive, or to affect the meaning or =
+scope of this Agreement=2E
+20=2E UPDATES=2EAspose may make updates and changes to this license Agreeme=
+nt from time to time=2E Such changes will be posted on our website at http:=
+//www=2Easpose=2Ecom as well as distributed with the Product=2E You are bou=
+nd by the terms of the Agreement as it is posted or distributed at the most=
+ recent time you install the Software or Updates=2E If You do not wish to b=
+e bound by the terms of this license Agreement You should not install any U=
+pdates or additional Software=2E
+21=2E PUBLICITY=2EYou grant Aspose the right to use Your name and logo in p=
+ress releases, brochures, case studies, marketing materials, the Aspose web=
+site and similar materials indicating that You are a customer of Aspose=2E =
+=20
+22=2E ENTIRE AGREEMENT=2EThis Agreement is the entire agreement between You=
+ and Aspose relating to the license of the Product and the support services=
+ (if any) You purchase hereunder and it supersedes all prior or contemporan=
+eous oral or written communications, proposals and representations with res=
+pect to the Product or any other subject matter covered by this Agreement=
+=2E  This Agreement includes and encompasses materials referenced herein fr=
+om the Aspose=2Ecom website=2E To the extent the terms of any Aspose polici=
+es or programs for support services conflict with the terms of this Agreeme=
+nt, the terms of this Agreement shall control=2E
+
+
+
+
+? 2005 ? 2012 Aspose Pty Ltd=2E All rights reserved=2E 	         www=2Easpo=
+se=2Ecom	Page 10 of 10
+
+
+
+----_=_NextPart1_8ced63e5-84d1-4e81-9c07-346d7c51722a--
+
