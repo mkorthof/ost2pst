@@ -110,6 +110,195 @@
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Managing Email Attachments</Title>
+                  <Description>An email attachment is a computer file which is sent along with an email message. The file may be sent as a separate message as well as a part of the message to which it is attached.
+The Attachment class is used with the MailMessage class. All messages include a body. In addition to the body, you might want to send additional files. These are sent as attachments and are represented as instance of the Attachment class.
+
+To attach an attachment to an email, please follow these steps as described in this example:
+
+- Create an instance of the MailMessage class.
+- Create an instance of the Attachment class.
+- Load attachment into the Attachment instance.
+- Add the Attachment instance into the MailMessage instance.</Description>
+                  <FolderName>ManagingEmailAttachments</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Managing Email Attachments</DisplayName>
+                    <Url>Managing+Email+Attachments</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\1.txt</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\1.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\1.doc</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\1.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\1.rar</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\outputAttachments.msg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\outputAttachmentRemoved.msg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\attachment_1.doc</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\attachment_1.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\attachment_1.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\attachment_1.rar</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Working with Embedded Objects</Title>
+                  <Description>An embedded object is an object that was created with one application an enclosed within a document or file created by another application. For example, a Microsoft Excel spreadsheet can be embedded into a Microsoft Word report, or a video file can be embedded into a Microsoft PowerPoint presentation.
+When a file is embedded, rather than inserted or pasted into another document, it retains its original format. The embedded document can be opened in the original application and modified.
+
+Aspose.Email lets you work with embedded objects in emails. This example shows how to embed objects. (Extracting emails is described in Extracting Embedded Objects.)</Description>
+                  <FolderName>WorkingWithEmbeddedObjects</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Working with Embedded Objects</DisplayName>
+                    <Url>Working+with+Embedded+Objects</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.png</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\EmbeddedImage.msg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Customizing Email Headers</Title>
+                  <Description>Email headers represent an Internet standard and RFC define header fields which are included in Internet email messages. An email header can be specified using the MailMessage class. Common header types are defined in the HeaderType class. It is a sealed class that works like a normal enumeration. This example provides details of customizing email header using Aspose.Email.</Description>
+                  <FolderName>CustomizingEmailHeaders</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Customizing Email Headers</DisplayName>
+                    <Url>Customizing+Email+Headers</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\MsgHeaders.msg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Aspose Email How Tos</Title>
+              <Description>This section includes examples related to following topics: 
+
+- How do I send a plain text email?
+- How do I send a simple HTML email?
+- How do I send email with alternate text?
+- How do I request a read receipt?
+- How do I specify mail body encoding?
+- How do I create multiple email addresses to send email?
+- How do I change email addresses to a friendly name?
+- How do I add custom headers to my email?
+- How do I add secret header to my email?
+- How to add and save an attachment
+- How to get the number of emails in the mailbox
+- How to download messages
+- How to delete messages
+- SMTP client activity logging
+- Create a Draft Appointment Request</Description>
+              <FolderName>AsposeEmailHowTos</FolderName>
+              <Order>4</Order>
+              <Examples>
+                <Example>
+                  <Title>Create a Draft Appointment Request</Title>
+                  <Description>It is often required to create an Appointment request in Draft mode, so as the basic information is added and then the same draft Appointment be forwarded to other users for necessary changes according to individual users.
+In order to save an Appointment in Draft mode, the Method property of Appointment class should be set to Publish. This example demonstrates the use of this concept using Aspose.Email.</Description>
+                  <FolderName>CreateDraftAppointmentRequest</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Create a Draft Appointment Request</DisplayName>
+                    <Url>Create+a+Draft+Appointment+Request</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\draftAppointment.msg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Managing Email Message Files with MailMessage</Title>
+              <Description>This section includes examples related to following topics: 
+
+- Extracting Email Headers 
+- Displaying Email Information on screen 
+- Extracting Email Attachments 
+- Extracting Embedded Objects</Description>
+              <FolderName>ManageEmailMessageFilesWithMailMessage</FolderName>
+              <Order>5</Order>
+              <Examples>
+                <Example>
+                  <Title>Extracting Email Headers</Title>
+                  <Description>The email header represents an Internet and RFC defined standard set of header fields included in Internet email messages. An email header can be specified using the MailMessage class. Common header types are defined in the HeaderType class. It is a sealed class working like normal enumeration.
+
+To extract headers from an email, follow these steps:
+
+- Create an instance of the MailMessage class.
+- Load an email message in the instance of MailMessage class.
+- After an email message has been loaded, we will get its raw content. The MailMessage class itself contains properties such as From, To, Cc, Subject and so on. These properties can be extracted from headers.
+- Display the raw content.</Description>
+                  <FolderName>ExtractingEmailHeaders</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Extracting Email Headers</DisplayName>
+                    <Url>Extracting+Email+Headers</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\test.eml</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Displaying Email Information on Screen</Title>
+                  <Description>The MailMessage represents an email message and allows developers to access email message properties. The header information (discussed in Extracting Email Headers) can be extracted and manipulated in different ways. This example explains how to display selected email header information and the email body on screen.</Description>
+                  <FolderName>DisplayEmailInformationOnScreen</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Displaying Email Information on Screen</DisplayName>
+                    <Url>Displaying+Email+Information+on+Screen</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\test.eml</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
           </Folders>
