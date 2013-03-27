@@ -16,6 +16,10 @@ Aspose.Email for Java provides a number of key features such as,
 
 These example projects provide helpful demonstrations and code when using Aspose.Email for Java.
 
+###Run Examples on your PC
+
+Download the [Aspose Examples Dashboard for Java](http://www.aspose.com/community/files/72/java-components/aspose.total-for-java/category1426.aspx) to view and run all these examples on your PC.
+
 ## Aspose.Email for Java at a Glance
 ![Aspose.Email Overview](http://www.aspose.com/Aspose.Email/Images/product-diagram-aspose.email-for-java.jpg "The Main Features of Aspose.Email for Java")
 
