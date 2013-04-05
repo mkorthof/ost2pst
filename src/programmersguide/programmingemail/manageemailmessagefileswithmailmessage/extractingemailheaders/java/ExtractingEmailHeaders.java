@@ -8,7 +8,8 @@
  
 package programmersguide.programmingemail.manageemailmessagefileswithmailmessage.extractingemailheaders.java;
 
-import com.aspose.email.*;
+import com.aspose.email.MailMessage;
+import com.aspose.email.MessageFormat;
 
 public class ExtractingEmailHeaders
 {
