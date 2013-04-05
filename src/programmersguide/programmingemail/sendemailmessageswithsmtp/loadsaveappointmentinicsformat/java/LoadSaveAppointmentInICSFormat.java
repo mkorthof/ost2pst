@@ -25,12 +25,19 @@ public class LoadSaveAppointmentInICSFormat
         MailAddressCollection cColletion = new MailAddressCollection();//("attendees@domain.com");
         cColletion.add("attendees@domain.com");
 
+        java.util.Calendar cal = java.util.Calendar.getInstance();
+        cal.set(2011, 2, 8, 13, 0, 0);
+
+        java.util.Calendar cal1 = java.util.Calendar.getInstance();
+        cal1.set(2011, 2, 8, 14, 0, 0);
+
+        Date dateRepresentation = cal.getTime();
         Appointment appointment = new Appointment(
                 "Meeting Room 3 at Office Headquarters",
                 "Monthly Meeting",
                 "Please confirm your availability.",
-                new Date(2011, 2, 8, 13, 0, 0),
-                new Date(2011, 2, 8, 14, 0, 0),
+                cal.getTime(),
+                cal1.getTime(),
                 new MailAddress("from@domain.com"),
                 cColletion);
 
@@ -39,6 +46,7 @@ public class LoadSaveAppointmentInICSFormat
 
         // Display Status.
         System.out.println("Appointment created and saved to disk successfully.");
+
 
         // 2.
         // Load an Appointment just created and saved to disk and display its details.
