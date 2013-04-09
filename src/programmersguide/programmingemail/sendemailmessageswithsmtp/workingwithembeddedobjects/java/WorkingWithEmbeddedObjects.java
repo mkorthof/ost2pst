@@ -10,6 +10,8 @@ package programmersguide.programmingemail.sendemailmessageswithsmtp.workingwithe
 
 import com.aspose.email.*;
 
+@SuppressWarnings("unchecked")
+
 public class WorkingWithEmbeddedObjects
 {
     public static void main(String[] args) throws Exception

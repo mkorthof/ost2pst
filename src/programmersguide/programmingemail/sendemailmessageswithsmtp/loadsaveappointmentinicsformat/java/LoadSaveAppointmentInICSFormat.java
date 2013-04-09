@@ -11,6 +11,8 @@ package programmersguide.programmingemail.sendemailmessageswithsmtp.loadsaveappo
 import com.aspose.email.*;
 import java.util.Date;
 
+@SuppressWarnings("unchecked")
+
 public class LoadSaveAppointmentInICSFormat
 {
     public static void main(String[] args) throws Exception

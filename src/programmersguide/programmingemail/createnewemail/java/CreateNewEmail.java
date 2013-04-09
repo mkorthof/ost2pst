@@ -8,7 +8,11 @@
  
 package programmersguide.programmingemail.createnewemail.java;
 
-import com.aspose.email.*;
+import com.aspose.email.MailAddress;
+import com.aspose.email.MailMessage;
+import com.aspose.email.MailMessageSaveType;
+
+@SuppressWarnings("unchecked")
 
 public class CreateNewEmail
 {

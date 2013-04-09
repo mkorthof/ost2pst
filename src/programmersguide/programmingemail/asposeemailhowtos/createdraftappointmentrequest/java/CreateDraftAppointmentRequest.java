@@ -13,6 +13,8 @@ import com.aspose.email.*;
 import java.util.Date;
 import java.util.TimeZone;
 
+@SuppressWarnings("unchecked")
+
 public class CreateDraftAppointmentRequest
 {
     public static void main(String[] args) throws Exception
