@@ -12,8 +12,6 @@ import com.aspose.email.MailAddress;
 import com.aspose.email.MailMessage;
 import com.aspose.email.MailMessageSaveType;
 
-@SuppressWarnings("unchecked")
-
 public class CreateNewEmail
 {
     public static void main(String[] args) throws Exception

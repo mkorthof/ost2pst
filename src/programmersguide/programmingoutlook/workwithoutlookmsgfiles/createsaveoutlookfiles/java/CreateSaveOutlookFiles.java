@@ -10,8 +10,6 @@ package programmersguide.programmingoutlook.workwithoutlookmsgfiles.createsaveou
 
 import com.aspose.email.*;
 
-@SuppressWarnings("unchecked")
-
 public class CreateSaveOutlookFiles
 {
     public static void main(String[] args) throws Exception

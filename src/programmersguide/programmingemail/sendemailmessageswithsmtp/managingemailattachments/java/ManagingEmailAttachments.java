@@ -10,8 +10,6 @@ package programmersguide.programmingemail.sendemailmessageswithsmtp.managingemai
 
 import com.aspose.email.*;
 
-@SuppressWarnings("unchecked")
-
 public class ManagingEmailAttachments
 {
     public static void main(String[] args) throws Exception

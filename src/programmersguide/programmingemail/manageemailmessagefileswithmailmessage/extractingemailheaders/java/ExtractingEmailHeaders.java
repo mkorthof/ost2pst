@@ -11,8 +11,6 @@ package programmersguide.programmingemail.manageemailmessagefileswithmailmessage
 import com.aspose.email.MailMessage;
 import com.aspose.email.MessageFormat;
 
-@SuppressWarnings("unchecked")
-
 public class ExtractingEmailHeaders
 {
     public static void main(String[] args) throws Exception

@@ -8,8 +8,6 @@
  
 package knowledgebase.printingfeatures.java;
 
-@SuppressWarnings("unchecked")
-
 public class PrintingFeatures
 {
     public static void main(String[] args) throws Exception

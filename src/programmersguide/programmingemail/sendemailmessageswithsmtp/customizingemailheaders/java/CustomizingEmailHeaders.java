@@ -14,8 +14,6 @@ import com.aspose.email.MessageFormat;
 
 import java.util.Date;
 
-@SuppressWarnings("unchecked")
-
 public class CustomizingEmailHeaders
 {
     public static void main(String[] args) throws Exception

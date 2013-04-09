@@ -10,8 +10,6 @@ package programmersguide.programmingoutlook.managemessagefiles.newpstaddsubfolde
 
 import com.aspose.email.*;
 
-@SuppressWarnings("unchecked")
-
 public class NewPSTAddSubfolders
 {
     public static void main(String[] args) throws Exception
