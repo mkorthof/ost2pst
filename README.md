@@ -1,29 +1,21 @@
 #Aspose.Email for Java Examples Repository
 
-Aspose.Email for Java is a Non-Graphical Java component that enables Java applications to read and write Microsoft Outlook documents without utilizing Microsoft Outlook. 
+This package contains Java Example Projects for [Aspose.Email for Java](http://www.aspose.com/java/email-component.aspx).
 
-Aspose.Email for Java provides a number of key features such as,
+##How to use the Examples?
 
-+ Supports email messages in EML, MSG and MHTML formats
-+ Create new message
-+ Modify existing message and update contents like subject, sender, recipients, body, attachments etc
-+ Load existing message and get message contents like subject, attachments, sender, recipients etc
-+ Manage (add/remove) attachments in email message
-+ Create HTML formatted email message
-+ Create message in draft mode (MSG only)
-+ Read nested email message attachments
-+ Convert messages from/to any of the supported formats
+###With the Examples Dashboard
 
-These example projects provide helpful demonstrations and code when using Aspose.Email for Java.
-
-## Aspose.Email for Java at a Glance
-![Aspose.Email Overview](http://www.aspose.com/Aspose.Email/Images/product-diagram-aspose.email-for-java.jpg "The Main Features of Aspose.Email for Java")
-
-###Run Examples on your PC
-
-Download the [Aspose Examples Dashboard for Java](http://www.aspose.com/community/files/72/java-components/aspose-examples-for-java/default.aspx) to view and run all these examples on your PC. No need to download any other file to run the examples in Dashboard!! It updates itself with the latest dependency libraries and examples.
+Download the [Aspose Examples Dashboard for Java](http://www.aspose.com/community/files/72/java-components/aspose-examples-for-java/default.aspx) to view and run all these examples on your PC. It updates itself with the latest dependency libraries and examples.
 
 ![Aspose Examples Dashboard](http://www.aspose.com/blogs/wp-content/uploads/2013/03/Java-Dashboard1.png "Aspose Examples Dashboard")
+
+###With IDE
+
+Clone or Download the ZIP and extract the contents to your local hard drive. If you have IntelliJ IDEA, then open the project directly 
+by browsing to the folder. For Netbeans and Eclipse, you can import project feature.
+
+Also download the [latest version](http://www.aspose.com/community/files/72/java-components/aspose.email-for-java/default.aspx) of Aspose.Email for Java and set/fix jar references.
 
 ##Open Source Feel of Aspose.Email
 
@@ -62,39 +54,6 @@ Each example is runnable Java class with its own main method. You can run each e
   <tr><td>PSTGetMessages</td><td>Demonstrates how to load an Outlook PST file and display the message information from all folders using recursive method.</td></tr>
   <tr><td>ThunderbirdMboxRead</td><td>This example explains the steps to load Thunderbird's MBOX storage file and extract messages from it.</td></tr>
 </table>
-
-###Data
-
-+ Input Documents - Main directory contains a Resources directory which contains any sample Documents used in the example.
-
-###Output
-
-+ Most of the examples generate output documents which can be found in the Output folder.
-
-###Help Material
-
-For further details on setting up the examples and any requirements refer to the readme.txt found in the root of the repository.
-
-##Download the examples
-
-Please [Download the Aspose.Email for Java Examples](https://github.com/asposeemail/Aspose_email_Java/downloads) to try them at your end.
-
-##How to use the examples?
-
-Download the examples from the above link. You will be able to run these Java examples on any Eclipse IDE.  
-
-Once downloaded, you can open the examples by importing the project into Eclipse IDE. 
-
-Please change the classpath to correct Aspose.Email for Java libraries, which you can download separately.
-
-Below is a list of libraries used in these examples which are specific to JDK 1.5. 
-
-- aspose-email-1.1.0-jdk15.jar
-- aspose.words.jdk15.jar
-
-The example should be ready to compile and run. Click on "Run" command and see the output on your respective directory.
-
-Note: You can download and use the latest versions of above mentioned JARs
 
 ##Contact Us
 
