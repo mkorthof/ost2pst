@@ -118,22 +118,6 @@
               </OutputFiles>
               <Type>Console</Type>
             </Example>
-            <Example>
-              <Title>Displaying Email Information on Screen</Title>
-              <Description>The MailMessage represents an email message and allows developers to access email message properties. The header information (discussed in Extracting Email Headers) can be extracted and manipulated in different ways. This article explains how to display selected email header information and the email body on screen.</Description>
-              <FolderName>DisplayingEmailInfoOnScreen</FolderName>
-              <Order>8</Order>
-              <DocLink>
-                <DisplayName>Displaying Email Information on Screen</DisplayName>
-                <Url>http://www.aspose.com/docs/display/EmailJava/Displaying+Email+Information+on+Screen</Url>
-              </DocLink>
-              <InputFiles>
-                <DataFile>
-                  <Path>..\Data\message.eml</Path>
-                </DataFile>
-              </InputFiles>
-              <Type>Console</Type>
-            </Example>
           </Examples>
           <Folders>
             <Folder>
