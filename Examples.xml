@@ -295,6 +295,22 @@ In order to save an Appointment in Draft mode, the Method property of Appointmen
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Formatting an Appointment</Title>
+                  <Description>The AppointmentFormattingOptions class can be used to format the appointment in text and HTML format.</Description>
+                  <FolderName>FormattinganAppointment</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Formatting an Appointment</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/EmailJava/Formatting+an+Appointment</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\sampleAppointment.ics</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
             <Folder>
