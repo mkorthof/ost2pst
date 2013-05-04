@@ -70,6 +70,70 @@
               </OutputFiles>
               <Type>Console</Type>
             </Example>
+            <Example>
+              <Title>Update and Save an Email</Title>
+              <Description>Aspose.Email API allows the developer to load any existing email message and modify it’s contents before saving back to the disk. One  notable point is to specify the MessageFormat while loading the email message from the disk. In addition, it is important to specify the correct MailMessageSaveType while saving the message back to disk.</Description>
+              <FolderName>UpdateandSaveEmail</FolderName>
+              <Order>6</Order>
+              <DocLink>
+                <DisplayName>Update and Save an Email</DisplayName>
+                <Url>http://www.aspose.com/docs/display/EmailJava/Update+and+Save+an+Email</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\sample-message.msg</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\message.out.msg</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Add Embedded images to Email Message</Title>
+              <Description>Using Aspose.Email Java API, the programmer can easily embed any image into an Email Message as well as attach it, as discussed earlier in topic “Manage Attachments in Email Message”. To embed an image, Aspose.Email Java API makes use of a specialized class by the name LinkedResource . In the example below, we will elaborate the use of LinkedResource class to achieve this functionality.</Description>
+              <FolderName>AddEmbeddedimagestoEmailMessage</FolderName>
+              <Order>7</Order>
+              <DocLink>
+                <DisplayName>Add Embedded images to Email Message</DisplayName>
+                <Url>http://www.aspose.com/docs/display/EmailJava/Add+Embedded+images+to+Email+Message</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\aspose-logo.png</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\message.out.eml</Path>
+                </DataFile>
+                <DataFile>
+                  <Path>..\Data\message.out.mhtml</Path>
+                </DataFile>
+                <DataFile>
+                  <Path>..\Data\message.out.msg</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Displaying Email Information on Screen</Title>
+              <Description>The MailMessage represents an email message and allows developers to access email message properties. The header information (discussed in Extracting Email Headers) can be extracted and manipulated in different ways. This article explains how to display selected email header information and the email body on screen.</Description>
+              <FolderName>DisplayingEmailInfoOnScreen</FolderName>
+              <Order>8</Order>
+              <DocLink>
+                <DisplayName>Displaying Email Information on Screen</DisplayName>
+                <Url>http://www.aspose.com/docs/display/EmailJava/Displaying+Email+Information+on+Screen</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\message.eml</Path>
+                </DataFile>
+              </InputFiles>
+              <Type>Console</Type>
+            </Example>
           </Examples>
           <Folders>
             <Folder>
