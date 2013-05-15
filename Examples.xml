@@ -448,6 +448,141 @@ To extract headers from an email, follow these steps:
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Parsing Outlook Message Files</Title>
+                  <Description>Using Aspose.Email for Java, developers can not only load but also parse contents of the Outlook Message files. For loading MSG files saved on disk, MapiMessage class exposes a static method fromFile. For parsing of MSG file contents, MapiMessage exposes a number of methods. In this topic, we will explain how an MSG file can be loaded and then parsed to display its contents.
+
+Aspose.Email for Java provides MapiMessage class that is used to open and parse an MSG file. As there may be many recipients in an MSG file, MapiMessage exposes the getRecipients() method that returns a MapiRecipientCollection, which represents a collection of MapiRecipient objects. MapiRecipient object further exposes the methods to work with recipient attributes. The following sequence of steps serves this purpose:* Create an instance of MapiMessage class to load an MSG file using fromFile() static method exposed by MapiMessage class.
+
+- Display the sender name, subject and body from the MSG file using getSenderName(), getSubject() and getBody() methods respectively exposed by MapiMessage class.
+- Call the getRecipients() method exposed by MapiRecipient class to get a reference to the collection of MapiRecipient objects associated with the MSG file.
+- Loop through the MapiRecipientCollection collection to display contents regarding each MapiRecipient object through its public methods.</Description>
+                  <FolderName>ParsingOutlookMessageFiles</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Parsing Outlook Message Files</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/EmailJava/Parsing+Outlook+Message+Files</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\message.msg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Accessing Outlook MAPI Properties</Title>
+                  <Description>Aspose.Email for Java provides MapiProperty class that represents a Mapi property continuing:
+- Name: Represents the name of the property
+- Tag: Represents the tag of the property
+- Data: Represents the data of the property
+
+In this topic, we will discuss how to access MAPI properties of an Outlook Message ( MSG ) file through Aspose.Email for Java.
+
+Please perform the following steps to read data of MAPI properties from an MSG file:
+
+- Create an instance of MapiMessage class to load an MSG file using fromFile() static method exposed by MapiMessage class.
+
+- Set a reference to the getProperties() method of MapiMessage object to get MapiPropertyCollection.
+
+- Get the MapiProperty object from MapiPropertyCollection by MapiPropertyTag keys.
+
+- Get the property data using an appropriate getxxx() method.</Description>
+                  <FolderName>AccessingOutlookMAPIProperties</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Accessing Outlook MAPI Properties</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/EmailJava/Accessing+Outlook+MAPI+Properties</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\message.msg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Parsing and Saving Attachments</Title>
+                  <Description>There may be one or more attachments with an Outlook Message file. Aspose.Email facilitates to loop through the attachments in an MSG file and hence save these attachments to disk. In this topic, we will discuss how to save attachments from an MSG file through Aspose.Email for Java.
+
+MapiMessage class of Aspose.Email for Java which is used to load an MSG file from the disk exposes getAttachments() method which provides a reference to the collection of MapiAttachment objects associated with the MSG file. MapiAttachment object further exposes methods to perform actions on the attachment. Please perform the following steps to save attachments in an MSG file to disk with the original name and extension:
+
+- Create an instance of MapiMessage class to load an MSG file using fromFile() static method exposed by MapiMessage class.
+
+- Call the getAttachments() method exposed by MapiRecipient class to get a reference to the collection of MapiAttachment objects associated with the MSG file.
+
+- Loop through the MapiAttachmentCollection collection to display contents regarding each MapiAttachment object through its public methods.
+
+- Call the Save() method of MapiAttachment object to save attachment to the disk.</Description>
+                  <FolderName>ParsingandSavingAttachments</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Parsing and Saving Attachments</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/EmailJava/Parsing+and+Saving+Attachments</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\attachment1.txt</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\attachment2.txt</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\message.msg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Read Outlook Template File (.OFT)</Title>
+                  <Description>Outlook Templates are very useful in those situations where you want to send similar email message again and again. Instead of preparing the message each time from scratch, you may save first prepare the message in Outlook and save it as Outlook template (OFT). After that, if you need to send the message, you may create it from the template, which saves time for writing up the same text in the body, subject etc.
+
+Outlook Templates are very useful in those situations where you want to send similar email message again and again. Instead of preparing the message each time from scratch, you may save first prepare the message in Outlook and save it as Outlook template (OFT). After that, if you need to send the message, you may create it from the template, which saves time for writing up the same text in the body, subject etc.</Description>
+                  <FolderName>ReadOutlookTemplateFile</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Read Outlook Template File (.OFT)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/EmailJava/Read+Outlook+Template+File+%28.OFT%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\sample.oft</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\invitation.msg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Setting Follow Up Flag and Due Date for Outlook Message (MSG) Files</Title>
+                  <Description>A follow up flag marks an email message for some kind of action. Microsoft Outlook lets users flag messages and, in the flag set-up, assign a due date for the follow up. Microsoft Outlook sends a reminder to the recipient to prompt them to follow up the email. Flagging emails and setting due dates programmatically lets software developers automate certain types of emails and help recipients remember to take action. For example, it could be used to send monthly messages to a sales team to remind them to complete their reports; or to send a message to all staff to remind them of a company meeting.
+Aspose.Email for Java supports setting follow up flag and due date for the MapiMessage objects using FollowUpManager and FollowUpOptions
+
+There are a number of variants in which the follow up flag can be set on a message. 
+
+- Set a follow up flag with a start date and a due date.
+- Add a flag with a reminder.
+- Add a flag to a recipient's message.
+- Flag the message for sender and recipient.
+- Mark as complete.
+- Remove flag.
+- Read follow up options.</Description>
+                  <FolderName>SettingFollowUpFlagandDueDateforOutlookMessageFiles</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Setting Follow Up Flag and Due Date for Outlook Message (MSG) Files</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/EmailJava/Setting+Follow+Up+Flag+and+Due+Date+for+Outlook+Message+%28MSG%29+Files</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\message.msg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
           </Folders>
