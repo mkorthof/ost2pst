@@ -70,54 +70,6 @@
               </OutputFiles>
               <Type>Console</Type>
             </Example>
-            <Example>
-              <Title>Update and Save an Email</Title>
-              <Description>Aspose.Email API allows the developer to load any existing email message and modify it’s contents before saving back to the disk. One  notable point is to specify the MessageFormat while loading the email message from the disk. In addition, it is important to specify the correct MailMessageSaveType while saving the message back to disk.</Description>
-              <FolderName>UpdateandSaveEmail</FolderName>
-              <Order>6</Order>
-              <DocLink>
-                <DisplayName>Update and Save an Email</DisplayName>
-                <Url>http://www.aspose.com/docs/display/EmailJava/Update+and+Save+an+Email</Url>
-              </DocLink>
-              <InputFiles>
-                <DataFile>
-                  <Path>..\Data\sample-message.msg</Path>
-                </DataFile>
-              </InputFiles>
-              <OutputFiles>
-                <DataFile>
-                  <Path>..\Data\message.out.msg</Path>
-                </DataFile>
-              </OutputFiles>
-              <Type>Console</Type>
-            </Example>
-            <Example>
-              <Title>Add Embedded images to Email Message</Title>
-              <Description>Using Aspose.Email Java API, the programmer can easily embed any image into an Email Message as well as attach it, as discussed earlier in topic “Manage Attachments in Email Message”. To embed an image, Aspose.Email Java API makes use of a specialized class by the name LinkedResource . In the example below, we will elaborate the use of LinkedResource class to achieve this functionality.</Description>
-              <FolderName>AddEmbeddedimagestoEmailMessage</FolderName>
-              <Order>7</Order>
-              <DocLink>
-                <DisplayName>Add Embedded images to Email Message</DisplayName>
-                <Url>http://www.aspose.com/docs/display/EmailJava/Add+Embedded+images+to+Email+Message</Url>
-              </DocLink>
-              <InputFiles>
-                <DataFile>
-                  <Path>..\Data\aspose-logo.png</Path>
-                </DataFile>
-              </InputFiles>
-              <OutputFiles>
-                <DataFile>
-                  <Path>..\Data\message.out.eml</Path>
-                </DataFile>
-                <DataFile>
-                  <Path>..\Data\message.out.mhtml</Path>
-                </DataFile>
-                <DataFile>
-                  <Path>..\Data\message.out.msg</Path>
-                </DataFile>
-              </OutputFiles>
-              <Type>Console</Type>
-            </Example>
           </Examples>
           <Folders>
             <Folder>
@@ -139,13 +91,13 @@
 - Customizing Email Headers
 - Introduction to Event Handling
 - Loading eml file from disk and sending it with SMTP</Description>
-              <FolderName>SendEmailMessagesWithSMTP</FolderName>
+              <FolderName>SendingWithSMTP</FolderName>
               <Order>1</Order>
               <Examples>
                 <Example>
                   <Title>Load and Save Appointment in ICS Format</Title>
                   <Description>The Appointment class in Aspose.Email can be used to load an appointment in ICS format as well as create a new appointment and save it to disk in ICS format. In this example, creation of an appointment, saving it to disk in ICS format, and then loading it back is explained in detail.</Description>
-                  <FolderName>LoadSaveAppointmentInICSFormat</FolderName>
+                  <FolderName>AppointmentInICSFormat</FolderName>
                   <Order>1</Order>
                   <DocLink>
                     <DisplayName>Load and Save Appointment in ICS Format</DisplayName>
@@ -220,7 +172,7 @@ To attach an attachment to an email, please follow these steps as described in t
 When a file is embedded, rather than inserted or pasted into another document, it retains its original format. The embedded document can be opened in the original application and modified.
 
 Aspose.Email lets you work with embedded objects in emails. This example shows how to embed objects. (Extracting emails is described in Extracting Embedded Objects.)</Description>
-                  <FolderName>WorkingWithEmbeddedObjects</FolderName>
+                  <FolderName>EmbeddedObjects</FolderName>
                   <Order>3</Order>
                   <DocLink>
                     <DisplayName>Working with Embedded Objects</DisplayName>
@@ -254,7 +206,232 @@ Aspose.Email lets you work with embedded objects in emails. This example shows h
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Sending Emails</Title>
+                  <Description>The SmtpClient class allows applications to send email using the Simple Mail Transfer Protocol (SMTP). The SmptClient class is the only major entry developers use to send mail messages. The SmtpClient class also provides other common email delivery methods, including writing email messages to the file system, message queue etc.</Description>
+                  <FolderName>SendingEmails</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Sending Emails</DisplayName>
+                    <Url>Sending+Emails</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Connecting to SSL Enabled SMTP Server</Title>
+                  <Description>The following properties need to be set when connecting with an SMTP server with SSL support.
+
+1: SecurityMode
+2: EnableSSL
+3: Port</Description>
+                  <FolderName>SSLEnabledSMTPServer</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Connecting to SSL Enabled SMTP Server</DisplayName>
+                    <Url>Connecting+to+SSL+Enabled+SMTP+Server</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Specifying Multiple Recipients</Title>
+                  <Description>The MailMessage class represents an email message. Instances of the MailMessage class are used to construct email messages that are transmitted to an SMTP server using the SmtpClient class. This topic demonstrates how to specify more than one email addresses.
+
+Email addresses can be specified using the MailMessage class. The email addresses used in the MailMessage class are:
+
+1: To
+2: Cc
+3: Bcc</Description>
+                  <FolderName>MultipleRecipients</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Specifying Multiple Recipients</DisplayName>
+                    <Url>Specifying+Multiple+Recipients</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Send Meeting Requests</Title>
+                  <Description>Microsoft Outlook offers calendar functions as well as email management. When a user opens an email with an invitation to an event, Outlook prompts them to accept or reject the invitation. Aspose.Email lets developers add calendar functions to your emails.</Description>
+                  <FolderName>MeetingRequests</FolderName>
+                  <Order>9</Order>
+                  <DocLink>
+                    <DisplayName>Send Meeting Requests</DisplayName>
+                    <Url>Send+Meeting+Requests</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Performing Mail Merge</Title>
+                  <Description>Mail merges help you create and send a batch of similar email messages. The core of the emails are the same, but the content can be personalized. Typically, a recipient's contact details (first name, second name, company and so on) are used to personalize the email.</Description>
+                  <FolderName>MailMerge</FolderName>
+                  <Order>10</Order>
+                  <DocLink>
+                    <DisplayName>Performing Mail Merge</DisplayName>
+                    <Url>Performing+Mail+Merge</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Loading EML Files from Disk and Sending it with SMTP</Title>
+                  <Description>You can load .eml files from disk or stream into the MailMessage class and send the email message using the SmtpClient class. The MailMessage class is the main class for creating new email messages, loading email message files from disk or stream and saving the messages.</Description>
+                  <FolderName>SendingEMLFilesWithSMTP</FolderName>
+                  <Order>13</Order>
+                  <DocLink>
+                    <DisplayName>Loading EML Files from Disk and Sending it with SMTP</DisplayName>
+                    <Url>Loading+EML+Files+from+Disk+and+Sending+it+with+SMTP</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\test.eml</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Load Smtp Authentication Information from Config File</Title>
+                  <Description>The SmtpClient class allows applications to read authentication information like username and password and the host address and port number directly from a configuration file. Using the .NET native configuration tag, as shown below, enables the SmptClient class to read this information through the Configuration Manager also available in .NET framework.</Description>
+                  <FolderName>LoadSmtpConfigFile</FolderName>
+                  <Order>14</Order>
+                  <DocLink>
+                    <DisplayName>Load Smtp Authentication Information from Config File</DisplayName>
+                    <Url>Load+Smtp+Authentication+Information+from+Config+File</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
+              <Folders>
+                <Folder>
+                  <Title>Set Mail Body</Title>
+                  <Description>The MailMessage class represents an email message. Instances of the MailMessage class are used to construct email messages that are transmitted to a SMTP server for delivery using the SmtpClient class. A mail body can be specified using the MailMessage class. An email can have multiple bodies. There are two types of mail bodies in MailMessage class:
+
+1: HTML body
+2: Text body</Description>
+                  <FolderName>SetMailBody</FolderName>
+                  <Order>8</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Setting HTML Body</Title>
+                      <Description>HtmlBody is used to specify the HTML content of a message body. HtmlBody must be enclosed between &lt;html&gt; &lt;/html&gt; tags.</Description>
+                      <FolderName>SettingHTMLBody</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Setting HTML Body</DisplayName>
+                        <Url>Set+Mail+Body</Url>
+                      </DocLink>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Setting Text Body</Title>
+                      <Description>TextBody is used to specify textual content for a message body.</Description>
+                      <FolderName>SettingTextBody</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Setting Text Body</DisplayName>
+                        <Url>Set+Mail+Body</Url>
+                      </DocLink>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+                <Folder>
+                  <Title>Importing and Exporting Emails</Title>
+                  <Description>Different email servers use different email formats. To move emails between servers and email applications, it can be useful to convert them from one format to another. This article shows how to import and export email messages with Aspose.Email. Aspose.Email's MailMessage class can import email in different formats:
+
+1: Microsoft Outlook Email Message Format (MSG).
+2: Microsoft HTML Format (MHT).
+3: RFC 822 Compliant Message Format (EML).
+ 
+It can export email in different formats too:
+
+1: RFC 822 Compliant Message Format (EML).
+2: Microsoft Html Format (MHT).</Description>
+                  <FolderName>ImportingExportingEmails</FolderName>
+                  <Order>11</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Import EML Format Email</Title>
+                      <Description>In this example, we will see how to import an EML format file using Aspose.Emails.</Description>
+                      <FolderName>ImportEML</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Importing and Exporting Emails</DisplayName>
+                        <Url>Importing+and+Exporting+Emails</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\test.eml</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Export Message as EML File</Title>
+                      <Description>In this example we will see how we can export and email message to EML file using Aspose.Email.</Description>
+                      <FolderName>ExportAsEML</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Importing and Exporting Emails</DisplayName>
+                        <Url>Importing+and+Exporting+Emails</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\Message.eml</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+                <Folder>
+                  <Title>Utility Features of Email Related Protocols</Title>
+                  <Description>The MailMessage class represents the content of an email message. Instances of the MailMessage class are used to construct an email message that is transmitted to a SMTP server for delivery using the SmtpClient class.
+
+In this section we have given examples of various utility features that MailMessage provides.</Description>
+                  <FolderName>ProtocolUtilityFeatures</FolderName>
+                  <Order>12</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Set Date, Priority and Sensitivity of Email</Title>
+                      <Description>In this example we will utlilize the following features of Mail Message class:
+
+1: Set Date and Time.
+2: Set Priority.
+3: Set Sensitivity.</Description>
+                      <FolderName>SetEmailInfo</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>MailMessage Utility Features</DisplayName>
+                        <Url>Utility+Features+of+Email+Related+Protocols</Url>
+                      </DocLink>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Delivery Notifications</Title>
+                      <Description>Delivery notifications let senders know that the email they sent have been delivered to the recipient's inbox. Read receipts reassure them that the recipient has opened (thus read) the email. They are often used to track that important messages have reached their audience.
+
+In Microsoft Outlook, recipients have the option of sending or ignoring to send a read receipt to toggling the receipt on does not automatically mean that the sender will receive a receipt.</Description>
+                      <FolderName>DeliveryNotifications</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Utility Features of Email Related Protocols</DisplayName>
+                        <Url>Utility+Features+of+Email+Related+Protocols</Url>
+                      </DocLink>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Customizing an Email Header</Title>
+                      <Description>Email headers represent an Internet standard and RFC define header fields which are included in Internet email messages. An email header can be specified using the MailMessage class. Common header types are defined in the HeaderType class. It is a sealed class working like a normal enumeration.</Description>
+                      <FolderName>CustomizingEmailHeader</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>Utility Features of Email Related Protocols</DisplayName>
+                        <Url>Utility+Features+of+Email+Related+Protocols</Url>
+                      </DocLink>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
             </Folder>
             <Folder>
               <Title>Aspose Email How Tos</Title>
@@ -282,7 +459,7 @@ Aspose.Email lets you work with embedded objects in emails. This example shows h
                   <Title>Create a Draft Appointment Request</Title>
                   <Description>It is often required to create an Appointment request in Draft mode, so as the basic information is added and then the same draft Appointment be forwarded to other users for necessary changes according to individual users.
 In order to save an Appointment in Draft mode, the Method property of Appointment class should be set to Publish. This example demonstrates the use of this concept using Aspose.Email.</Description>
-                  <FolderName>CreateDraftAppointmentRequest</FolderName>
+                  <FolderName>DraftAppointmentRequest</FolderName>
                   <Order>1</Order>
                   <DocLink>
                     <DisplayName>Create a Draft Appointment Request</DisplayName>
@@ -295,22 +472,6 @@ In order to save an Appointment in Draft mode, the Method property of Appointmen
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
-                <Example>
-                  <Title>Formatting an Appointment</Title>
-                  <Description>The AppointmentFormattingOptions class can be used to format the appointment in text and HTML format.</Description>
-                  <FolderName>FormattinganAppointment</FolderName>
-                  <Order>2</Order>
-                  <DocLink>
-                    <DisplayName>Formatting an Appointment</DisplayName>
-                    <Url>http://www.aspose.com/docs/display/EmailJava/Formatting+an+Appointment</Url>
-                  </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\Data\sampleAppointment.ics</Path>
-                    </DataFile>
-                  </InputFiles>
-                  <Type>Console</Type>
-                </Example>
               </Examples>
             </Folder>
             <Folder>
@@ -321,7 +482,7 @@ In order to save an Appointment in Draft mode, the Method property of Appointmen
 - Displaying Email Information on screen 
 - Extracting Email Attachments 
 - Extracting Embedded Objects</Description>
-              <FolderName>ManageEmailMessageFilesWithMailMessage</FolderName>
+              <FolderName>ManageEmailMessages</FolderName>
               <Order>5</Order>
               <Examples>
                 <Example>
@@ -350,7 +511,7 @@ To extract headers from an email, follow these steps:
                 <Example>
                   <Title>Displaying Email Information on Screen</Title>
                   <Description>The MailMessage represents an email message and allows developers to access email message properties. The header information (discussed in Extracting Email Headers) can be extracted and manipulated in different ways. This example explains how to display selected email header information and the email body on screen.</Description>
-                  <FolderName>DisplayEmailInformationOnScreen</FolderName>
+                  <FolderName>DisplayEmailInformation</FolderName>
                   <Order>2</Order>
                   <DocLink>
                     <DisplayName>Displaying Email Information on Screen</DisplayName>
@@ -364,6 +525,311 @@ To extract headers from an email, follow these steps:
                   <Type>Console</Type>
                 </Example>
               </Examples>
+            </Folder>
+            <Folder>
+              <Title>Managing Email Messages with POP3</Title>
+              <Description>This section includes the following examples: 
+
+1: Connecting to POP3 Server 
+2: Connecting to SSL Enabled Pop3 server 
+3: Authenticating to a POP3 Server 
+4: Getting Mailbox Info 
+5: Receiving Emails and Saving to Disk 
+6: Filtering Messages from POP3 Mailbox Based on Sender, Recipient or Date</Description>
+              <FolderName>ManagingEmailMessagesPOP3</FolderName>
+              <Order>6</Order>
+              <Examples>
+                <Example>
+                  <Title>Connecting to POP3 Server</Title>
+                  <Description>The Pop3Client class allows applications to manage email boxes using the Post Office Protocol, Version 3 (POP3). To connect to a server, use the Pop3Client class. The Pop3Client class is the major entry for developers who want to add POP3 management to their .NET applications.</Description>
+                  <FolderName>ConnectingToPOP3</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Connecting to POP3 Server</DisplayName>
+                    <Url>Connecting+to+POP3+Server</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Connecting to SSL Enabled POP3 Server</Title>
+                  <Description>The process for connecting to an SSL enabled POP3 server requires some additional information:
+
+1: SecurityMode
+2: EnableSSL
+3: Port</Description>
+                  <FolderName>SSLEnabledPOP3Server</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Connecting to SSL Enabled POP3 Server</DisplayName>
+                    <Url>Connecting+to+SSL+Enabled+POP3+Server</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Getting Mailbox Info</Title>
+                  <Description>We can get information about the mailbox such as the number of messages and the mailbox size using the GetMailBoxSize() and GetMailBoxInfo() methods.
+
+1: The GetMailBoxSize() method returns the size of the mailbox in bytes.
+2: The GetMailBoxInfo() method returns an object of type Pop3MailBoxInfo.
+
+It is also possible to get the number of messages using the MessageCount property and the size using the OccupiedSize property.</Description>
+                  <FolderName>GettingMailboxInfo</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Getting Mailbox Info</DisplayName>
+                    <Url>Getting+Mailbox+Info</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+              <Folders>
+                <Folder>
+                  <Title>Receiving Emails and Saving to Disk</Title>
+                  <Description>This section includes examples which demonstrate how to recieve emails, save them and parse them for information.</Description>
+                  <FolderName>ReceivingAndSavingToDisk</FolderName>
+                  <Order>1</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Retrieving Email Headers</Title>
+                      <Description>Email headers can give us information about an email message that we can use to decide whether or not to retrieve the whole email message. Typically, the header information contains sender, subject, received date etc.</Description>
+                      <FolderName>RetrievingEmailHeaders</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Receiving Emails and Saving to Disk</DisplayName>
+                        <Url>Receiving+Emails+and+Saving+to+Disk</Url>
+                      </DocLink>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Retrieving Email Messages</Title>
+                      <Description>Aspose.Email.Pop3 component provides the capability to retrieve email messages from the POP3 server, and parse them into a MailMessage instance with the help of Aspose.Email.Mail components. The MailMessage class contains several properties and methods for manipulating email content. By using the Pop3Client class' FetchMessage function, you can get a MailMessage instance directly from the POP3 server.</Description>
+                      <FolderName>RetrievingEmailMessages</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Receiving Emails and Saving to Disk</DisplayName>
+                        <Url>Receiving+Emails+and+Saving+to+Disk</Url>
+                      </DocLink>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Save Message to Disk without Parsing</Title>
+                      <Description>If you want to download email messages from the POP3 server without parsing them, use the Pop3Client class' SaveMessage function. The SaveMessage function does not parse the email message so it is faster than the FetchMessage function.</Description>
+                      <FolderName>SaveToDiskWithoutParsing</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>Receiving Emails and Saving to Disk</DisplayName>
+                        <Url>Receiving+Emails+and+Saving+to+Disk</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\1234.eml</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Parse Message Before Saving</Title>
+                      <Description>The following sample uses the Pop3Client's FetchMessage method to retrieve a message from a POP3 server by its sequence number, then save the message to disk using the subject as the file name.</Description>
+                      <FolderName>ParseMessageAndSave</FolderName>
+                      <Order>4</Order>
+                      <DocLink>
+                        <DisplayName>Receiving Emails and Saving to Disk</DisplayName>
+                        <Url>Receiving+Emails+and+Saving+to+Disk</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\Msg1234.eml</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Getting Recipient Information</Title>
+                      <Description>The MapiRecipient class represents the sender or recipient information of the email message, which contains:* RecipientType indicates the type of the recipient.* DisplayName a string represents the display name of the recipient.* EmailAddress a string array represents the email address of the recipient.
+To query the mailbox status:# Create a MapiMessage instance by loading from files or stream.# Get the MapiRecipient from MapiMessage.Recipients.</Description>
+                      <FolderName>RecipientInformation</FolderName>
+                      <Order>5</Order>
+                      <DocLink>
+                        <DisplayName>Receiving Emails and Saving to Disk</DisplayName>
+                        <Url>Receiving+Emails+and+Saving+to+Disk</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\Message.msg</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
+            </Folder>
+            <Folder>
+              <Title>Managing Emails with IMAP</Title>
+              <Description>This section includes the following examples: 
+
+1: Connecting with IMAP Server 
+2: Connecting with SSL enabled Imap Server 
+3: Fetch Messages from Imap Server and Save to Disk 
+4: Delete Messages 
+5: Changing the Message Flags 
+6: Adding a New Message in a Folder 
+7: Getting Folders Information 
+8: Deleting and Renaming Folders 
+9: Get Folder and Sub-folders Information from IMAP Server and Read Messages Recursively 
+10: Filtering Messages from IMAP Mailbox Based on Sender, Recipient or Date</Description>
+              <FolderName>ManagingEmailsWithIMAP</FolderName>
+              <Order>6</Order>
+              <Examples>
+                <Example>
+                  <Title>Connecting with IMAP Server</Title>
+                  <Description>The ImapClient class allows applications to manage IMAP mailboxs using the IMAP protocol. The ImapClient class is used to connect to IMAP mail servers and manage emails in the IMAP email folders.</Description>
+                  <FolderName>ConnectingWithIMAPServer</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Connecting with IMAP Server</DisplayName>
+                    <Url>Connecting+with+IMAP+Server</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Connecting with SSL Enabled IMAP Server</Title>
+                  <Description>In this example, we will see how to connect with IMAP Server with SSL Enabled. The process for connecting to an SSL enables IMAP server requires following additional information:
+
+1: SecurityMode
+2: EnableSSL
+3: Port</Description>
+                  <FolderName>SSLEnabledIMAPServer</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Connecting with SSL Enabled IMAP Server</DisplayName>
+                    <Url>Connecting+with+SSL+Enabled+IMAP+Server</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Fetch Messages from IMAP Server and Save to Disk</Title>
+                  <Description>The ImapClient class can fetch messages from an IMAP server and save the messages in EML format to a local disk.</Description>
+                  <FolderName>MessagesFromIMAPServerToDisk</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Fetch Messages from IMAP Server and Save to Disk</DisplayName>
+                    <Url>Fetch+Messages+from+IMAP+Server+and+Save+to+Disk</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\1.eml</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Setting Message Flags</Title>
+                  <Description>You can change message flags by using the ChangeMessageFlags() method. This method takes two parameters. 
+
+1.The message sequence number or unique ID.
+2.MessageFlag.
+ 
+The following flags can be set:
+
+1: Answered
+2: Deleted
+3: Draft
+4: Empty
+5: Flagged
+6: IsRead
+7: Readed
+8: Recent</Description>
+                  <FolderName>SettingMessageFlags</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Changing the Message Flags</DisplayName>
+                    <Url>Changing+the+Message+Flags</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Removing Message Flags</Title>
+                  <Description>Message flags can also be removed with the RemoveMessageFlags() method. Usage is similar to that of the ChangeMessageFlags() method. It takes a sequence number or unique message ID and MessageFlag.</Description>
+                  <FolderName>RemovingMessageFlags</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Changing the Message Flags</DisplayName>
+                    <Url>Changing+the+Message+Flags</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding a New Message in a Folder</Title>
+                  <Description>Developers can add a new message to the folder using the MailMessage and ImapClient classes of Aspose.Email.</Description>
+                  <FolderName>AddingNewMessage</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Adding a New Message in a Folder</DisplayName>
+                    <Url>Adding+a+New+Message+in+a+Folder</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Getting Folders Information</Title>
+                  <Description>Getting information about folders from an IMAP server is very easy with Aspose.Email. Call the Aspose.Email.Imap namespace ListFolders() method. It returns an object of the ImapFolderInfoCollection type. Iterate through this collection and get information about individual folders in a loop. The method is overloaded. You can pass a folder name as a parameter to get a list of subfolders.</Description>
+                  <FolderName>GettingFoldersInformation</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Getting Folders Information</DisplayName>
+                    <Url>Getting+Folders+Information</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get Folder Information from IMAP Server and Read Messages Recursively</Title>
+                  <Description>In this example, most of the ImapClient features are used to create an application that lists all the folders and sub-folders recursively from an IMAP server. It also saves the messages in each folder and sub-folder in MSG format on a local disk. In disk, folders and messages are created and saved in the same hierarchical structure as on the IMAP server.</Description>
+                  <FolderName>ReadMessagesRecursively</FolderName>
+                  <Order>9</Order>
+                  <DocLink>
+                    <DisplayName>Get Folder and Sub folders Information from IMAP Server and Read Messages Recursively</DisplayName>
+                    <Url>Get+Folder+and+Sub+folders+Information+from+IMAP+Server+and+Read+Messages+Recursively</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\INBOX\Test Email-4.msg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+              <Folders>
+                <Folder>
+                  <Title>Deleting and Renaming Folders</Title>
+                  <Description>This section includes the following examples:</Description>
+                  <FolderName>DeletingAndRenamingFolders</FolderName>
+                  <Order>8</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Renaming Folders</Title>
+                      <Description>Aspose.Email allows developers to rename folders. Call the RenameFolder() method,and pass the current folder name and new folder name.</Description>
+                      <FolderName>RenamingFolders</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Deleting and Renaming Folders</DisplayName>
+                        <Url>Deleting+and+Renaming+Folders</Url>
+                      </DocLink>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Deleting Folders</Title>
+                      <Description>A folder on an IMAP server can be deleted with a single line using Aspose.Email. Developer can pass folder name as parameter to DeleteFolder() method to delete a specific folder.</Description>
+                      <FolderName>DeletingFolders</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Deleting and Renaming Folders</DisplayName>
+                        <Url>Deleting+and+Renaming+Folders</Url>
+                      </DocLink>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
             </Folder>
           </Folders>
         </Folder>
@@ -446,141 +912,6 @@ To extract headers from an email, follow these steps:
                       <Path>..\Data\message.msg</Path>
                     </DataFile>
                   </OutputFiles>
-                  <Type>Console</Type>
-                </Example>
-                <Example>
-                  <Title>Parsing Outlook Message Files</Title>
-                  <Description>Using Aspose.Email for Java, developers can not only load but also parse contents of the Outlook Message files. For loading MSG files saved on disk, MapiMessage class exposes a static method fromFile. For parsing of MSG file contents, MapiMessage exposes a number of methods. In this topic, we will explain how an MSG file can be loaded and then parsed to display its contents.
-
-Aspose.Email for Java provides MapiMessage class that is used to open and parse an MSG file. As there may be many recipients in an MSG file, MapiMessage exposes the getRecipients() method that returns a MapiRecipientCollection, which represents a collection of MapiRecipient objects. MapiRecipient object further exposes the methods to work with recipient attributes. The following sequence of steps serves this purpose:* Create an instance of MapiMessage class to load an MSG file using fromFile() static method exposed by MapiMessage class.
-
-- Display the sender name, subject and body from the MSG file using getSenderName(), getSubject() and getBody() methods respectively exposed by MapiMessage class.
-- Call the getRecipients() method exposed by MapiRecipient class to get a reference to the collection of MapiRecipient objects associated with the MSG file.
-- Loop through the MapiRecipientCollection collection to display contents regarding each MapiRecipient object through its public methods.</Description>
-                  <FolderName>ParsingOutlookMessageFiles</FolderName>
-                  <Order>2</Order>
-                  <DocLink>
-                    <DisplayName>Parsing Outlook Message Files</DisplayName>
-                    <Url>http://www.aspose.com/docs/display/EmailJava/Parsing+Outlook+Message+Files</Url>
-                  </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\Data\message.msg</Path>
-                    </DataFile>
-                  </InputFiles>
-                  <Type>Console</Type>
-                </Example>
-                <Example>
-                  <Title>Accessing Outlook MAPI Properties</Title>
-                  <Description>Aspose.Email for Java provides MapiProperty class that represents a Mapi property continuing:
-- Name: Represents the name of the property
-- Tag: Represents the tag of the property
-- Data: Represents the data of the property
-
-In this topic, we will discuss how to access MAPI properties of an Outlook Message ( MSG ) file through Aspose.Email for Java.
-
-Please perform the following steps to read data of MAPI properties from an MSG file:
-
-- Create an instance of MapiMessage class to load an MSG file using fromFile() static method exposed by MapiMessage class.
-
-- Set a reference to the getProperties() method of MapiMessage object to get MapiPropertyCollection.
-
-- Get the MapiProperty object from MapiPropertyCollection by MapiPropertyTag keys.
-
-- Get the property data using an appropriate getxxx() method.</Description>
-                  <FolderName>AccessingOutlookMAPIProperties</FolderName>
-                  <Order>3</Order>
-                  <DocLink>
-                    <DisplayName>Accessing Outlook MAPI Properties</DisplayName>
-                    <Url>http://www.aspose.com/docs/display/EmailJava/Accessing+Outlook+MAPI+Properties</Url>
-                  </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\Data\message.msg</Path>
-                    </DataFile>
-                  </InputFiles>
-                  <Type>Console</Type>
-                </Example>
-                <Example>
-                  <Title>Parsing and Saving Attachments</Title>
-                  <Description>There may be one or more attachments with an Outlook Message file. Aspose.Email facilitates to loop through the attachments in an MSG file and hence save these attachments to disk. In this topic, we will discuss how to save attachments from an MSG file through Aspose.Email for Java.
-
-MapiMessage class of Aspose.Email for Java which is used to load an MSG file from the disk exposes getAttachments() method which provides a reference to the collection of MapiAttachment objects associated with the MSG file. MapiAttachment object further exposes methods to perform actions on the attachment. Please perform the following steps to save attachments in an MSG file to disk with the original name and extension:
-
-- Create an instance of MapiMessage class to load an MSG file using fromFile() static method exposed by MapiMessage class.
-
-- Call the getAttachments() method exposed by MapiRecipient class to get a reference to the collection of MapiAttachment objects associated with the MSG file.
-
-- Loop through the MapiAttachmentCollection collection to display contents regarding each MapiAttachment object through its public methods.
-
-- Call the Save() method of MapiAttachment object to save attachment to the disk.</Description>
-                  <FolderName>ParsingandSavingAttachments</FolderName>
-                  <Order>4</Order>
-                  <DocLink>
-                    <DisplayName>Parsing and Saving Attachments</DisplayName>
-                    <Url>http://www.aspose.com/docs/display/EmailJava/Parsing+and+Saving+Attachments</Url>
-                  </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\Data\attachment1.txt</Path>
-                    </DataFile>
-                    <DataFile>
-                      <Path>..\Data\attachment2.txt</Path>
-                    </DataFile>
-                    <DataFile>
-                      <Path>..\Data\message.msg</Path>
-                    </DataFile>
-                  </InputFiles>
-                  <Type>Console</Type>
-                </Example>
-                <Example>
-                  <Title>Read Outlook Template File (.OFT)</Title>
-                  <Description>Outlook Templates are very useful in those situations where you want to send similar email message again and again. Instead of preparing the message each time from scratch, you may save first prepare the message in Outlook and save it as Outlook template (OFT). After that, if you need to send the message, you may create it from the template, which saves time for writing up the same text in the body, subject etc.
-
-Outlook Templates are very useful in those situations where you want to send similar email message again and again. Instead of preparing the message each time from scratch, you may save first prepare the message in Outlook and save it as Outlook template (OFT). After that, if you need to send the message, you may create it from the template, which saves time for writing up the same text in the body, subject etc.</Description>
-                  <FolderName>ReadOutlookTemplateFile</FolderName>
-                  <Order>5</Order>
-                  <DocLink>
-                    <DisplayName>Read Outlook Template File (.OFT)</DisplayName>
-                    <Url>http://www.aspose.com/docs/display/EmailJava/Read+Outlook+Template+File+%28.OFT%29</Url>
-                  </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\Data\sample.oft</Path>
-                    </DataFile>
-                  </InputFiles>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\invitation.msg</Path>
-                    </DataFile>
-                  </OutputFiles>
-                  <Type>Console</Type>
-                </Example>
-                <Example>
-                  <Title>Setting Follow Up Flag and Due Date for Outlook Message (MSG) Files</Title>
-                  <Description>A follow up flag marks an email message for some kind of action. Microsoft Outlook lets users flag messages and, in the flag set-up, assign a due date for the follow up. Microsoft Outlook sends a reminder to the recipient to prompt them to follow up the email. Flagging emails and setting due dates programmatically lets software developers automate certain types of emails and help recipients remember to take action. For example, it could be used to send monthly messages to a sales team to remind them to complete their reports; or to send a message to all staff to remind them of a company meeting.
-Aspose.Email for Java supports setting follow up flag and due date for the MapiMessage objects using FollowUpManager and FollowUpOptions
-
-There are a number of variants in which the follow up flag can be set on a message. 
-
-- Set a follow up flag with a start date and a due date.
-- Add a flag with a reminder.
-- Add a flag to a recipient's message.
-- Flag the message for sender and recipient.
-- Mark as complete.
-- Remove flag.
-- Read follow up options.</Description>
-                  <FolderName>SettingFollowUpFlagandDueDateforOutlookMessageFiles</FolderName>
-                  <Order>6</Order>
-                  <DocLink>
-                    <DisplayName>Setting Follow Up Flag and Due Date for Outlook Message (MSG) Files</DisplayName>
-                    <Url>http://www.aspose.com/docs/display/EmailJava/Setting+Follow+Up+Flag+and+Due+Date+for+Outlook+Message+%28MSG%29+Files</Url>
-                  </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\Data\message.msg</Path>
-                    </DataFile>
-                  </InputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
