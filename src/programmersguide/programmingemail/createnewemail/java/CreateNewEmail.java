@@ -12,12 +12,15 @@ import com.aspose.email.MailAddress;
 import com.aspose.email.MailMessage;
 import com.aspose.email.MailMessageSaveType;
 
+import java.io.File;
+
 public class CreateNewEmail
 {
     public static void main(String[] args) throws Exception
     {
         // The path to the documents directory.
         String dataDir = "src/programmersguide/programmingemail/createnewemail/data/";
+        new File(dataDir).mkdirs();
 
         // Create a new instance of MailMessage class
         MailMessage message = new MailMessage();

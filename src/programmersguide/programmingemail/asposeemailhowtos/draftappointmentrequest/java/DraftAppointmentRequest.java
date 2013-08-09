@@ -10,6 +10,7 @@ package programmersguide.programmingemail.asposeemailhowtos.draftappointmentrequ
 
 import com.aspose.email.*;
 
+import java.io.File;
 import java.util.Date;
 import java.util.TimeZone;
 
@@ -19,6 +20,7 @@ public class DraftAppointmentRequest
     {
         // The path to the documents directory.
         String dataDir = "src/programmersguide/programmingemail/asposeemailhowtos/draftappointmentrequest/data/";
+        new File(dataDir).mkdirs();
 
         String sender = "test@gmail.com";
         String recipient = "test@email.com";

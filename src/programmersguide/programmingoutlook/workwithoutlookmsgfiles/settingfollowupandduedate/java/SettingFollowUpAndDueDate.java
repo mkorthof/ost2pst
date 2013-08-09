@@ -13,7 +13,7 @@ import java.util.Date;
 
 import com.aspose.email.*;
 
-public class SettingFollowUpFlagAndDueDate
+public class SettingFollowUpAndDueDate
 {
     public static void main(String[] args) throws Exception
     {

@@ -10,12 +10,15 @@ package programmersguide.programmingoutlook.workwithoutlookmsgfiles.createsaveou
 
 import com.aspose.email.*;
 
+import java.io.File;
+
 public class CreateSaveOutlookFiles
 {
     public static void main(String[] args) throws Exception
     {
         // The path to the documents directory.
         String dataDir = "src/programmersguide/programmingoutlook/workwithoutlookmsgfiles/createsaveoutlookfiles/data/";
+        new File(dataDir).mkdirs();
 
         // Create an instance of MailMessage class
         MailMessage mailMsg = new MailMessage();

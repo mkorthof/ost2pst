@@ -9,6 +9,8 @@
 package programmersguide.programmingemail.sendingwithsmtp.appointmentinicsformat.java;
 
 import com.aspose.email.*;
+
+import java.io.File;
 import java.util.Date;
 
 public class AppointmentInICSFormat
@@ -17,6 +19,7 @@ public class AppointmentInICSFormat
     {
         // The path to the documents directory.
         String dataDir = "src/programmersguide/programmingemail/sendingwithsmtp/appointmentinicsformat/data/";
+        new File(dataDir).mkdirs();
 
         // 1.
         // Create and save an Appointment to disk.

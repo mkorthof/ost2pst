@@ -10,12 +10,15 @@ package programmersguide.programmingemail.savemessageasdraft.java;
 
 import com.aspose.email.*;
 
+import java.io.File;
+
 public class SaveMessageAsDraft
 {
     public static void main(String[] args) throws Exception
     {
         // The path to the documents directory.
         String dataDir = "src/programmersguide/programmingemail/savemessageasdraft/data/";
+        new File(dataDir).mkdirs();
 
         // Create a new instance of MailMessage class
         MailMessage message = new MailMessage();
