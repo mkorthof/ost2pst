@@ -17,7 +17,7 @@ public class SaveMessageAsDraft
     public static void main(String[] args) throws Exception
     {
         // The path to the documents directory.
-        String dataDir = "src/programmersguide/programmingemail/savemessageasdraft/data/";
+        String dataDir = System.getProperty("user.dir") + java.io.File.separator + "src/programmersguide/programmingemail/savemessageasdraft/data/";
         new File(dataDir).mkdirs();
 
         // Create a new instance of MailMessage class
@@ -27,8 +27,8 @@ public class SaveMessageAsDraft
         message.setFrom(new MailAddress("from@domain.com", "Sender Name", false));
 
         // Add recipients
-        message.getTo().add(new MailAddress("to1@domain.com", "Recipient 1", false));
-        message.getTo().add(new MailAddress("to2@domain.com", "Recipient 2", false));
+        message.getTo().addMailAddress(new MailAddress("to1@domain.com", "Recipient 1", false));
+        message.getTo().addMailAddress(new MailAddress("to2@domain.com", "Recipient 2", false));
 
         // Set subject of the message
         message.setSubject("New message created by Aspose.Email for Java");
@@ -50,7 +50,3 @@ public class SaveMessageAsDraft
         System.out.println("Message saved as draft successfully.");
     }
 }
-
-
-
-

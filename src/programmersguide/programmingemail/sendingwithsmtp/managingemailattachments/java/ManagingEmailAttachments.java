@@ -15,7 +15,7 @@ public class ManagingEmailAttachments
     public static void main(String[] args) throws Exception
     {
         // The path to the documents directory.
-        String dataDir = "src/programmersguide/programmingemail/sendingwithsmtp/managingemailattachments/data/";
+        String dataDir = System.getProperty("user.dir") + java.io.File.separator + "src/programmersguide/programmingemail/sendingwithsmtp/managingemailattachments/data/";
 
 
         // 1.
@@ -28,7 +28,7 @@ public class ManagingEmailAttachments
         message.setFrom(new MailAddress("sender@sender.com"));
 
         //to whom
-        message.getTo().add(new MailAddress("receiver@gmail.com"));
+        message.getTo().addMailAddress(new MailAddress("receiver@gmail.com"));
 
         //Adding 1st attachment
         //Create an instance of Attachment class
@@ -38,22 +38,22 @@ public class ManagingEmailAttachments
         attachment = new Attachment(dataDir + "1.txt");
 
         //Add attachment in instance of MailMessage class
-        message.getAttachments().add(attachment);
+        message.getAttachments().addItem(attachment);
 
         //Add 2nd Attachment
-        message.getAttachments().add(new Attachment(dataDir + "1.jpg"));
+        message.getAttachments().addItem(new Attachment(dataDir + "1.jpg"));
 
         //Add 3rd Attachment
-        message.getAttachments().add(new Attachment(dataDir + "1.doc"));
+        message.getAttachments().addItem(new Attachment(dataDir + "1.doc"));
 
         //Add 4th Attachment
-        message.getAttachments().add(new Attachment(dataDir + "1.rar"));
+        message.getAttachments().addItem(new Attachment(dataDir + "1.rar"));
 
         //Add 5th Attachment
-        message.getAttachments().add(new Attachment(dataDir + "1.pdf"));
+        message.getAttachments().addItem(new Attachment(dataDir + "1.pdf"));
 
         //Save message to disk
-        message.save(dataDir + "outputAttachments.msg",MessageFormat.getMsg());
+        message.save(dataDir + "outputAttachments.msg", SaveOptions.getDefaultMsg());
 
         // Display status
         System.out.println("Attachments are added and resultant message is save successfully.");
@@ -67,12 +67,12 @@ public class ManagingEmailAttachments
         if(message.getAttachments().size() > 0)
         {
             //Remove Attachment from index location 0
-            message.getAttachments().remove(0);
+            message.getAttachments().removeAt(0);
             System.out.println("Attachment Count after removal of first attachment: " + message.getAttachments().size());
         }
 
         //Save message to disk
-        message.save(dataDir + "outputAttachmentRemoved.msg",MessageFormat.getMsg());
+        message.save(dataDir + "outputAttachmentRemoved.msg", SaveOptions.getDefaultMsg());
 
 
         // 3.
@@ -85,7 +85,7 @@ public class ManagingEmailAttachments
         for(int index = 0; index < attachments.size(); index++)
         {
             //Initialize Attachment object and Get the indexed Attachment reference
-            Attachment atchmnt = (Attachment) attachments.get(index);
+            Attachment atchmnt = (Attachment) attachments.get_Item(index);
 
             //Display Attachment Name
             System.out.println(atchmnt.getName());
@@ -99,7 +99,3 @@ public class ManagingEmailAttachments
         System.out.println("\n\nAttachments addition, removal and retrieval has been performed successfully.");
     }
 }
-
-
-
-

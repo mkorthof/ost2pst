@@ -10,7 +10,7 @@ package programmersguide.programmingemail.createnewemail.java;
 
 import com.aspose.email.MailAddress;
 import com.aspose.email.MailMessage;
-import com.aspose.email.MailMessageSaveType;
+import com.aspose.email.SaveOptions;
 
 import java.io.File;
 
@@ -19,7 +19,7 @@ public class CreateNewEmail
     public static void main(String[] args) throws Exception
     {
         // The path to the documents directory.
-        String dataDir = "src/programmersguide/programmingemail/createnewemail/data/";
+        String dataDir = System.getProperty("user.dir") + java.io.File.separator + "src/programmersguide/programmingemail/createnewemail/data/";
         new File(dataDir).mkdirs();
 
         // Create a new instance of MailMessage class
@@ -36,23 +36,19 @@ public class CreateNewEmail
         message.setFrom(new MailAddress("from@domain.com", "Sender Name", false));
 
         // Add TO recipients
-        message.getTo().add(new MailAddress("to1@domain.com", "Recipient 1", false));
-        message.getTo().add(new MailAddress("to2@domain.com", "Recipient 2", false));
+        message.getTo().addMailAddress(new MailAddress("to1@domain.com", "Recipient 1", false));
+        message.getTo().addMailAddress(new MailAddress("to2@domain.com", "Recipient 2", false));
 
         //Add CC recipients
-        message.getCC().add(new MailAddress("cc1@domain.com", "Recipient 3", false));
-        message.getCC().add(new MailAddress("cc2@domain.com", "Recipient 4", false));
+        message.getCC().addMailAddress(new MailAddress("cc1@domain.com", "Recipient 3", false));
+        message.getCC().addMailAddress(new MailAddress("cc2@domain.com", "Recipient 4", false));
 
         // Save message in EML, MSG and MHTML formats
-        message.save(dataDir + "Message.eml", MailMessageSaveType.getEmlFormat());
-        message.save(dataDir + "Message.msg", MailMessageSaveType.getOutlookMessageFormat());
-        message.save(dataDir + "Message.mhtml", MailMessageSaveType.getMHtmlFromat());
+        message.save(dataDir + "Message.eml", SaveOptions.getDefaultEml());
+        message.save(dataDir + "Message.msg", SaveOptions.getDefaultMsg());
+        message.save(dataDir + "Message.mhtml", SaveOptions.getDefaultMhtml());
 
         // Display Status.
         System.out.println("New Emails created successfully.");
     }
 }
-
-
-
-

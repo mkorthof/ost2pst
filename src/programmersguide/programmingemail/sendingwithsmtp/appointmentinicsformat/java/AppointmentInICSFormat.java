@@ -11,7 +11,6 @@ package programmersguide.programmingemail.sendingwithsmtp.appointmentinicsformat
 import com.aspose.email.*;
 
 import java.io.File;
-import java.util.Date;
 
 public class AppointmentInICSFormat
 {
@@ -34,7 +33,6 @@ public class AppointmentInICSFormat
         java.util.Calendar cal1 = java.util.Calendar.getInstance();
         cal1.set(2011, 2, 8, 14, 0, 0);
 
-        Date dateRepresentation = cal.getTime();
         Appointment appointment = new Appointment(
                 "Meeting Room 3 at Office Headquarters",
                 "Monthly Meeting",
@@ -73,7 +71,3 @@ public class AppointmentInICSFormat
         System.out.println("\nAppointment loaded and information displayed successfully.");
     }
 }
-
-
-
-
