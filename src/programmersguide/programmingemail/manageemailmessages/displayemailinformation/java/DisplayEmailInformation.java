@@ -14,13 +14,13 @@ public class DisplayEmailInformation
 {
     public static void main(String[] args) throws Exception
     {
-        // The path to the documents directory.
+       // The path to the documents directory.
         String dataDir = "src/programmersguide/programmingemail/manageemailmessages/displayemailinformation/data/";
 
         MailMessage message;
 
         //Create MailMessage instance by loading an Eml file
-        message = MailMessage.load(dataDir + "test.eml", MessageFormat.getEml());
+        message = MailMessage.load(dataDir + "test.eml", MailMessageLoadOptions.getDefaultEml());
 
         System.out.print("From: ");
 
@@ -40,8 +40,8 @@ public class DisplayEmailInformation
         System.out.println(message.getHtmlBody());
         System.out.print("TextBody: ");
 
-        //Gets the textbody
-        System.out.println(message.getTextBody());
+        //Gets the textboby
+        System.out.println(message.getHtmlBodyText());
 
 
     }

@@ -37,13 +37,13 @@ public class CustomizingEmailHeaders
         message.setFrom(new MailAddress("from@domain.com", "Sender Name", false));
 
         // Add TO recipients
-        message.getTo().add(new MailAddress("to@domain.com", "Recipient 1", false));
+        message.getTo().addItem(new MailAddress("to@domain.com", "Recipient 1", false));
 
         // Add CC recipients
-        message.getCc().add(new MailAddress("cc@domain.com", "Recipient 2", false));
+        message.getCc().addItem(new MailAddress("cc@domain.com", "Recipient 2", false));
 
         // Add BCC recipients
-        message.getBcc().add(new MailAddress("bcc@domain.com", "Recipient 3", false));
+        message.getBcc().addItem(new MailAddress("bcc@domain.com", "Recipient 3", false));
 
         //Message subject
         message.setSubject("Customizing Email Headers");
@@ -61,7 +61,7 @@ public class CustomizingEmailHeaders
         message.getHeaders().add("secret-header", "mystery");
 
         //Save message to disc
-        message.save(dataDir + "MsgHeaders.msg", MessageFormat.getMsg());
+        message.save(dataDir + "MsgHeaders.msg", SaveOptions.getDefaultMsgUnicode());
 
         // Display status
         System.out.println("\nMessage Header has been added to email message successfully.");

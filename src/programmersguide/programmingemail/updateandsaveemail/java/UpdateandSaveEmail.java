@@ -1,11 +1,11 @@
-/* 
+/*
  * Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
  *
  * This file is part of Aspose.Email. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
- 
+
 package programmersguide.programmingemail.updateandsaveemail.java;
 
 import com.aspose.email.*;
@@ -14,11 +14,11 @@ public class UpdateandSaveEmail
 {
     public static void main(String[] args) throws Exception
     {
-        // The path to the documents directory.
+ 	    // The path to the documents directory.
         String dataDir = "src/programmersguide/programmingemail/updateandsaveemail/data/";
-        
+
       //Initialize and Load an existing MSG file by specifying the MessageFormat
-        MailMessage email = MailMessage.load(dataDir + "sample-message.msg", MessageFormat.getMsg());
+        MailMessage email = MailMessage.load(dataDir + "sample-message.msg", MailMessageLoadOptions.getDefaultMsg());
 
         //Initialize a String variable to get the Email Subject
         String subject = email.getSubject();
@@ -43,7 +43,7 @@ public class UpdateandSaveEmail
         if (contacts.size() > 0)
         {
             //Remove the first email address
-            contacts.remove(0);
+            contacts.removeAt(0);
             //Add another email address to collection
             contacts.add("to1@domain.com");
         }
@@ -61,9 +61,10 @@ public class UpdateandSaveEmail
         email.setCC(contacts);
 
         //Save the Email message to disk by specifying the MessageFormat
-        email.save(dataDir + "message.out.msg", MailMessageSaveType.getOutlookMessageFormat());
-        
+        email.save(dataDir + "message.out.msg", SaveOptions.getDefaultMsgUnicode());
+
         //Print message
         System.out.println("Email message updated and saved successfully. Check output file.");
+
     }
 }

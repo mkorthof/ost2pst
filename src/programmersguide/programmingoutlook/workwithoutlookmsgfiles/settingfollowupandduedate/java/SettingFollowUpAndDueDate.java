@@ -34,7 +34,7 @@ public class SettingFollowUpAndDueDate
 
         // Add a flag with a reminder
         FollowUpOptions followUpOptions = new FollowUpOptions("Follow up", startDate, dueDate, reminderTime);
-        FollowUpManager.setFlag(msg, followUpOptions);
+        FollowUpManager.setOptions(msg, followUpOptions);
 
         // Add a flag to a message sent to someone else
         FollowUpManager.setFlagForRecipients(msg, "Follow up", reminderTime);
@@ -43,7 +43,7 @@ public class SettingFollowUpAndDueDate
         followUpOptions = new FollowUpOptions("Follow up", startDate, dueDate, reminderTime);
         followUpOptions.setRecipientsFlagRequest("Follow up");
         followUpOptions.setRecipientsReminderTime(reminderTime);
-        FollowUpManager.setFlag(msg, followUpOptions);
+        FollowUpManager.setOptions(msg, followUpOptions);
 
         // Mark a message flag complete
         FollowUpManager.markAsCompleted(msg);
@@ -52,8 +52,7 @@ public class SettingFollowUpAndDueDate
         FollowUpManager.clearFlag(msg);
 
         // Read follow-up flag options from a message
-        FollowUpOptions options = FollowUpManager.getFlag(msg);
+        FollowUpOptions options = FollowUpManager.getOptions(msg);
 
-        System.out.println("Follow up options set successfully.");
-    }
+        System.out.println("Follow up options set successfully.");    }
 }

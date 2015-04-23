@@ -1,11 +1,11 @@
-/* 
+/*
  * Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
  *
  * This file is part of Aspose.Email. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
- 
+
 package programmersguide.programmingemail.asposeemailhowtos.draftappointmentrequest.java;
 
 import com.aspose.email.*;
@@ -34,7 +34,7 @@ public class DraftAppointmentRequest
         Date endDate = calendar.getTime();
 
         MailAddressCollection attendees = new MailAddressCollection();
-        attendees.add(new MailAddress("attendee_address@aspose.com", "Attendee"));
+        attendees.addItem(new MailAddress("attendee_address@aspose.com", "Attendee"));
         WeeklyRecurrencePattern expected = new WeeklyRecurrencePattern(3);
 
 

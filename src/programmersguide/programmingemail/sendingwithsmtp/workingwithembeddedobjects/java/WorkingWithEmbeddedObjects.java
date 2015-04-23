@@ -24,8 +24,8 @@ public class WorkingWithEmbeddedObjects
         message.setFrom(new MailAddress("from@domain.com", "Sender Name", false));
 
         // Add recipients
-        message.getTo().add(new MailAddress("to1@domain.com", "Recipient 1", false));
-        message.getTo().add(new MailAddress("to2@domain.com", "Recipient 2", false));
+        message.getTo().addItem(new MailAddress("to1@domain.com", "Recipient 1", false));
+        message.getTo().addItem(new MailAddress("to2@domain.com", "Recipient 2", false));
 
         // Set subject of the message
         message.setSubject("New message created by Aspose.Email for Java");
@@ -40,11 +40,11 @@ public class WorkingWithEmbeddedObjects
         res.setContentId("barcode");
 
         // Add Linked resource to the message’s Linked resource colledction
-        message.getLinkedResources().add(res);
+        message.getLinkedResources().addItem(res);
 
         // Save message in MSG (optionally to EML and MHTML formats)
         //message.save(dataDir + "EmbeddedImage.eml", MailMessageSaveType.getEmlFormat());
-        message.save(dataDir + "EmbeddedImage.msg", MailMessageSaveType.getOutlookMessageFormat());
+        message.save(dataDir + "EmbeddedImage.msg", SaveOptions.getDefaultMsgUnicode());
         //message.save(dataDir + "EmbeddedImage.mhtml", MailMessageSaveType.getMHtmlFromat());
 
         // Display status

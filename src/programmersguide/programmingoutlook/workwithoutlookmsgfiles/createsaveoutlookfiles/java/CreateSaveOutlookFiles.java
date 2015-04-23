@@ -1,11 +1,11 @@
-/* 
+/*
  * Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
  *
  * This file is part of Aspose.Email. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
- 
+
 package programmersguide.programmingoutlook.workwithoutlookmsgfiles.createsaveoutlookfiles.java;
 
 import com.aspose.email.*;
@@ -39,7 +39,7 @@ public class CreateSaveOutlookFiles
         mailMsg.setSubject("creating an outlook message file");
 
         // Set BODY of the message
-        mailMsg.setTextBody("This message is created by Aspose.Email for Java");
+        mailMsg.setBody("This message is created by Aspose.Email for Java");
 
         // Create an instance of MapiMessage class and pass MailMessage as argument
         MapiMessage outlookMsg = MapiMessage.fromMailMessage(mailMsg);

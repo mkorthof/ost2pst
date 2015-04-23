@@ -21,7 +21,7 @@ public class ExtractingEmailHeaders
         MailMessage message;
 
         //Create MailMessage instance by loading an EML file
-        message = MailMessage.load(dataDir + "test.eml", MessageFormat.getEml());
+        message = MailMessage.load(dataDir + "test.eml", MailMessageLoadOptions.getDefaultEml());
 
         System.out.println("Printing all Headers:\n\n");
 
