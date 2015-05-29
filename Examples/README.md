@@ -8,6 +8,6 @@ This package contains Java examples for [Aspose.Email for Java](http://www.aspos
   </a>
 </p>
 
-## How to Run the Examples?
+## How to run the Examples?
 
 All the examples are arranged in src folder and any modern IDE like IntelliJ IDEA, Eclipse, Netbeans etc can import the source folder easily. Visit our [documentation website](http://www.aspose.com/docs/display/emailjava/How+to+Run+the+Examples) for more details.
