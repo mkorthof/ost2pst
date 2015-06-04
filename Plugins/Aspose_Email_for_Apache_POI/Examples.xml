@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Data>
+    <Folders>
+        <Folder>
+            <Title>Features Comparison</Title>
+            <Description>
+Contain the code comparison for features in Apache POI HSMF SDK and Aspose.Email
+These examples are helpful for developers who want to compare Apache POI with Aspose OR migrate from Apache POI to Aspose.
+            </Description>
+            <FolderName>featurescomparison</FolderName>
+            <Order>1</Order>
+            <Folders>
+                <Folder>
+                    <Title>Working with Emails</Title>
+                    <Description>This folder contain the examples to deal with Emails.</Description>
+                    <FolderName>workingwithemails</FolderName>
+                    <Order></Order>
+                    <Examples>
+                        <Example>
+                            <Title>Load Email Message</Title>
+                            <Description>How to load Email messages.</Description>
+                            <FolderName>loademailmessages</FolderName>
+                            <Order>1</Order>
+                            <InputFiles>
+                                <DataFile>
+                                    <Path>..\data\message.msg</Path>
+                                </DataFile>
+                                <DataFile>
+                                    <Path>..\data\message.eml</Path>
+                                </DataFile>
+                            </InputFiles>
+                            <Type>Console</Type>
+                        </Example>
+                        <Example>
+                            <Title>Save Email Message</Title>
+                            <Description>How to save Email messages.</Description>
+                            <FolderName>saveemailmessages</FolderName>
+                            <Order>2</Order>
+                            <InputFiles>
+                                <DataFile>
+                                    <Path>..\data\message.msg</Path>
+                                </DataFile>
+                            </InputFiles>
+                            <OutputFiles>
+                                <DataFile>
+                                    <Path>..\data\ApacheMessage.txt</Path>
+                                </DataFile>
+                                <DataFile>
+                                    <Path>..\data\AsposeMessage.msg</Path>
+                                </DataFile>
+                                <DataFile>
+                                    <Path>..\data\AsposeMessage.eml</Path>
+                                </DataFile>
+                                <DataFile>
+                                    <Path>..\data\AsposeMessage.emlx</Path>
+                                </DataFile>
+                                <DataFile>
+                                    <Path>..\data\AsposeMessage.mht</Path>
+                                </DataFile>
+                            </OutputFiles>
+                            <Type>Console</Type>
+                        </Example>
+                    </Examples>
+                </Folder>
+                <Folder>
+                    <Title>Working with Headers and Body</Title>
+                    <Description>This folder contain the examples to deal with Email Headers and Body.</Description>
+                    <FolderName>workingwithheadersandbody</FolderName>
+                    <Order>2</Order>
+                    <Examples>
+                        <Example>
+                            <Title>Extract Message Attachments</Title>
+                            <Description>How to extract attachments from Email Messages.</Description>
+                            <FolderName>extractmessageattachments</FolderName>
+                            <Order>1</Order>
+                            <InputFiles>
+                                <DataFile>
+                                    <Path>..\data\message.msg</Path>
+                                </DataFile>
+                            </InputFiles>
+                            <Type>Console</Type>
+                        </Example>
+                        <Example>
+                            <Title>Extract Message Headers</Title>
+                            <Description>How to extract Email message headers.</Description>
+                            <FolderName>extractmessageheaders</FolderName>
+                            <Order>2</Order>
+                            <InputFiles>
+                                <DataFile>
+                                    <Path>..\data\message.msg</Path>
+                                </DataFile>
+                            </InputFiles>
+                            <Type>Console</Type>
+                        </Example>
+                        <Example>
+                            <Title>Extract Message Body</Title>
+                            <Description>How to extract email message body.</Description>
+                            <FolderName>extractmessagebody</FolderName>
+                            <Order>3</Order>
+                            <InputFiles>
+                                <DataFile>
+                                    <Path>..\data\message.msg</Path>
+                                </DataFile>
+                            </InputFiles>
+                            <Type>Console</Type>
+                        </Example>
+                    </Examples>
+                </Folder>
+            </Folders>
+        </Folder>
+        <Folder>
+        	<Title>Aspose Features</Title>
+        	<Description>Contain examples of features that are only available in Aspose but not in Apache POI HSMF for Outlook.</Description>
+        	<FolderName>asposefeatures</FolderName>
+        	<Order></Order>
+        	<Folders>
+        		<Folder>
+        			<Title>Conversion to Other Formats</Title>
+        			<Description>Shows how to convert msg file to other formats.</Description>
+        			<FolderName>conversion</FolderName>
+        			<Order>1</Order>
+        			<Examples>
+        				<Example>
+        					<Title>Convert MSG to Other Formats</Title>
+        					<Description>Shows how to convert msg to other formats</Description>
+        					<FolderName>msgtootherformats</FolderName>
+        					<Order>1</Order>
+        					<InputFiles>
+        						<DataFile>
+        							<Path>..\data\message.msg</Path></DataFile></InputFiles>
+        					<OutputFiles>
+        						<DataFile>
+        							<Path>..\data\AsposeMessage.eml</Path></DataFile>
+        						<DataFile>
+        							<Path>..\data\Asposemessage.mhtml</Path></DataFile></OutputFiles>
+        					<Type>Console</Type>
+        				</Example>
+        				<Example>
+        					<Title>Convert OST to PST</Title>
+        					<Description>Shows how to convert Outlook Storage file to pst.</Description>
+        					<FolderName>osttopst</FolderName>
+        					<Order>2</Order>
+        					<InputFiles>
+        						<DataFile>
+        							<Path>..\data\outlook.ost</Path></DataFile></InputFiles>
+        					<OutputFiles>
+        						<DataFile>
+        							<Path>..\data\AsposeOST-PST.pst</Path></DataFile></OutputFiles>
+        					<Type>Console</Type>
+        				</Example>
+        			</Examples>
+        		</Folder>
+        		<Folder>
+        			<Title>Working with Emails</Title>
+        			<Description>Shows how to deal with emails while programming.</Description>
+        			<FolderName>programmingemail</FolderName>
+        			<Order>2</Order>
+        			<Examples>
+        				<Example>
+        					<Title>Add Embedded Images to Email Message</Title>
+        					<Description>how to add enbedded images to EMail Messages.</Description>
+        					<FolderName>addembeddedimagestoemail</FolderName>
+        					<Order>1</Order>
+        					<InputFiles>
+        						<DataFile>
+        							<Path>..\data\Aspose.png</Path></DataFile></InputFiles>
+        					<OutputFiles>
+        						<DataFile>
+        							<Path>..\data\New.eml</Path></DataFile>
+        						<DataFile>
+        							<Path>..\data\New.msg</Path></DataFile>
+        						<DataFile>
+        							<Path>..\data\New.mhtml</Path></DataFile>
+        					</OutputFiles>
+        					<Type>Console</Type>
+        				</Example>
+        				<Example>
+        					<Title>Read Embedded Email Attachments from Message</Title>
+        					<Description>How to Read Embedded Email Attachements from Email Messages.</Description>
+        					<FolderName>readembeddedattachments</FolderName>
+        					<Order>2</Order>
+        					<InputFiles>
+        						<DataFile>
+        							<Path>..\data\embedded.msg</Path></DataFile></InputFiles>
+        					<Type>Console</Type>
+        				</Example>        			
+        			</Examples>
+        		</Folder>
+        		<Folder>
+        			<Title>Working with Appointments</Title>
+        			<Description>How to deal with appointments.</Description>
+        			<FolderName>workingwithappointments</FolderName>
+        			<Order>3</Order>
+        			<Examples>
+        				<Example>
+        					<Title>Set Color Category for Outlook Message - MSG</Title>
+        					<Description>Shows how to set colot for Outlook Message.</Description>
+        					<FolderName>colorcategory</FolderName>
+        					<Order>1</Order>
+        					<InputFiles>
+        						<DataFile>
+        							<Path>..\data\message.msg</Path></DataFile></InputFiles>
+        					<OutputFiles>
+        						<DataFile>
+        							<Path>..\data\AsposeCategories.msg</Path></DataFile></OutputFiles>
+        					<Type>Console</Type>
+        				</Example>
+        				<Example>
+        					<Title>Creating Audio Reminder</Title>
+        					<Description>Shows how to create Audio Reminder</Description>
+        					<FolderName>createaudioreminders</FolderName>
+        					<Order>2</Order>
+        					<InputFiles>
+        						<DataFile>
+        							<Path>..\data\logon.wav</Path></DataFile></InputFiles>
+        					<OutputFiles>
+        						<DataFile>
+        							<Path>..\data\AsposeAudioReminder.ics</Path></DataFile></OutputFiles>
+        					<Type>Console</Type>
+        				</Example>
+        				<Example>
+        					<Title>Creating New Calendar Item</Title>
+        					<Description>Shows how to create new calender item.</Description>
+        					<FolderName>createcalenderitem</FolderName>
+        					<Order>3</Order>
+        					<OutputFiles>
+        						<DataFile>
+        							<Path>..\data\AsposeCalendarItem.ics</Path></DataFile></OutputFiles>
+        					<Type>Console</Type>
+        				</Example>
+        				<Example>
+        					<Title>Create Draft Appointment Request</Title>
+        					<Description>Shows how to create draft appointment request.</Description>
+        					<FolderName>draftappointmentrequest</FolderName>
+        					<Order>4</Order>
+        					<OutputFiles>
+        						<DataFile>
+        							<Path>..\data\AsposeDraft.msg</Path></DataFile></OutputFiles>
+        					<Type>Console</Type>
+        				</Example>
+        				<Example>
+        					<Title>Formatting an Appointment</Title>
+        					<Description>Shows how to format an appointment.</Description>
+        					<FolderName>formattingappointment</FolderName>
+        					<Order>5</Order>
+        					<InputFiles>
+        						<DataFile>
+        							<Path>..\data\appointment.ics</Path></DataFile></InputFiles>
+        					<Type>Console</Type>
+        				</Example>
+        			</Examples>
+        		</Folder>
+        		<Folder>
+        			<Title>Working with Contacts</Title>
+        			<Description>Shows how to deal with contacts.</Description>
+        			<FolderName>workingwithmsgfiles</FolderName>
+        			<Order>4</Order>
+        			<Examples>
+        				<Example>
+        					<Title>Create, Save and Read Outlook Contacts</Title>
+        					<Description>Show how to deal with contacts.</Description>
+        					<FolderName>readwriteoutlookcontacts</FolderName>
+        					<Order>1</Order>
+        					<InputFiles>
+        						<DataFile>
+        							<Path>..\data\Aspose.jpg</Path></DataFile></InputFiles>
+        					<OutputFiles>
+        						<DataFile>
+        							<Path>..\data\contact.msg</Path></DataFile></OutputFiles>
+        					<Type>Console</Type>
+        				</Example>
+        			</Examples>
+        		</Folder>
+        		<Folder>
+        			<Title>Working with Outlook Storage</Title>
+        			<Description>Shows how to deal with Outlook Storage.</Description>
+        			<FolderName>workingwithoutlookstorage</FolderName>
+        			<Order>5</Order>
+        			<Examples>
+        				<Example>
+        					<Title>Check PST Password Protection</Title>
+        					<Description>How to check PST Password Protection.</Description>
+        					<FolderName>checkprotection</FolderName>
+        					<Order>1</Order>
+        					<InputFiles>
+        						<DataFile>
+        							<Path>..\data\personalStorage.pst</Path></DataFile></InputFiles>
+        					<Type>Console</Type>
+        				</Example>
+        				<Example>
+        					<Title>Show or Hide Extra Print Headers</Title>
+        					<Description>Shows how to show or hide print headers.</Description>
+        					<FolderName>printheaders</FolderName>
+        					<Order>2</Order>
+        					<InputFiles>
+        						<DataFile>
+        							<Path>..\data\message.eml</Path></DataFile></InputFiles>
+        					<OutputFiles>
+        						<DataFile>
+        							<Path>..\data\AsposeHideExtraHeaders.mhtml</Path></DataFile></OutputFiles>
+        					<Type>Console</Type>
+        				</Example>
+        				<Example>
+        					<Title>Read Outlook Template OFT</Title>
+        					<Description>Shows the way to read outlook template file.</Description>
+        					<FolderName>readoft</FolderName>
+        					<Order>3</Order>
+        					<InputFiles>
+        						<DataFile>
+        							<Path>..\data\sample.oft</Path></DataFile></InputFiles>
+        					<OutputFiles>
+        						<DataFile>
+        							<Path>..\data\AsposeInvitation.msg</Path></DataFile></OutputFiles>
+        					<Type>Console</Type>
+        				</Example>
+        				<Example>
+        					<Title>Read Outlook Storage PST</Title>
+        					<Description>Shows how to read PST.</Description>
+        					<FolderName>readpst</FolderName>
+        					<Order>4</Order>
+        					<InputFiles>
+        						<DataFile>
+        							<Path>..\data\archive.pst</Path></DataFile></InputFiles>
+        					<Type>Console</Type>
+        				</Example>
+        				<Example>
+        					<Title>Read Outlook PST and Get Folders and Subfolders Information</Title>
+        					<Description>Show how to read and PST and get all folders information.</Description>
+        					<FolderName>readpstfoldernsubfolders</FolderName>
+        					<Order>5</Order>
+        					<InputFiles>
+        						<DataFile>
+        							<Path>..\data\personalStorage.pst</Path></DataFile></InputFiles>
+        					<Type>Console</Type>
+        				</Example>        			
+        			</Examples>
+        		</Folder>
+        	</Folders></Folder>
+    </Folders>
+</Data>
