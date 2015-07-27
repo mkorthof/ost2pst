@@ -10,4 +10,4 @@ This package contains Java examples for [Aspose.Email for Java](http://www.aspos
 
 ## How to run the Examples?
 
-All the examples are arranged in src folder and any modern IDE like IntelliJ IDEA, Eclipse, Netbeans etc can import the source folder easily. Visit our [documentation website](http://www.aspose.com/docs/display/emailjava/How+to+Run+the+Examples) for more details.
+Clone or Download the ZIP and extract the contents to your local hard drive. This project uses Maven build system and can be opened in any modern IDE like IntelliJ IDEA, Eclipse or NetBeans. For more details, visit our [documentation website](http://www.aspose.com/docs/display/emailjava/How+to+Run+the+Examples).
