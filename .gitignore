@@ -4,8 +4,6 @@ obj/
 classes/
 generated/
 bin/
-* Out*
-* out*
 *.ldb
 _ReSharper*/
 *.iws
@@ -22,7 +20,6 @@ build.xml
 Thumbs.db
 manifest.mf
 Out/
-Out*/
 *.lic
 Data/*Out*
 .idea/
