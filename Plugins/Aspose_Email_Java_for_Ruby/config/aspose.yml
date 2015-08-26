@@ -1,0 +1,5 @@
+jar_dir: ../asposeemailjava/jars
+license_path: ../asposeemailjava/license/path
+jvm_args: -Xms512m -Xmx1G
+
+
