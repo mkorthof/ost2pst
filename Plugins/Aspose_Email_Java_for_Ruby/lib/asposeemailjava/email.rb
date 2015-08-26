@@ -1,0 +1,8 @@
+require_relative 'Email/createnewemail'
+require_relative 'Email/updateemail'
+require_relative 'Email/savemessageasdraft'
+require_relative 'Email/customizeemailheaders'
+require_relative 'Email/manageattachments'
+require_relative 'Email/getemailinfo'
+require_relative 'Email/extractemailheaders'
+require_relative 'Email/converter'
