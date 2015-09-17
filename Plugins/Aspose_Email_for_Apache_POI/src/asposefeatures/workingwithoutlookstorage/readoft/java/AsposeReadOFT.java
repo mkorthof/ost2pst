@@ -13,7 +13,7 @@ public class AsposeReadOFT
 		String dataPath = "src/asposefeatures/workingwithoutlookstorage/readoft/data/";
 		
 		// Load the Outlook template (OFT) file in MailMessage's instance
-		MailMessage message = MailMessage.load(dataPath + "sample.oft", MessageFormat.getMsg());
+		MailMessage message = MailMessage.load(dataPath + "sample.oft");
 
 		// Set the sender and recipients information
 		String senderDisplayName = "John";

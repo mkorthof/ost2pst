@@ -9,7 +9,7 @@ public class AsposeMsgBody
 	{
 		String dataPath = "src/featurescomparison/workingwithheadersandbody/extractmessagebody/data/";
 		
-		MailMessage msg = MailMessage.load(dataPath + "message.msg", MessageFormat.getMsg());
+		MailMessage msg = MailMessage.load(dataPath + "message.msg");
 
 		String messageTextBody = msg.getTextBody();
 		

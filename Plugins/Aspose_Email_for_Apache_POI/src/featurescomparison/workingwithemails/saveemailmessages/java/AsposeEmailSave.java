@@ -9,7 +9,7 @@ public class AsposeEmailSave
 	{
 		String dataPath = "src/featurescomparison/workingwithemails/saveemailmessages/data/";
 		
-		MailMessage messageMSG 	= MailMessage.load(dataPath + "message.msg", MessageFormat.getMsg());
+		MailMessage messageMSG 	= MailMessage.load(dataPath + "message.msg");
 				
 		messageMSG.save(dataPath + "AsposeMessage.msg", MessageFormat.getMsg());
 		

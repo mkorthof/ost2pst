@@ -9,7 +9,7 @@ public class AsposeMsgHeaders
 	{
 		String dataPath = "src/featurescomparison/workingwithheadersandbody/extractmessageheaders/data/";
 		
-		MailMessage message = MailMessage.load(dataPath + "message.msg", MessageFormat.getMsg());
+		MailMessage message = MailMessage.load(dataPath + "message.msg");
 
 		//Gets Email Headers
 		System.out.println("From: " 	+ message.getFrom());

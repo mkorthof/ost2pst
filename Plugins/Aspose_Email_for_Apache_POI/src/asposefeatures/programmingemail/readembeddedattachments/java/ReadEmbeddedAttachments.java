@@ -1,7 +1,9 @@
 package asposefeatures.programmingemail.readembeddedattachments.java;
 
 import com.aspose.email.Attachment;
+import com.aspose.email.LoadOptions;
 import com.aspose.email.MailMessage;
+import com.aspose.email.MailMessageLoadOptions;
 import com.aspose.email.MessageFormat;
 
 public class ReadEmbeddedAttachments
@@ -14,7 +16,7 @@ public class ReadEmbeddedAttachments
 	    {
 	    	System.out.println("Reading message with embedded messages....");
 
-	        MailMessage message = MailMessage.load(dataPath + "embedded.msg", MessageFormat.getMsg());
+	        MailMessage message = MailMessage.load(dataPath + "embedded.msg");
 	        ParseMessage(message);
 
 	        System.out.println("Success");
@@ -52,7 +54,7 @@ public class ReadEmbeddedAttachments
 	        if ((attExt.equals(".eml")) || (att.getContentType().getMediaType().equals("text/plain") && att.getName().contains(".txt") == true && att.getName().contains("ATT") == true))
 	        {
 	            // Try to load this text file in MailMessage
-	            MailMessage attMsg = MailMessage.load(dataPath + attFileName + attExt, MessageFormat.getEml());
+	            MailMessage attMsg = MailMessage.load(dataPath + attFileName + attExt);
 	            // Call the function recursively to parse this message and attachments
 	            ParseMessage(attMsg);
 	        }
