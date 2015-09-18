@@ -34,13 +34,13 @@ public class EmbeddedImageInEmail
 	    LinkedResource res = new LinkedResource(dataPath + "Aspose.png", MediaTypeNames.Image.PNG);
 	    res.setContentId("companylogo");
 
-	    // Add Linked resource to the message’s Linked resource collection
+	    // Add Linked resource to the messageï¿½s Linked resource collection
 	    message.getLinkedResources().addItem(res);
 
 	    // Save message in EML, MSG and MHTML formats
 	    message.save(dataPath + "New.eml", MailMessageSaveType.getEmlFormat());
 	    message.save(dataPath + "New.msg", MailMessageSaveType.getOutlookMessageFormat());
-	    message.save(dataPath + "New.mhtml", MailMessageSaveType.getMHtmlFromat());
+	    message.save(dataPath + "New.mhtml", MailMessageSaveType.getMHtmlFormat());
 	    
 	    System.out.println("Done.");
 	}

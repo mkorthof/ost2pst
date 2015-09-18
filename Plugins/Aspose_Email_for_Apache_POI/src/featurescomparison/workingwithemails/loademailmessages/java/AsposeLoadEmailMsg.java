@@ -11,10 +11,9 @@ public class AsposeLoadEmailMsg
 		
 		System.out.println("Loading Message");
 		//Create MailMessage instance by loading an Eml/Msg/Emlx/Mht file
-		MailMessage messageMSG = MailMessage.load(dataPath + "message.msg",
-				MessageFormat.getMsg());
+		MailMessage messageMSG = MailMessage.load(dataPath + "message.msg");
 
-		MailMessage messageEML 	= MailMessage.load(dataPath + "message.eml", MessageFormat.getEml());
+		MailMessage messageEML 	= MailMessage.load(dataPath + "message.eml");
 		//MailMessage messageEMLX = MailMessage.load("data/message.emlx", MessageFormat.getEmlx());
 		//MailMessage messageMHT 	= MailMessage.load("data/message.mht", MessageFormat.getMht());
 		

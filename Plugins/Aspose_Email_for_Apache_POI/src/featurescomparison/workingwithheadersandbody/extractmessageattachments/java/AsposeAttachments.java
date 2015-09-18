@@ -11,7 +11,7 @@ public class AsposeAttachments
 	{
 		String dataPath = "src/featurescomparison/workingwithheadersandbody/extractmessageattachments/data/";
 		
-		MailMessage message = MailMessage.load(dataPath + "message.msg", MessageFormat.getMsg());
+		MailMessage message = MailMessage.load(dataPath + "message.msg");
 
 		AttachmentCollection attachments = message.getAttachments();
 		

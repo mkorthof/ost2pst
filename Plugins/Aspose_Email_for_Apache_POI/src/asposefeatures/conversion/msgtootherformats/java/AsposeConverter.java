@@ -11,11 +11,11 @@ public class AsposeConverter
 		String dataPath = "src/asposefeatures/conversion/msgtootherformats/data/";
 		
 	    // Initialize and Load an existing MSG file by specifying the MessageFormat
-	    MailMessage msg = MailMessage.load(dataPath + "message.msg", MessageFormat.getMsg());
+	    MailMessage msg = MailMessage.load(dataPath + "message.msg");
 
 	    // Save the Email message to disk by specifying the EML and MHT MailMessageSaveType
 	    msg.save(dataPath + "AsposeMessage.eml", MailMessageSaveType.getEmlFormat());
-	    msg.save(dataPath + "Asposemessage.mhtml", MailMessageSaveType.getMHtmlFromat());
+	    msg.save(dataPath + "Asposemessage.mhtml", MailMessageSaveType.getMHtmlFormat());
 	    
 	    System.out.println("Done");
 	}
