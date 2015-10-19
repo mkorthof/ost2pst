@@ -5,9 +5,9 @@
 test-output/
 
 # IntelliJ project files
-.idea/
+#.idea/
 *.iws
-*.iml
+#*.iml
 *.ipr
 
 # Mac
