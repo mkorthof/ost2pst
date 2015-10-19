@@ -31,7 +31,7 @@ For the complete documentation of this Intellij IDEA plugin, [please go through 
 ## Download Latest Versions?
 
 
-* [Latest Releases on Codeplex](https://asposeemailjavaintellij.codeplex.com/releases/view)
+* [Latest Releases on Codeplex](https://asposeemailjavaintellij.codeplex.com/releases)
 
 
 
