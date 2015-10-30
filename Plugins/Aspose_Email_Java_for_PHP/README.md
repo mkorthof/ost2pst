@@ -19,7 +19,7 @@ http://www.aspose.com/docs/display/emailjava/3.+Aspose.Email+Java+For+PHP
 
 ## Download Latest Versions?
 
-* [Latest Releases on Codeplex](https://asposeemailjavaphp.codeplex.com/releases/view/618018)
+* [Latest Releases on Codeplex](https://asposeemailjavaphp.codeplex.com/releases)
 
 ## Clone Plugin SourceCodes?
 
