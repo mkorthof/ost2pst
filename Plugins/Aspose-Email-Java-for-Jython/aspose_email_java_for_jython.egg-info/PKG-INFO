@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: aspose-email-java-for-jython
+Version: v1.0
+Summary: Aspose.Email Java for Jython is a project that demonstrates / provides the Aspose.Email for Java API usage examples in Python.
+Home-page: http://www.aspose.com/docs/display/emailjava/Aspose.Email+Java+for+Jython
+Author: Fahad Adeel - Aspose Plugins Team
+Author-email: email@aspose.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
