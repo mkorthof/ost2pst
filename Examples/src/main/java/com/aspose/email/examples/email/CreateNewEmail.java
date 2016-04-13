@@ -19,6 +19,7 @@ public class CreateNewEmail
 {
     public static void main(String[] args) throws Exception
     {
+	//ExStart: CreateNewEmail
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(CreateNewEmail.class);
 
@@ -48,7 +49,19 @@ public class CreateNewEmail
         message.save(dataDir + "Message.msg", SaveOptions.getDefaultMsg());
         message.save(dataDir + "Message.mhtml", SaveOptions.getDefaultMhtml());
 
+	//Save as OFT
+	try
+	{
+	    MsgSaveOptions options = SaveOptions.getDefaultMsgUnicode();
+	    options.setSaveAsTemplate(true);
+	    message.save("emlToOft.oft", options);
+	}
+	finally { if (eml != null) 
+		((IDisposable)eml).dispose(); 
+	}
+
         // Display Status.
         System.out.println("New Emails created successfully.");
+	//ExEnd: CreateNewEmail
     }
 }
