@@ -23,7 +23,7 @@ public class ListAppointmentsWithPagingSupport
     {
 		//ExStart: ListAppointmentsWithPagingSupport
 	    final IEWSClient client = EWSClient.getEWSClient("exchange.domain.com", "username", "password");
-	    +
+	    
 	    try
 	    {
 	        try
