@@ -1,66 +1,59 @@
 /* 
- * Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
+ * Copyright 2001-2016 Aspose Pty Ltd. All Rights Reserved.
  *
  * This file is part of Aspose.Email. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
- 
+
 package com.aspose.email.examples.email;
 
-import com.aspose.email.*;
-import com.aspose.email.examples.Utils;
-
+import java.util.Calendar;
 import java.util.Date;
+import java.util.TimeZone;
 
-public class CustomizingEmailHeaders
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(CustomizingEmailHeaders.class);
+import com.aspose.email.MailAddress;
+import com.aspose.email.MailMessage;
+import com.aspose.email.SaveOptions;
 
-        // Create a new instance of MailMessage class
-        MailMessage message = new MailMessage();
+public class CustomizingEmailHeaders {
+	public static void main(String[] args) {
 
-        // Set subject of the message
-        message.setSubject("New message created by Aspose.Email for Java");
+		// Create a new instance of MailMessage class
+		MailMessage message = new MailMessage();
 
-        // Set Html body
-        message.setHtmlBody("<b>This line is in bold.</b> <br/> <br/>" +
-                "<font color=blue>This line is in blue color</font>");
+		// Set subject of the message
+		message.setSubject("New message created by Aspose.Email for Java");
 
-        // Set sender information
-        message.setFrom(new MailAddress("from@domain.com", "Sender Name", false));
+		// Set Html body
+		message.setHtmlBody(
+				"<b>This line is in bold.</b> <br/> <br/>" + "<font color=blue>This line is in blue color</font>");
 
-        // Add TO recipients
-        message.getTo().addItem(new MailAddress("to@domain.com", "Recipient 1", false));
+		// Set sender information
+		message.setFrom(new MailAddress("from@domain.com", "Sender Name", false));
 
-        // Add CC recipients
-        message.getCc().addItem(new MailAddress("cc@domain.com", "Recipient 2", false));
+		// Add TO recipients
+		message.getTo().addItem(new MailAddress("to@domain.com", "Recipient 1", false));
 
-        // Add BCC recipients
-        message.getBcc().addItem(new MailAddress("bcc@domain.com", "Recipient 3", false));
+		// Message subject
+		message.setSubject("Customizing Email Headers");
 
-        //Message subject
-        message.setSubject("Customizing Email Headers");
+		// Specify Date
+		Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
 
-        //Specify Date
-        java.util.Calendar calendar = java.util.Calendar.getInstance(java.util.TimeZone.getTimeZone("GMT"));
+		Date date = calendar.getTime();
+		message.setDate(date);
 
-        Date date = calendar.getTime();
-        message.setDate(date);
+		// Specify XMailer
+		message.setXMailer("Aspose.Email");
 
-        //Specify XMailer
-        message.setXMailer("Aspose.Email");
+		// Specify Secret Header
+		message.getHeaders().add("secret-header", "mystery");
 
-        //Specify Secret Header
-        message.getHeaders().add("secret-header", "mystery");
+		// Insert Header at Specific Location
+		message.getHeaders().insert("Received", "Value");
 
-        //Save message to disc
-        message.save(dataDir + "MsgHeaders.msg", SaveOptions.getDefaultMsgUnicode());
-
-        // Display status
-        System.out.println("\nMessage Header has been added to email message successfully.");
-    }
+		// Save message to disc
+		message.save("MsgHeaders.msg", SaveOptions.getDefaultMsg());
+	}
 }
