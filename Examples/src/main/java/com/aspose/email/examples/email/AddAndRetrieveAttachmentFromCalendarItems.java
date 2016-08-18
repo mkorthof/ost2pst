@@ -19,7 +19,7 @@ public class AddAndRetrieveAttachmentFromCalendarItems {
 
 	public static void main(String[] args) throws IOException {
 		// The path to the resource directory.
-		String dataDir = Utils.getSharedDataDir(SaveMessageAsDraft.class) + "email/";
+		String dataDir = Utils.getSharedDataDir(AddAndRetrieveAttachmentFromCalendarItems.class) + "email/";
 		
 		Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
 		calendar.set(2016, Calendar.NOVEMBER, 1, 0, 0, 0);

@@ -10,7 +10,7 @@ public class AddAttachmentToANewEmailMessage {
 
 	public static void main(String[] args) {
 		// The path to the resource directory.
-		String dataDir = Utils.getSharedDataDir(CreateNewEmail.class) + "email/";
+		String dataDir = Utils.getSharedDataDir(AddAttachmentToANewEmailMessage.class) + "email/";
 				
 		//Create an instance of MailMessage class
 		MailMessage message = new MailMessage();

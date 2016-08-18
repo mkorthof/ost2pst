@@ -10,7 +10,7 @@ public class ExtractAttachments {
 
 	public static void main(String[] args) {
 		// The path to the resource directory.
-		String dataDir = Utils.getSharedDataDir(CreateNewEmail.class) + "email/";
+		String dataDir = Utils.getSharedDataDir(ExtractAttachments.class) + "email/";
 
 		//Initialize and Load an existing EML file
 		MailMessage msg = MailMessage.load(dataDir + "EmailWithAttachment.eml", new EmlLoadOptions());

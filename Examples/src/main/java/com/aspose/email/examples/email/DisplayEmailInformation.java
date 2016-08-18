@@ -7,7 +7,7 @@ public class DisplayEmailInformation {
 
 	public static void main(String[] args) {
 		// The path to the resource directory.
-		String dataDir = Utils.getSharedDataDir(SaveMessageAsDraft.class) + "email/";
+		String dataDir = Utils.getSharedDataDir(DisplayEmailInformation.class) + "email/";
 		
 		//Create MailMessage instance by loading an Eml file
 		MailMessage message = MailMessage.load(dataDir + "test.eml");

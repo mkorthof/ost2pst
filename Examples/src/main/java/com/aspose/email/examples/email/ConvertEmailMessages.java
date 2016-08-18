@@ -22,7 +22,7 @@ public class ConvertEmailMessages {
 
 	public static void main(String[] args) {
 		// The path to the resource directory.
-		String dataDir = Utils.getSharedDataDir(CreateNewEmail.class) + "email/";
+		String dataDir = Utils.getSharedDataDir(ConvertEmailMessages.class) + "email/";
 		
 		// Loading EML and Saving as EML
 		loadingEMLAndSavingAsEML(dataDir);

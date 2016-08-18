@@ -8,7 +8,7 @@ public class FormattingAnAppointment {
 
 	public static void main(String[] args) {
 		// The path to the resource directory.
-		String dataDir = Utils.getSharedDataDir(SaveMessageAsDraft.class) + "email/";
+		String dataDir = Utils.getSharedDataDir(FormattingAnAppointment.class) + "email/";
 		// Text Formatting
 		textFormatting(dataDir);
 		

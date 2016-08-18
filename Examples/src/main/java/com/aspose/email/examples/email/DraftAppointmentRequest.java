@@ -18,7 +18,7 @@ public class DraftAppointmentRequest {
 
 	public static void main(String[] args) {
 		// The path to the resource directory.
-		String dataDir = Utils.getSharedDataDir(SaveMessageAsDraft.class) + "email/";
+		String dataDir = Utils.getSharedDataDir(DraftAppointmentRequest.class) + "email/";
 		
 		//Create a Draft Appointment Request
 		createADraftAppointmentRequest(dataDir);

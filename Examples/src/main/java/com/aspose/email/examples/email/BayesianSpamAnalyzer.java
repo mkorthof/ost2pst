@@ -8,7 +8,7 @@ public class BayesianSpamAnalyzer {
 
 	public static void main(String[] args) {
 		// The path to the resource directory.
-		String dataDir = Utils.getSharedDataDir(SaveMessageAsDraft.class) + "email/";
+		String dataDir = Utils.getSharedDataDir(BayesianSpamAnalyzer.class) + "email/";
 
 		SpamFilterTest(dataDir);
 	}

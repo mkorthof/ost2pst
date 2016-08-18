@@ -8,7 +8,7 @@ public class DetectingFileFormat {
 
 	public static void main(String[] args) {
 		// The path to the resource directory.
-		String dataDir = Utils.getSharedDataDir(CreateNewEmail.class) + "email/";
+		String dataDir = Utils.getSharedDataDir(DetectingFileFormat.class) + "email/";
 				
 		//Detect file format
 		FileFormatInfo info = FileFormatUtil.detectFileFormat(dataDir + "Message.msg");

@@ -10,7 +10,7 @@ public class AddOrRemoveAttachmentFromAnExistingMessage {
 
 	public static void main(String[] args) {
 		// The path to the resource directory.
-		String dataDir = Utils.getSharedDataDir(CreateNewEmail.class) + "email/";
+		String dataDir = Utils.getSharedDataDir(AddOrRemoveAttachmentFromAnExistingMessage.class) + "email/";
 
 		//Initialize and Load an existing EML file by specifying the MessageFormat
 		MailMessage message = MailMessage.load(dataDir + "EmailWithAttachment.eml");

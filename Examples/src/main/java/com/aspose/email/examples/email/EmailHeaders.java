@@ -13,7 +13,7 @@ public class EmailHeaders {
 
 	public static void main(String[] args) {
 		// The path to the resource directory.
-		String dataDir = Utils.getSharedDataDir(SaveMessageAsDraft.class) + "email/";
+		String dataDir = Utils.getSharedDataDir(EmailHeaders.class) + "email/";
 		
 		// Set Email Headers
 		setEmailHeaders(dataDir);

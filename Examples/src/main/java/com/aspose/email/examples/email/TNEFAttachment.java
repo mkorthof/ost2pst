@@ -14,7 +14,7 @@ public class TNEFAttachment {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		// The path to the resource directory.
-		String dataDir = Utils.getSharedDataDir(SaveMessageAsDraft.class) + "email/";
+		String dataDir = Utils.getSharedDataDir(TNEFAttachment.class) + "email/";
 
 		// Adding New Attachments to Main Message Containing TNEF
 		addNewAttachmentToMessageContainingTNEF(dataDir);

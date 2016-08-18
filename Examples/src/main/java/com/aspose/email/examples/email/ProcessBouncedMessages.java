@@ -8,7 +8,7 @@ public class ProcessBouncedMessages {
 
 	public static void main(String[] args) {
 		// The path to the resource directory.
-		String dataDir = Utils.getSharedDataDir(SaveMessageAsDraft.class) + "email/";
+		String dataDir = Utils.getSharedDataDir(ProcessBouncedMessages.class) + "email/";
 				
 		String fileName = "failed.msg";
 		MailMessage mail = MailMessage.load(dataDir + fileName);

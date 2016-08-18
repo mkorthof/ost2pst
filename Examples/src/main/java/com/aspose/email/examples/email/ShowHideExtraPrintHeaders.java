@@ -9,7 +9,7 @@ public class ShowHideExtraPrintHeaders {
 
 	public static void main(String[] args) {
 		// The path to the resource directory.
-		String dataDir = Utils.getSharedDataDir(ReadEmbeddedEmailAttachmentsFromMessage.class) + "email/";
+		String dataDir = Utils.getSharedDataDir(ShowHideExtraPrintHeaders.class) + "email/";
 
 		String pageHeader = "<div><div class='pageHeader'>&quot;Panditharatne, Mithra&quot; &lt;mithra.panditharatne@cibc.com&gt;<hr/></div>";
 		MailMessage message = MailMessage.load(dataDir + "Message.eml");

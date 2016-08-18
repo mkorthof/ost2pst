@@ -9,7 +9,7 @@ public class ModifyAnExistingEmailMessage {
 	public static void main(String[] args) {
 		
 		// The path to the resource directory.
-		String dataDir = Utils.getSharedDataDir(CreateNewEmail.class) + "email/";
+		String dataDir = Utils.getSharedDataDir(ModifyAnExistingEmailMessage.class) + "email/";
 
 		//Initialize and Load an existing MSG file by specifying the MessageFormat
 		MailMessage email = MailMessage.load(dataDir + "Message.msg");
