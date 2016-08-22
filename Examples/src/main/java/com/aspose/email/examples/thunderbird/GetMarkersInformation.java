@@ -44,7 +44,7 @@ public class GetMarkersInformation {
 
 	public static void writingMessages() throws IOException {
 		//Getting marker information while writing messages to Mbox storage file
-		FileOutputStream writeStream = new FileOutputStream(dataDir + "\\inbox");
+		FileOutputStream writeStream = new FileOutputStream(dataDir + "inbox");
 		try {
 			MboxrdStorageWriter writer = new MboxrdStorageWriter(writeStream, false);
 			try {
