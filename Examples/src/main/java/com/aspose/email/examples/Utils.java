@@ -2,6 +2,9 @@ package com.aspose.email.examples;
 
 import java.io.File;
 
+import com.aspose.email.EWSClient;
+import com.aspose.email.IEWSClient;
+
 public class Utils {
 
     public static String getDataDir(Class c) {
@@ -28,4 +31,12 @@ public class Utils {
         
         return dir.toString() + File.separator;
     }
+    
+    public static IEWSClient getAsposeEWSClient() {
+		// Create instance of IEWSClient class by giving credentials
+		IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/ews/exchange.asmx", "testUser", "pwd", "domain");
+
+		// Return the instance of IEWSClient class
+		return client;
+	}
 }
