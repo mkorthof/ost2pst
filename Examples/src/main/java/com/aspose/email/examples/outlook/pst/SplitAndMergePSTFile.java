@@ -28,16 +28,16 @@ public class SplitAndMergePSTFile {
 			
 	
 		//Splitting PST into Multiple PST files
-		//splitPSTIntoMultiplePSTFiles(); // Generating Exception
+		splitPSTIntoMultiplePSTFiles(); 
 
 		//Merging of Multiple PSTs into a Single PST
-		//mergeMultiplePSTsIntoASinglePST(); // Generating an Exception
+		mergeMultiplePSTsIntoASinglePST(); 
 		
 		//Merging Folders from another PST
-		mergeFoldersFromAnotherPST();    // Generating an Exception
+		mergeFoldersFromAnotherPST();   
  		
 		//Splitting PST based on Specified Criterion
-		//splitPSTBasedOnDefinedCriterion();
+		splitPSTBasedOnDefinedCriterion();
 	}
 
 	public static void splitPSTIntoMultiplePSTFiles() {
@@ -154,12 +154,12 @@ public class SplitAndMergePSTFile {
 		criteria.addItem(pstQueryBuilder.getQuery());
 
 		//specify some other criterion as well
-		/*pstQueryBuilder = new PersonalStorageQueryBuilder();
+		pstQueryBuilder = new PersonalStorageQueryBuilder();
 		c.set(2005, 5, 7, 12, 0, 0);
 		pstQueryBuilder.getSentDate().since(c.getTime());
 		c.set(2005, 5, 13, 12, 0, 0);
 		pstQueryBuilder.getSentDate().before(c.getTime());
-		criteria.addItem(pstQueryBuilder.getQuery());*/
+		criteria.addItem(pstQueryBuilder.getQuery());
 
 		final PersonalStorage pst = PersonalStorage.fromFile(fileName);
 		try {
