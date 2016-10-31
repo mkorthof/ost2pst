@@ -25,24 +25,25 @@ public class SplitAndMergePSTFile {
 	public static String currentFolder = null;
 
 	public static void main(String[] args) {
-
+			
+	
 		//Splitting PST into Multiple PST files
-		splitPSTIntoMultiplePSTFiles();
+		//splitPSTIntoMultiplePSTFiles(); // Generating Exception
 
 		//Merging of Multiple PSTs into a Single PST
-		mergeMultiplePSTsIntoASinglePST();
+		//mergeMultiplePSTsIntoASinglePST(); // Generating an Exception
 		
 		//Merging Folders from another PST
-		mergeFoldersFromAnotherPST();
-		
+		mergeFoldersFromAnotherPST();    // Generating an Exception
+ 		
 		//Splitting PST based on Specified Criterion
-		splitPSTBasedOnDefinedCriterion();
+		//splitPSTBasedOnDefinedCriterion();
 	}
 
 	public static void splitPSTIntoMultiplePSTFiles() {
 
 		String sourceFileName = dataDir + "test.pst";
-
+		
 		final PersonalStorage pst = PersonalStorage.fromFile(sourceFileName);
 		try {
 			pst.StorageProcessed.add(new StorageProcessedEventHandler() {
@@ -55,7 +56,9 @@ public class SplitAndMergePSTFile {
 					pstSplit_OnItemMoved(sender, e);
 				}
 			});
-			pst.splitInto(5000000, dataDir + "chunks/");
+			
+			deleteAllFilesInDirectory(new File(dataDir + "chunks/"));
+			pst.splitInto(542720, dataDir + "chunks/");
 		} finally {
 			if (pst != null)
 				(pst).dispose();
@@ -78,7 +81,7 @@ public class SplitAndMergePSTFile {
 					pstMerge_OnItemMoved(sender, e);
 				}
 			});
-			//Get a collection of all the html files in the directory
+			//Get a collection of all files in the directory
 			ArrayList<String> results = new ArrayList<String>();
 			String[] fileNames;
 
@@ -90,12 +93,13 @@ public class SplitAndMergePSTFile {
 				return;
 
 			for (File file : files) {
-				if (file.isFile()) {
-					results.add(file.getName());
+				if (file.isFile() && file.getName().endsWith(".pst")) {
+					results.add(file.getAbsolutePath());
 				}
 			}
+			
+			fileNames = results.toArray(new String[0]);
 			pst.mergeWith(fileNames);
-			System.out.println("Total messages added: " + totalAdded);
 		} finally {
 			if (pst != null)
 				(pst).dispose();
@@ -110,7 +114,9 @@ public class SplitAndMergePSTFile {
 		try {
 			final PersonalStorage sourcePst = PersonalStorage.fromFile(sourceFileName);
 			try {
-				FolderInfo destinationFolder = destinationPst.getRootFolder().addSubFolder("FolderFromOtherPst");
+				
+				FolderInfo destinationFolder = destinationPst.getRootFolder().addSubFolder("FolderFromOtherPst" + (int) (Math.random() * 100));
+				
 				FolderInfo sourceFolder = sourcePst.getPredefinedFolder(StandardIpmFolder.DeletedItems);
 
 				destinationFolder.ItemMoved.add(new ItemMovedEventHandler() {
@@ -141,22 +147,23 @@ public class SplitAndMergePSTFile {
 
 		//Define a criterion based on Time
 		PersonalStorageQueryBuilder pstQueryBuilder = new PersonalStorageQueryBuilder();
-		c.set(2005, 5, 1, 12, 0, 0);
+		c.set(2015, 1, 1, 0, 0, 0);
 		pstQueryBuilder.getSentDate().since(c.getTime());
-		c.set(2005, 5, 7, 12, 0, 0);
+		c.set(2015, 12, 12, 0, 0, 0);
 		pstQueryBuilder.getSentDate().before(c.getTime());
 		criteria.addItem(pstQueryBuilder.getQuery());
 
 		//specify some other criterion as well
-		pstQueryBuilder = new PersonalStorageQueryBuilder();
+		/*pstQueryBuilder = new PersonalStorageQueryBuilder();
 		c.set(2005, 5, 7, 12, 0, 0);
 		pstQueryBuilder.getSentDate().since(c.getTime());
 		c.set(2005, 5, 13, 12, 0, 0);
 		pstQueryBuilder.getSentDate().before(c.getTime());
-		criteria.addItem(pstQueryBuilder.getQuery());
+		criteria.addItem(pstQueryBuilder.getQuery());*/
 
 		final PersonalStorage pst = PersonalStorage.fromFile(fileName);
 		try {
+			deleteAllOutputFiles();
 			pst.splitInto(criteria, dataDir);
 		} finally {
 			if (pst != null)
@@ -216,4 +223,21 @@ public class SplitAndMergePSTFile {
 		messageCount++;
 	}
 
+	public static void deleteAllFilesInDirectory(File dir) {
+		for(String s: dir.list()){
+		    File currentFile = new File(dir.getPath(), s);
+		    currentFile.delete();
+		}
+	}
+	
+	public static void deleteAllOutputFiles() {
+		File dir = new File(dataDir);
+		for(String s: dir.list()){
+			if(s.startsWith("Test_part")) {
+				File file = new File(dir.getPath(), s);
+				file.delete();
+			}
+		}
+	}
+	
 }
