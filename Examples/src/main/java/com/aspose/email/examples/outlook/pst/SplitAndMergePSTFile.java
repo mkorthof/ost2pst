@@ -26,11 +26,9 @@ public class SplitAndMergePSTFile {
 	public static int totalAdded = 0;
 	public static String currentFolder = null;
 	
-	/**
-	 * Following examples will only work if you have Aspose License file. 
-	 */
 	public static void main(String[] args) {
 		
+		//Following examples will only work if you have Aspose License file.
 		try {
 			Utils.applyALicense();
 		} catch(Exception e) {
