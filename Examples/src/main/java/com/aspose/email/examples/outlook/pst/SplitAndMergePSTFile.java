@@ -28,7 +28,7 @@ public class SplitAndMergePSTFile {
 	
 	public static void main(String[] args) {
 		
-		//Following examples will only work if you have Aspose License file.
+		//Following examples will not run with trail version. You have to purchase Aspose License.
 		try {
 			Utils.applyALicense();
 		} catch(Exception e) {
@@ -241,17 +241,10 @@ public class SplitAndMergePSTFile {
 		messageCount++;
 	}
 	
-	public static void resetState() {
-		messageCount = 0;
-		totalAdded = 0;
-		currentFolder = null;
-	}
-	
 	public static void deleteAndRecopySampleFiles(String destFolder, String srcFolder) {
 		
 		try {
 			deleteAllFilesInDirectory(new File(destFolder));
-			//Copy destination file from Outlook folder into Destination folder
 			File source = new File(srcFolder);
 			File dest = new File(destFolder);
 			FileUtils.copyDirectory(source, dest);
