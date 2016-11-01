@@ -4,9 +4,16 @@ import java.io.File;
 
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;
+import com.aspose.email.License;
 
 public class Utils {
-
+	
+	public static void applyALicense() throws Exception {
+    	String dataDir = getSharedDataDir(Utils.class) + "License/";
+    	License license = new License();
+    	license.setLicense(dataDir + "Aspose.Total.Java.lic");
+    }
+	
     public static String getDataDir(Class c) {
         File dir = new File(System.getProperty("user.dir"));
         dir = new File(dir, "src");
