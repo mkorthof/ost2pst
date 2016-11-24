@@ -30,7 +30,7 @@ public class DisplayEmailInformation {
 		
 		System.out.print("TextBody: ");
 		//Gets the textbody
-		System.out.println(message.getTextBody());
+		System.out.println(message.getBody());
 		
 		System.out.print("HtmlBodyText: ");
 		//Gets the textbody from HTML

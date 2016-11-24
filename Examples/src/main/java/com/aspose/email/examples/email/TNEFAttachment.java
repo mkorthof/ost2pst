@@ -3,14 +3,7 @@ package com.aspose.email.examples.email;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-import com.aspose.email.Attachment;
-import com.aspose.email.FileCompatibilityMode;
-import com.aspose.email.MailMessage;
-import com.aspose.email.MailMessageInterpretor;
-import com.aspose.email.MailMessageInterpretorFactory;
-import com.aspose.email.MailMessageLoadOptions;
-import com.aspose.email.MapiMessage;
-import com.aspose.email.MessageFormat;
+import com.aspose.email.*;
 import com.aspose.email.examples.Utils;
 
 public class TNEFAttachment {
@@ -45,18 +38,17 @@ public class TNEFAttachment {
 
 	public static void creatingTNEFEMLFromMSG(String dataDir) {
 		MapiMessage msg = MapiMessage.fromFile(dataDir + "Message.msg");
-		MailMessageInterpretor mi = MailMessageInterpretorFactory.getInstance().getIntepretor(msg.getMessageClass());
-		MailMessage eml = mi.interpretAsTnef(msg);
+		MailConversionOptions options = new MailConversionOptions();
+		options.setConvertAsTnef (true);
+		MailMessage mail = msg.toMailMessage(options);
 	}
 	
 	public static void createTNEF(String dataDir) {
-		MailMessageLoadOptions options = new MailMessageLoadOptions();
-		options.setMessageFormat(MessageFormat.getMsg());
-
+		MsgLoadOptions msgLoadOptions = new MsgLoadOptions();
 		// The PreserveTnefAttachments option with MessageFormat.Msg will create the TNEF eml.
-		options.setFileCompatibilityMode(FileCompatibilityMode.PreserveTnefAttachments);
+		msgLoadOptions.setPreserveTnefAttachments(true);
 
-		MailMessage eml = MailMessage.load(dataDir + "test.eml", options);
+		MailMessage eml = MailMessage.load(dataDir + "test.eml", msgLoadOptions);
 	}
 	
 	public static void detectIfAMessageIsTNEF(String dataDir) {

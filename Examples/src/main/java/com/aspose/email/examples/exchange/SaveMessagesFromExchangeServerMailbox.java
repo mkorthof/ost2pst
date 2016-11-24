@@ -8,7 +8,12 @@ import com.aspose.email.IEWSClient;
 import com.aspose.email.MailMessage;
 import com.aspose.email.SaveOptions;
 import com.aspose.email.examples.Utils;
+import com.aspose.email.system.exceptions.FileNotFoundException;
+import com.aspose.email.system.exceptions.IOException;
 import com.aspose.email.system.io.MemoryStream;
+
+import java.io.FileOutputStream;
+import java.io.OutputStream;
 
 public class SaveMessagesFromExchangeServerMailbox {
 
@@ -19,10 +24,10 @@ public class SaveMessagesFromExchangeServerMailbox {
 		saveMessagesAsEML();
 		
 		saveMessagesAsEMLUsingEWS();
-		
-		saveMessagesToAMemoryStream();
-		
-		saveMessagesToAMemoryStreamUsingEWS();
+
+        saveMessagesToOutputStream();
+
+        saveMessagesToOutputStreamUsingEWS();
 		
 		saveMessagesInMSGFormat();
 		
@@ -59,7 +64,7 @@ public class SaveMessagesFromExchangeServerMailbox {
 		}
 	}
 
-	public static void saveMessagesToAMemoryStream() {
+	public static void saveMessagesToOutputStream() {
 		// Create instance of ExchangeClient class by giving credentials
 		ExchangeClient client = new ExchangeClient("http://ex07sp1/exchange/Administrator", "user", "pwd", "domain");
 
@@ -70,15 +75,16 @@ public class SaveMessagesFromExchangeServerMailbox {
 		for (ExchangeMessageInfo msgInfo : msgCollection) {
 			String strMessageURI = msgInfo.getUniqueUri();
 
-			// Now save the message in memory stream
-			MemoryStream stream = new MemoryStream();
-			client.saveMessage(strMessageURI, stream);
-
-			// You can save the stream to some storage location e.g. database
+            try {
+                OutputStream outputStream = new FileOutputStream(dataDir + msgInfo.getMessageId() + "_Out.eml");
+                client.saveMessage(strMessageURI, outputStream);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 		}
 	}
 
-	public static void saveMessagesToAMemoryStreamUsingEWS() {
+	public static void saveMessagesToOutputStreamUsingEWS() {
 		// Create instance of EWSClient class by giving credentials
 		IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/ews/exchange.asmx", "testUser", "pwd", "domain");
 
@@ -89,11 +95,12 @@ public class SaveMessagesFromExchangeServerMailbox {
 		for (ExchangeMessageInfo msgInfo : msgCollection) {
 			String strMessageURI = msgInfo.getUniqueUri();
 
-			// Now save the message in memory stream
-			MemoryStream stream = new MemoryStream();
-			client.saveMessage(strMessageURI, stream);
-
-			// You can save the stream to some storage location e.g. database
+            try {
+                OutputStream outputStream = new FileOutputStream(dataDir + msgInfo.getMessageId() + "_Out.eml");
+                client.saveMessage(strMessageURI, outputStream);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 		}
 	}
 

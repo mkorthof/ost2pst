@@ -31,9 +31,6 @@ public class ConnectToExchangeServerUsingIMAP {
 		for (ImapMessageInfo msgInfo : msgCollection) {
 			System.out.println(msgInfo.getSubject());
 		}
-
-		// Disconnect from the server
-		imapClient.disconnect();
 	}
 
 	public static void useMessageInfoObjectSequenceNumberToSaveAMessage() {

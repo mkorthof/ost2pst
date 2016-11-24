@@ -103,7 +103,6 @@ public class DistributionLists {
 		distributionList.setChangeKey("list's change key");
 		MailAddressCollection membersToDelete = new MailAddressCollection();
 		MailAddress addressToDelete = new MailAddress("address", true);
-		addressToDelete.getId().setEWSId("member's id");
 		membersToDelete.addItem(addressToDelete);
 		client.addToDistributionList(distributionList, membersToDelete);
 	}
@@ -130,14 +129,13 @@ public class DistributionLists {
 		message.setSubject("sendToPrivateDistributionList");
 		client.send(message);
 	}
-	
+
 	public static void createMailAddressFromDistributionListId() {
 		IEWSClient client = EWSClient.getEWSClient("https://exchange.domain.com/ews/Exchange.asmx/", "user", "password", "");
 		ExchangeDistributionList[] distributionLists = client.listDistributionLists();
 		String id = distributionLists[0].getId();
 
 		MailAddress distributionListAddress = new MailAddress("privateDL", true);
-		distributionListAddress.getId().setEWSId(id);
 	}
 	
 	public static void expandPublicDistributionList() {

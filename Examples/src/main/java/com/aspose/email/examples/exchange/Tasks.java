@@ -2,18 +2,7 @@ package com.aspose.email.examples.exchange;
 
 import java.util.Calendar;
 
-import com.aspose.email.DeleteTaskOptions;
-import com.aspose.email.EWSClient;
-import com.aspose.email.ExchangeMessageInfo;
-import com.aspose.email.ExchangeMessageInfoCollection;
-import com.aspose.email.ExchangeTask;
-import com.aspose.email.ExchangeTaskStatus;
-import com.aspose.email.FileCompatibilityMode;
-import com.aspose.email.IEWSClient;
-import com.aspose.email.MailAddress;
-import com.aspose.email.MailMessage;
-import com.aspose.email.MailMessageLoadOptions;
-import com.aspose.email.MessageFormat;
+import com.aspose.email.*;
 import com.aspose.email.examples.Utils;
 
 public class Tasks {
@@ -108,17 +97,15 @@ public class Tasks {
 		}
 	}
 
-	@SuppressWarnings("deprecation")
 	public static void sendTaskRequest() {
 		// Create instance of ExchangeClient class by giving credentials
 		IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/ews/exchange.asmx", "testUser", "pwd", "domain");
 
-		MailMessageLoadOptions loadOptions = new MailMessageLoadOptions();
-		loadOptions.setMessageFormat(MessageFormat.getMsg());
-		loadOptions.setFileCompatibilityMode(FileCompatibilityMode.PreserveTnefAttachments);
+		MsgLoadOptions msgLoadOptions = new MsgLoadOptions();
+		msgLoadOptions.setPreserveTnefAttachments(true);
 
 		// load task from .msg file
-		MailMessage eml = MailMessage.load(dataDir + "task.msg", loadOptions);
+		MailMessage eml = MailMessage.load(dataDir + "task.msg", msgLoadOptions);
 		eml.setFrom(new MailAddress("firstname.lastname@domain.com"));
 		eml.getTo().clear();
 		eml.getTo().addItem(new MailAddress("firstname.lastname@domain.com"));

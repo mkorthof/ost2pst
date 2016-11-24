@@ -23,7 +23,6 @@ public class FilterMessagesFromExchangeMailbox {
 		filterMessagesBasedOnSpecificSender();
 		filterMessagesBasedOnSpecificDomain();
 		filterMessagesBasedOnSpecificRecipient();
-		filterMessagesBasedOnMessageID();
 		combineQueriesWithAND();
 		combiningQueriesWithOR();
 		filterMessagesBasedCaseSensitivity();
@@ -107,12 +106,6 @@ public class FilterMessagesFromExchangeMailbox {
 		builder.getTo().contains("recipient");
 	}
 	
-	public static void filterMessagesBasedOnMessageID() {
-		MailQueryBuilder builder = new MailQueryBuilder();
-		// Get email delivery notifications
-		builder.getMessageId().equals("MessageID");
-	}
-	
 	public static void combineQueriesWithAND() {
 		MailQueryBuilder builder = new MailQueryBuilder();
 
@@ -123,7 +116,7 @@ public class FilterMessagesFromExchangeMailbox {
 		// AND all emails that arrived since 7 days ago
 		builder.getInternalDate().since(new Date(new Date().getTime() + TimeUnit.DAYS.toDays(-7)));
 	}
-	
+
 	public static void combiningQueriesWithOR() {
 		MailQueryBuilder builder = new MailQueryBuilder();
 		

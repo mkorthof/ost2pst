@@ -70,9 +70,6 @@ public class FilterMessagesFromIMAPMailbox {
 		//Get list of messages
 		ImapMessageInfoCollection messages = client.listMessages(query);
 		System.out.println("Imap: " + messages.size() + " message(s) found.");
-
-		//Disconnect from IMAP
-		client.disconnect();
 	}
 
 	public static void filterEmailBasedOnTodayDate() {
@@ -135,8 +132,6 @@ public class FilterMessagesFromIMAPMailbox {
 		for (ImapMessageInfo info : messages) {
 			System.out.println("Internal Date: " + info.getInternalDate().getTime());
 		}
-		// Disconnect from IMAP
-		client.disconnect();
 	}
 
 	public static void caseSensitiveEmailFiltering() {
