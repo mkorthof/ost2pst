@@ -8,7 +8,7 @@ This repository contains some projects and example code that will help you to wr
   </a>
 </p>
 
-Following is short description of contents of the repository:
+Following is short description of contents of the repository: 
 
 Directory  | Description
 ---------- | -----------
