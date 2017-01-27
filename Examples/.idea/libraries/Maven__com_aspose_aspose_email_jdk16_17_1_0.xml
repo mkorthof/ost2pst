@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.aspose:aspose-email:jdk16:17.1.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/aspose/aspose-email/17.1.0/aspose-email-17.1.0-jdk16.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/aspose/aspose-email/17.1.0/aspose-email-17.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/aspose/aspose-email/17.1.0/aspose-email-17.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
