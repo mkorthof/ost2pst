@@ -27,7 +27,7 @@ public class AccessMailboxCustomFoldersOrSubfolders {
 
 		if (subfolderInfo != null) {
 			//Get all the messages info from the target URI
-			messages = _client.findMessages(subfolderInfo[0].getUri());
+			messages = _client.listMessages(subfolderInfo[0].getUri());
 
 			//Parse all the messages info collection
 			for (ExchangeMessageInfo info : messages) {
