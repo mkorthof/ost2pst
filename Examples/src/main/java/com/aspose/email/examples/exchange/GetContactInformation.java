@@ -26,7 +26,7 @@ public class GetContactInformation {
 		IEWSClient client = EWSClient.getEWSClient("https://exchange.domain.com/ews/Exchange.asmx", "username", "password", "domain.com");
 
 		// List all the contacts
-		Contact[] contacts = client.resolveContacts("Changed Name", ExchangeListContactsOptions.FetchAttachmentAndFullPhotoInformation);
+		Contact[] contacts = client.resolveContacts("Changed Name");
 		// Loop through all contacts
 		for (Contact contact : contacts) {
 			// Display name and email address
