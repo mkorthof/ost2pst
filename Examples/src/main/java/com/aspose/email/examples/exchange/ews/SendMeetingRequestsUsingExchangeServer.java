@@ -19,6 +19,7 @@ public class SendMeetingRequestsUsingExchangeServer {
 	}
 
 	public static void sendingMeetingRequestsUsingAnExchangeServerEWS() throws ParseException {
+		// ExStart:SendMeetingRequestsUsingExchangeServer
 		try {
 			String domain = "litwareinc.com";
 			// Create instance of IEWSClient class by giving credentials
@@ -50,5 +51,6 @@ public class SendMeetingRequestsUsingExchangeServer {
 		} catch (ExchangeException ex) {
 			System.out.println(ex.getMessage());
 		}
+		// ExEnd:SendMeetingRequestsUsingExchangeServer
 	}
 }

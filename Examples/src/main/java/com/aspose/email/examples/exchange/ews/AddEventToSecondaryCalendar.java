@@ -14,6 +14,7 @@ import com.aspose.email.system.IDisposable;
 public class AddEventToSecondaryCalendar {
 
 	public static void main(String[] args) {
+		// ExStart:AddEventToSecondaryCalendar
 		IEWSClient client = null;
 		try {
 			client = EWSClient.getEWSClient("https://outlook.office365.com/ews/exchange.asmx", "username", "password");
@@ -82,5 +83,6 @@ public class AddEventToSecondaryCalendar {
 			if (client != null)
 				((IDisposable) client).dispose();
 		}
+		// ExEnd:AddEventToSecondaryCalendar
 	}
 }
