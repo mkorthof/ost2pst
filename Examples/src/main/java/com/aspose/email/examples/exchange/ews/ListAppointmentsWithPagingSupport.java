@@ -9,6 +9,7 @@ import com.aspose.email.system.collections.generic.List;
 public class ListAppointmentsWithPagingSupport {
 
 	public static void main(String[] args) {
+		// ExStart:ListAppointmentsWithPagingSupport
 		IEWSClient client = EWSClient.getEWSClient("exchange.domain.com", "username", "password");
 		try {    
 	        //Define total number of items per page
@@ -30,5 +31,6 @@ public class ListAppointmentsWithPagingSupport {
 			if (client != null) 
 				((IDisposable)client).dispose(); 
 		}
+		// ExEnd:ListAppointmentsWithPagingSupport
 	}
 }
