@@ -41,7 +41,7 @@ public class Utils {
     
     public static IEWSClient getAsposeEWSClient() {
 		// Create instance of IEWSClient class by giving credentials
-		IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/ews/exchange.asmx", "testUser", "pwd", "domain");
+		IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser", "pwd", "domain");
 
 		// Return the instance of IEWSClient class
 		return client;
