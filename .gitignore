@@ -34,4 +34,5 @@ manifest.mf
 Out/
 *.lic
 Data/*Out*
+*_out.*
 /dist/
