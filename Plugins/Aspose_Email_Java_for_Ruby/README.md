@@ -1,4 +1,4 @@
- # Aspose.EmailJava for Ruby
+ # Aspose.Email Java for Ruby
 Aspose.Email Java for Ruby is a gem that demonstrates / provides the Aspose.Email for Java API usage examples in Ruby by using Rjb - Ruby Java Bridge.
 
 ## Installation
