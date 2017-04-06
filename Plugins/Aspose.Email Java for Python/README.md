@@ -10,13 +10,3 @@ Aspose.Email Java for Python is a project that demonstrates / provides the Aspos
 ## Documentation
 
 For most complete documentation of the project, check [Aspose.Email Java For Python confluence wiki](https://docs.aspose.com/display/emailjava/Aspose.Email+Java+For+Python).
-
-## Download Latest Versions?
-
-* [Latest Releases on Codeplex](https://asposeemailjavapython.codeplex.com/releases/view/621297)
-
-## Clone Plugin SourceCodes?
-
-This project is also hosted and maintained at CodePlex. To clone navigate to:
-
-* [Aspose.Email Java for Python on CodePlex - click here](https://asposeemailjavapython.codeplex.com/SourceControl/latest)
