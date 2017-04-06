@@ -22,23 +22,8 @@ Managing and manipulating emails that come in through Microsoft Outlook doesn’
 
 Aspose.Email API also provides the ability to manipulate message storage files i.e. Personal Storage Files (PST) and Offline Storage Files (OST). You can create PST, add messages to it, extract information from various PST folders, and remove items from the PST with just a few lines of code. Its powerful API gives you complete access to the contents of a PST for manipulation.
 
-For more info about the **Aspose.Email for Java API**, [please check the api documentation - click here](http://goo.gl/idmYQ1)
+For more info about the **Aspose.Email for Java API**, [please check the api documentation - click here](https://docs.aspose.com/display/emailjava/Getting+Started)
 
 ## Plugin Documentation
 
-For the complete documentation of this Intellij IDEA plugin, [please go through this wiki - click here](http://goo.gl/j0rSTJ)
-
-## Download Latest Versions?
-
-
-* [Latest Releases on Codeplex](https://asposeemailjavaintellij.codeplex.com/releases)
-
-
-
-## Clone Plugin SourceCodes?
-
-
-This project is also hosted and maintained at CodePlex. To clone navigate to: 
-
-
-* [Aspose.Email Java for IntelliJ Maven on CodePlex - click here](https://asposeemailjavaintellij.codeplex.com/SourceControl/latest)
+For the complete documentation of this Intellij IDEA plugin, [please go through this wiki - click here](https://docs.aspose.com/display/emailjava/Aspose.Email+Java+for+IntelliJ+IDEA+-+Maven)
