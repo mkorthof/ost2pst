@@ -1,4 +1,4 @@
-# Aspose_Email_Java_for_Ruby
+ # Aspose.EmailJava for Ruby
 Aspose.Email Java for Ruby is a gem that demonstrates / provides the Aspose.Email for Java API usage examples in Ruby by using Rjb - Ruby Java Bridge.
 
 ## Installation
@@ -9,13 +9,13 @@ Execute following command.
 
 To download Aspose.Email for Java API to be used with these examples through RJB, Please navigate to:
 
-http://www.aspose.com/community/files/72/java-components/aspose.email-for-java/default.aspx
+https://downloads.aspose.com/email/java
 
 Note: Create jars folder at root of the gem folder and copy downloaded Aspose.Email for java component into it.
 
 For most complete documentation of the project, check Aspose.Email Java for Ruby confluence wiki link:
 
-http://www.aspose.com/docs/display/emailjava/2.+Aspose.Email+Java+For+Ruby
+https://docs.aspose.com/display/emailjava/Aspose.Email+Java+For+Ruby
 
 ## Usage
 
