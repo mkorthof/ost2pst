@@ -13,13 +13,3 @@ Aspose.Email Java for Jython is a project that demonstrates / provides the Aspos
 For most complete documentation of the project, check Aspose.Email Java For Jython confluence wiki link:
 
 https://docs.aspose.com/display/emailjava/Aspose.Email+Java+for+Jython
-
-## Download Latest Versions?
-
-* [Latest Releases on Codeplex](https://asposeemailjavajython.codeplex.com/releases/)
-
-## Clone Plugin SourceCodes?
-
-This project is also hosted and maintained at CodePlex. To clone navigate to:
-
-* [Aspose.Email Java for Jython on CodePlex - click here](https://asposeemailjavajython.codeplex.com/SourceControl/latest)
