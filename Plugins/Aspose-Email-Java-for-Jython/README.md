@@ -4,7 +4,7 @@ Aspose.Email Java for Jython is a project that demonstrates / provides the Aspos
 
 ## Download
 
-* To download Aspose.Email for Java API to be used with these examples, Please navigate to: http://www.aspose.com/community/files/72/java-components/aspose.email-for-java/
+* To download Aspose.Email for Java API to be used with these examples, Please navigate to: https://www.aspose.com/products/email/java
 * Place downloaded jar file into "lib" directory. 
 * Replace "your-lib" with the jar filename.
 
@@ -12,7 +12,7 @@ Aspose.Email Java for Jython is a project that demonstrates / provides the Aspos
 
 For most complete documentation of the project, check Aspose.Email Java For Jython confluence wiki link:
 
-http://www.aspose.com/docs/display/emailjava/Aspose.Email+Java+for+Jython
+https://docs.aspose.com/display/emailjava/Aspose.Email+Java+for+Jython
 
 ## Download Latest Versions?
 
