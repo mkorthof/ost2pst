@@ -10,19 +10,8 @@ http://php-java-bridge.sourceforge.net/pjb/index.php
 To download Aspose.Email for Java API to be used with these examples through PHP/Java Bridge
 Please navigate to:
 
-http://www.aspose.com/community/files/72/java-components/aspose.email-for-java/
+https://downloads.aspose.com/email/java
 
 For most complete documentation of the project, check Aspose.Email Java for PHP confluence wiki link:
 
-http://www.aspose.com/docs/display/emailjava/3.+Aspose.Email+Java+For+PHP
-
-
-## Download Latest Versions?
-
-* [Latest Releases on Codeplex](https://asposeemailjavaphp.codeplex.com/releases)
-
-## Clone Plugin SourceCodes?
-
-This project is also hosted and maintained at CodePlex. To clone navigate to: 
-
-* [Aspose.Email Java for PHP - click here](https://asposeemailjavaphp.codeplex.com/SourceControl/latest)
+https://docs.aspose.com/display/emailjava/Aspose.Email+Java+For+PHP
