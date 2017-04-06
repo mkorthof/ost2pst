@@ -25,13 +25,7 @@ If you are a Java developer looking to choose a file format library to process w
 
 ## What is Apache POI ?
 
-The Apache POI Project's mission is to create and maintain Java APIs for manipulating various file formats based upon the Office Open XML standards (OOXML) and Microsoft's OLE 2 Compound Document format (OLE2). In short, you can read and write MS Excel files using Java. In addition, you can read and write MS Word and MS PowerPoint files using Java. Apache POI is Java Excel solution (for Excel 97-2008).
-
-OLE2 files include Microsoft Office files such as XLS, DOC, and PPT as well as MFC serialization API based file formats. The project provides APIs for the OLE2 Filesystem (POIFS) and OLE2 Document Properties (HPSF).
-
-Office OpenXML Format is the new standards based XML file format found in Microsoft Office 2007 and 2008. This includes XLSX, DOCX and PPTX. The project provides a low level API to support the Open Packaging Conventions using openxml4j.
-
-For each MS Office application there exists a component module that attempts to provide a common high level Java api to both OLE2 and OOXML document formats.
+The Apache POI Project's mission is to create and maintain Java APIs for manipulating various file formats based upon the Office Open XML standards (OOXML) and Microsoft's OLE 2 Compound Document format (OLE2). In short, you can read and write MS Outlook files using Java.
 
 Read More at [poi.apache.org](http://poi.apache.org/)
 
