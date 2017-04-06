@@ -4,14 +4,14 @@ Aspose.Email Java for Apache POI SM is a project to provide comparative source c
 
 Below are some code comparisons and features of Aspose.Email for Java that are not available in Apache POI.
 
-* [Code Comparison for common features in **Aspose.Email** and **Apache POI SM**](http://www.aspose.com/docs/display/emailjava/1.2+Code+Comparison+for+Common+Features+in+Aspose.Email+and+Apache+POI+-+HSMF)
-* [Missing Features of Apache POI SM available in Aspose.Email](http://www.aspose.com/docs/display/emailjava/1.3+Missing+Features+in+Apache+POI+-+HSMF)
+* [Code Comparison for common features in **Aspose.Email** and **Apache POI SM**](https://docs.aspose.com/display/emailjava/Code+Comparison+for+Common+Features+in+Aspose.Email+and+Apache+POI+HSMF)
+* [Missing Features of Apache POI SM available in Aspose.Email](https://docs.aspose.com/display/emailjava/Missing+Features+in+Apache+POI+HSMF)
 
 These examples are helpful for developers who want to compare Apache POI with Aspose.Email OR migrate from Apache POI to Aspose.
 
 ### Feedback and Suggestions
 
-* Many more examples are yet to come. [Keep visiting us](http://www.aspose.com/java/excel-component.aspx).
+* Many more examples are yet to come. [Keep visiting us](https://www.aspose.com/products/email/java).
 * Raise your queries and suggest more examples via [Aspose Forums](http://www.aspose.com/community/forums/default.aspx) or via this social coding site.
 
 ## Why Aspose for Apache POI ?
@@ -45,22 +45,12 @@ All the Aspose APIs don’t have any dependency over any other engine. For examp
 
 ### Aspose.Email for Java
 
-[![Aspose.Email for Java](http://www.aspose.com/App_Themes/V2/images/productLogos/JAVA/aspose_email-for-java.jpg)](http://www.aspose.com/java/email-component.aspx)
+[![Aspose.Email for Java](http://www.aspose.com/App_Themes/V2/images/productLogos/JAVA/aspose_email-for-java.jpg)](https://www.aspose.com/products/email/java)
 
 Aspose.Email for Java is a Java class library that enables Java applications to read and write email message files in various formats without Microsoft Outlook.
 
 It provides classes to read and update MSG,EML,EMLX,OFT files, add/remove attachments and recipients, update subject, body and other MSG file properties.
 
-[Learn More](http://www.aspose.com/java/email-component.aspx)
-
-## Download Latest Versions?
-
-* [Latest Releases on Codeplex](https://asposeemailjavaapachepoi.codeplex.com/releases/view/618811)
-
-## Clone Plugin SourceCodes?
-
-This project is also hosted and maintained at CodePlex. To clone navigate to:
-
-* [Aspose.Email Java for Apache POI SM on CodePlex - click here](https://asposeemailjavaapachepoi.codeplex.com/SourceControl/latest)
+[Learn More](https://www.aspose.com/products/email/java)
 
 
