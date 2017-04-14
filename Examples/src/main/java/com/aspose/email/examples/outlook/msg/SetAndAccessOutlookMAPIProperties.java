@@ -4,11 +4,13 @@ import java.util.UUID;
 
 import com.aspose.email.BodyContentType;
 import com.aspose.email.MapiMessage;
+import com.aspose.email.MapiNamedProperty;
 import com.aspose.email.MapiProperty;
 import com.aspose.email.MapiPropertyCollection;
 import com.aspose.email.MapiPropertyTag;
 import com.aspose.email.MapiPropertyType;
 import com.aspose.email.examples.Utils;
+import com.aspose.email.system.BitConverter;
 import com.aspose.email.system.collections.ArrayList;
 import com.aspose.email.system.collections.IList;
 
@@ -34,7 +36,7 @@ public class SetAndAccessOutlookMAPIProperties {
 		MapiPropertyCollection coll = outlookMessageFile.getProperties();
 
 		//Access the MapiPropertyTag.PR_SUBJECT property
-		MapiProperty prop = (MapiProperty) coll.get_Item((Object) MapiPropertyTag.PR_SUBJECT);
+		MapiProperty prop = (MapiProperty) coll.get_Item(MapiPropertyTag.PR_SUBJECT);
 
 		//If the MapiProperty is not found, check the MapiProperty.PR_SUBJECT_W
 		//which is a unicode peer of MapiPropertyTag.PR_SUBJECT
@@ -117,6 +119,26 @@ public class SetAndAccessOutlookMAPIProperties {
 		property = new MapiProperty(message.getNamedPropertyMapping().getNextAvailablePropertyId(MapiPropertyType.PT_MV_LONG), values);
 
 		message.addCustomProperty(property, "customProperty");
+		
+		//PT_FLOAT
+		//Please note that you need explicit cast to float value for this to work
+		float floatValue = 123.456F;
+		MapiMessage newMsg = new MapiMessage();
+		long floatTag = newMsg.getNamedPropertyMapping().getNextAvailablePropertyId(MapiPropertyType.PT_FLOAT);
+		UUID guid = UUID.randomUUID();
+		MapiProperty newMapiProperty = new MapiProperty(floatTag, BitConverter.getBytesSingle(floatValue));
+		newMsg.getNamedPropertyMapping().addNamedPropertyMapping(newMapiProperty,(long) 12, guid);
+		newMsg.setProperty(newMapiProperty);
+
+		boolean propertyIsOk = false;
+		for (MapiNamedProperty prop : (Iterable<MapiNamedProperty>) newMsg.getNamedProperties().getValues())
+		{
+		    if (prop.getGuid().equals(guid))
+		    {
+		        float val = prop.getFloat();
+		        propertyIsOk = val == floatValue;
+		    }
+		}
 	}
 
 	public static void removeProperties(String dataDir) {

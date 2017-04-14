@@ -32,7 +32,7 @@ public class PSTPasswordProtectionProperties {
 	private static boolean isPasswordProtected(PersonalStorage pst) {
 
 		// If the property exists and is nonzero, then the PST file is password protected.
-		if (pst.getStore().getProperties().contains(MapiPropertyTag.PR_PST_PASSWORD)) {
+		if (pst.getStore().getProperties().containsKey(MapiPropertyTag.PR_PST_PASSWORD)) {
 			long passwordHash = pst.getStore().getProperties().get_Item(MapiPropertyTag.PR_PST_PASSWORD).getLong();
 			return passwordHash != 0;
 		}
@@ -42,7 +42,7 @@ public class PSTPasswordProtectionProperties {
 	private static boolean isPasswordValid(String password, PersonalStorage pst) {
 
 		// If the property exists and is nonzero, then the PST file is password protected.
-		if (pst.getStore().getProperties().contains(MapiPropertyTag.PR_PST_PASSWORD)) {
+		if (pst.getStore().getProperties().containsKey(MapiPropertyTag.PR_PST_PASSWORD)) {
 			// The property value contains the CRC-32 hash of the password string of PST.
 			long passwordHash = pst.getStore().getProperties().get_Item(MapiPropertyTag.PR_PST_PASSWORD).getLong();
 
@@ -57,7 +57,7 @@ public class PSTPasswordProtectionProperties {
 	public static void resetThe_PR_PST_PASSWORD_Property() {
 		PersonalStorage pst = PersonalStorage.fromFile(dataDir + "PersonalStorage.pst");
 
-		if (pst.getStore().getProperties().contains(MapiPropertyTag.PR_PST_PASSWORD)) {
+		if (pst.getStore().getProperties().containsKey(MapiPropertyTag.PR_PST_PASSWORD)) {
 			MapiProperty property = new MapiProperty(MapiPropertyTag.PR_PST_PASSWORD, getBytes((int) 0));
 			pst.getStore().setProperty(property);
 		}
