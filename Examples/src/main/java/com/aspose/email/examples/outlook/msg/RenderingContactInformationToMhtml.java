@@ -3,6 +3,7 @@ package com.aspose.email.examples.outlook.msg;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 
+import com.aspose.email.ContactFieldsSet;
 import com.aspose.email.ContactSaveFormat;
 import com.aspose.email.MailConversionOptions;
 import com.aspose.email.MailMessage;
@@ -35,8 +36,11 @@ public class RenderingContactInformationToMhtml {
         MhtSaveOptions mhtSaveOptions = new MhtSaveOptions();
         mhtSaveOptions.setCheckBodyContentEncoding(true);
         mhtSaveOptions.setPreserveOriginalBoundaries(true);
-        int formatOp = (int)(MhtFormatOptions.WriteHeader | MhtFormatOptions.HideExtraPrintHeader | MhtFormatOptions.RenderVCardInfo);
-        mhtSaveOptions.setMhtFormatOptions(formatOp);
+        
+		mhtSaveOptions.setMhtFormatOptions(MhtFormatOptions.RenderVCardInfo | MhtFormatOptions.WriteHeader);
+		
+		mhtSaveOptions.setRenderedContactFields(ContactFieldsSet.NameInfo | ContactFieldsSet.PersonalInfo | ContactFieldsSet.Telephones | ContactFieldsSet.Events);
+        
         eml.save(dataDir + "ContactsSaqib Razzaq_out.mhtml", mhtSaveOptions);
         
         System.out.println("Execution Completed.");

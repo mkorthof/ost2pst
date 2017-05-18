@@ -104,4 +104,12 @@ public class FilterMessagesFromExchangeMailbox {
 		builder1.getFrom().contains("tesT", true);
 		MailQuery query1 = builder1.getQuery();
 	}
+	
+	public static void getMessagesByMessageSize(){
+		
+		//ExStart: GetMessagesByMessageSize
+		ExchangeQueryBuilder builder1 = new ExchangeQueryBuilder();
+		builder1.getItemSize().greater(80000);
+		//ExEnd: GetMessagesByMessageSize
+	}
 }
