@@ -6,6 +6,7 @@ import java.util.Date;
 
 import com.aspose.email.ImapClient;
 import com.aspose.email.ImapFolderInfo;
+import com.aspose.email.ImapMessageFlags;
 import com.aspose.email.ImapMessageInfo;
 import com.aspose.email.ImapMessageInfoCollection;
 import com.aspose.email.ImapPageInfo;
@@ -47,6 +48,9 @@ public class FilterMessagesFromIMAPMailbox {
 		
 		// Filter Messages and List with Paging Support
 		filterMessagesAndListWithPagingSupport();
+		
+		//Filter Messages based on Custom Flag
+		
 	}
 
 	public static void filterMessagesFromMailbox() {
@@ -197,5 +201,15 @@ public class FilterMessagesFromIMAPMailbox {
 
 		client.dispose();
 	}
+	
+	public static void filterMessagesOnCustomFlag()
+	{
+		//ExStart: GetMessageWithCustomFlag
+		ImapQueryBuilder queryBuilder = new ImapQueryBuilder();
 
+		queryBuilder.hasFlags(ImapMessageFlags.keyword("custom1"));
+
+		queryBuilder.hasNoFlags(ImapMessageFlags.keyword("custom2"));
+		//ExEnd: GetMessageWithCustomFlag
+	}
 }

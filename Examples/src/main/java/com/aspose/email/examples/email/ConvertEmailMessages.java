@@ -14,6 +14,7 @@ import com.aspose.email.MapiMessage;
 import com.aspose.email.MapiRecipient;
 import com.aspose.email.MhtFormatOptions;
 import com.aspose.email.MhtSaveOptions;
+import com.aspose.email.MsgLoadOptions;
 import com.aspose.email.MsgSaveOptions;
 import com.aspose.email.SaveOptions;
 import com.aspose.email.examples.Utils;
@@ -152,6 +153,19 @@ public class ConvertEmailMessages {
 		for (MapiRecipient rec : msg.getRecipients()) {
 			rec.getRecipientTrackStatus();
 		}
+	}
+	
+	public static void convertToMHTMLWithoutInlineImages(String dataDir)
+	{
+		//ExStart: ConvertToMHTMLWithoutInlineImages
+		MailMessage eml = MailMessage.load(dataDir + "Message.msg", new MsgLoadOptions());
+		
+		MhtSaveOptions mhtSaveOptions = new MhtSaveOptions();
+		
+		mhtSaveOptions.setSkipInlineImages(true);
+
+		eml.save(dataDir + "EmlToMhtmlWithoutInlineImages_out.mht", mhtSaveOptions);
+		//ExEnd: ConvertToMHTMLWithoutInlineImages
 	}
 
 }
