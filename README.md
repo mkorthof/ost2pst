@@ -26,6 +26,6 @@ Directory  | Description
 
 ## Notes
 
-* In eclipse: > Export > Runnable JAR file
+* In eclipse: > Export > Runnable JAR file, cmd: java -jar ost2pst.jar
 * http://wiki.opf-labs.org/pages/viewpage.action?pageId=25887031
 * https://github.com/rjohnsondev/java-libpst
