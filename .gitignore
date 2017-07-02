@@ -36,3 +36,4 @@ Out/
 Data/*Out*
 *_out.*
 /dist/
+*.bak
