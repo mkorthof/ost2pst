@@ -20,7 +20,7 @@ Needed something to convert a 5GB Outlook OST file to PST format. Turned out Asp
 
 ## Source
 
-[LoadAndConvertOSTFileCLI.java](Examples/src/main/java/LoadAndConvertOSTFileCLI.java)
+[LoadAndConvertOSTFileCLI.java](Examples/ost2pst/LoadAndConvertOSTFileCLI.java)
 
 ## Notes
 
