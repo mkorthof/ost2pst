@@ -43,7 +43,7 @@ public class PSTExtractMessages {
 		// Loop through all the messages in this folder
 		MessageInfoCollection messageInfoCollection = folderInfo.getContents();
 		for (int i = 0; i < messageInfoCollection.size(); i++) {
-			MessageInfo messageInfo = (MessageInfo) messageInfoCollection.get_Item(i);
+			MessageInfo messageInfo = messageInfoCollection.get_Item(i);
 			System.out.println("Saving message " + messageInfo.getSubject() + "....");
 			// Get the message in MapiMessage instance
 			MapiMessage message = pst.extractMessage(messageInfo);
@@ -62,7 +62,7 @@ public class PSTExtractMessages {
 		// Call this method recursively for each subfolder
 		if (folderInfo.hasSubFolders() == true) {
 			for (int i = 0; i < folderInfo.getSubFolders().size(); i++) {
-				FolderInfo subfolderInfo = (FolderInfo) folderInfo.getSubFolders().get_Item(i);
+				FolderInfo subfolderInfo = folderInfo.getSubFolders().get_Item(i);
 				extractMsgFiles(subfolderInfo, pst, strPSTFile);
 			}
 		}

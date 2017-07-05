@@ -1,5 +1,8 @@
 package com.aspose.email.examples.exchangeews;
 
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+
 import com.aspose.email.EWSClient;
 import com.aspose.email.ExchangeMessageInfo;
 import com.aspose.email.ExchangeMessageInfoCollection;
@@ -7,9 +10,6 @@ import com.aspose.email.IEWSClient;
 import com.aspose.email.MailMessage;
 import com.aspose.email.SaveOptions;
 import com.aspose.email.examples.Utils;
-
-import java.io.FileOutputStream;
-import java.io.OutputStream;
 
 public class SaveMessagesFromExchangeServerMailbox {
 

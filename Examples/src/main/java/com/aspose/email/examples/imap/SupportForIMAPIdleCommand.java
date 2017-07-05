@@ -19,6 +19,7 @@ public class SupportForIMAPIdleCommand {
 				final Semaphore semaphore = new Semaphore(1);
 				final ImapMonitoringEventArgs[] eventArgs = { null };
 				imapClient.startMonitoring(new ImapMonitoringEventHandler() {
+					@Override
 					public void invoke(Object sender, ImapMonitoringEventArgs e) {
 						eventArgs[0] = e;
 						semaphore.release();

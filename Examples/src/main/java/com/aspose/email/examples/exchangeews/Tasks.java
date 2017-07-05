@@ -3,7 +3,18 @@ package com.aspose.email.examples.exchangeews;
 import java.util.Arrays;
 import java.util.Calendar;
 
-import com.aspose.email.*;
+import com.aspose.email.DeleteTaskOptions;
+import com.aspose.email.EWSClient;
+import com.aspose.email.ExchangeMessageInfo;
+import com.aspose.email.ExchangeMessageInfoCollection;
+import com.aspose.email.ExchangeQueryBuilder;
+import com.aspose.email.ExchangeTask;
+import com.aspose.email.ExchangeTaskStatus;
+import com.aspose.email.IEWSClient;
+import com.aspose.email.MailAddress;
+import com.aspose.email.MailMessage;
+import com.aspose.email.MailQuery;
+import com.aspose.email.MsgLoadOptions;
 import com.aspose.email.examples.Utils;
 
 public class Tasks {
@@ -156,7 +167,7 @@ public class Tasks {
 		for (int status : values)
 		{
 			queryBuilder = new ExchangeQueryBuilder();
-			queryBuilder.getTaskStatus().notEquals((int)status);
+			queryBuilder.getTaskStatus().notEquals(status);
 			query = queryBuilder.getQuery();
 			messageInfoCol = client.listMessages(client.getMailboxInfo().getTasksUri(), query);
 		}

@@ -50,7 +50,7 @@ public class AddBulkMessagesWithImprovedPerformance {
 		PersonalStorage pst = PersonalStorage.create(dataDir + "PersonalStorage.pst", FileFormatVersion.Unicode);
 		FolderInfo folder = pst.getRootFolder().addSubFolder("myInbox");
 
-		folder.addMessages((IGenericEnumerable<MapiMessage>) new MapiMessageCollection(dataDir));
+		folder.addMessages(new MapiMessageCollection(dataDir));
 	}
 	
 	

@@ -25,7 +25,7 @@ public class ParsingOutlookMessageFiles {
 		//Loop through the recipients collection associated with the MapiMessage object
 		for (int i = 0; i < outlookMessageFile.getRecipients().size(); i++) {
 			//Set a reference to the MapiRecipient object
-			MapiRecipient rcp = (MapiRecipient) outlookMessageFile.getRecipients().get_Item(i);
+			MapiRecipient rcp = outlookMessageFile.getRecipients().get_Item(i);
 			//Display recipient email address
 			System.out.println("Email : " + rcp.getEmailAddress());
 			//Display recipient name

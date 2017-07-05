@@ -1,7 +1,6 @@
 package com.aspose.email.examples.email;
 
 import com.aspose.email.EmlLoadOptions;
-import com.aspose.email.EmlSaveOptions;
 import com.aspose.email.MailMessage;
 import com.aspose.email.SaveOptions;
 import com.aspose.email.examples.Utils;

@@ -18,37 +18,37 @@ public class SetAdditionalMAPIProperties {
 		//ExStart: SetAdditionalProperties
 		// PT_MV_FLOAT, PT_MV_R4, mv.float
 		MapiMessage msg = new MapiMessage();
-		IList values = (IList) new ArrayList();
+		IList values = new ArrayList();
 		values.addItem((float) 1);
 		values.addItem((float) 2);
 		msg.setProperty(new MapiProperty(0x23901004, values));
 
 		//PT_MV_DOUBLE, PT_MV_R8
-		values = (IList) new ArrayList();
+		values = new ArrayList();
 		values.addItem((double) 1);
 		values.addItem((double) 2);
 		msg.setProperty(new MapiProperty(0x23901005, values));
 
 		//PT_MV_APPTIME
-		values = (IList) new ArrayList();
+		values = new ArrayList();
 		values.addItem(30456.34);
 		values.addItem(40655.45);
 		msg.setProperty(new MapiProperty(0x23901007, values));
 
 		//PT_MV_I8, PT_MV_LONGLONG
-		values = (IList) new ArrayList();
+		values = new ArrayList();
 		values.addItem((long) 30456);
 		values.addItem((long) 40655);
 		msg.setProperty(new MapiProperty(0x23901014, values));
 
 		//PT_MV_SHORT, PT_MV_I2, mv.i2
-		values = (IList) new ArrayList();
+		values = new ArrayList();
 		values.addItem((short) 1);
 		values.addItem((short) 2);
 		msg.setProperty(new MapiProperty(0x23901002, values));
 
 		//PT_MV_BOOLEAN
-		values = (IList) new ArrayList();
+		values = new ArrayList();
 		values.addItem(true);
 		values.addItem(false);
 		msg.setProperty(new MapiProperty(0x2390100b, values));
@@ -57,8 +57,8 @@ public class SetAdditionalMAPIProperties {
 		msg.setProperty(new MapiProperty(0x67400001, new byte[1]));
 
 		//PT_MV_LONG
-		values = (IList) new ArrayList();
-		values.addItem((int) 4);
+		values = new ArrayList();
+		values.addItem(4);
 
 		UUID uuid = UUID.randomUUID();
 		MapiProperty property = new MapiProperty(msg.getNamedPropertyMapping().getNextAvailablePropertyId(MapiPropertyType.PT_MV_LONG), values);
@@ -68,8 +68,8 @@ public class SetAdditionalMAPIProperties {
 		//OR you can set the custom property (with the custom name)
 		MapiMessage message = new MapiMessage("sender@test.com", "recipient@test.com", "subj", "Body of test msg");
 
-		values = (IList) new ArrayList();
-		values.addItem((int) 4);
+		values = new ArrayList();
+		values.addItem(4);
 
 		property = new MapiProperty(message.getNamedPropertyMapping().getNextAvailablePropertyId(MapiPropertyType.PT_MV_LONG), values);
 
@@ -82,7 +82,7 @@ public class SetAdditionalMAPIProperties {
 		long floatTag = newMsg.getNamedPropertyMapping().getNextAvailablePropertyId(MapiPropertyType.PT_FLOAT);
 		UUID guid = UUID.randomUUID();
 		MapiProperty newMapiProperty = new MapiProperty(floatTag, BitConverter.getBytesSingle(floatValue));
-		newMsg.getNamedPropertyMapping().addNamedPropertyMapping(newMapiProperty,(long) 12, guid);
+		newMsg.getNamedPropertyMapping().addNamedPropertyMapping(newMapiProperty,12, guid);
 		newMsg.setProperty(newMapiProperty);
 
 		boolean propertyIsOk = false;

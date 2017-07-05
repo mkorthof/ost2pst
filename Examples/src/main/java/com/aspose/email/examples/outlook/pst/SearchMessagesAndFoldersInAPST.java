@@ -20,7 +20,7 @@ public class SearchMessagesAndFoldersInAPST {
 		PersonalStorageQueryBuilder builder = new PersonalStorageQueryBuilder();
 
 		// High importance messages
-		builder.getImportance().equals((int) MapiImportance.High);
+		builder.getImportance().equals(MapiImportance.High);
 		MessageInfoCollection messages = folder.getContents(builder.getQuery());
 		System.out.println("Messages with High Imp:" + messages.size());
 
@@ -31,7 +31,7 @@ public class SearchMessagesAndFoldersInAPST {
 
 		builder = new PersonalStorageQueryBuilder();
 		// Messages with attachments AND high importance
-		builder.getImportance().equals((int) MapiImportance.High);
+		builder.getImportance().equals(MapiImportance.High);
 		builder.hasFlags(MapiMessageFlags.MSGFLAG_HASATTACH);
 		messages = folder.getContents(builder.getQuery());
 		System.out.println("Messages with atts: " + messages.size());

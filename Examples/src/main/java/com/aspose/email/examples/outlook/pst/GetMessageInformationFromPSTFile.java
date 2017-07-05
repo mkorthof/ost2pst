@@ -28,7 +28,7 @@ public class GetMessageInformationFromPSTFile {
 		// display information about messages inside this folder
 		MessageInfoCollection messageInfoCollection = folderInfo.getContents();
 		for (int i = 0; i < messageInfoCollection.size(); i++) {
-			MessageInfo messageInfo = (MessageInfo) messageInfoCollection.get_Item(i);
+			MessageInfo messageInfo = messageInfoCollection.get_Item(i);
 			System.out.println("Subject: " + messageInfo.getSubject());
 			System.out.println("Sender: " + messageInfo.getSenderRepresentativeName());
 			System.out.println("To: " + messageInfo.getDisplayTo());
@@ -39,7 +39,7 @@ public class GetMessageInformationFromPSTFile {
 		// call this method recursively for each subfolder
 		if (folderInfo.hasSubFolders() == true) {
 			for (int i = 0; i < folderInfo.getSubFolders().size(); i++) {
-				FolderInfo subfolderInfo = (FolderInfo) folderInfo.getSubFolders().get_Item(i);
+				FolderInfo subfolderInfo = folderInfo.getSubFolders().get_Item(i);
 				displayFolderContents(subfolderInfo, pst);
 			}
 		}

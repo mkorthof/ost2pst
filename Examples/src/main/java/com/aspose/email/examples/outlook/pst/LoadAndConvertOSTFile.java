@@ -28,7 +28,7 @@ public class LoadAndConvertOSTFile {
 		// Loop over all the-sub folders
 		for (int i = 0; i < folderInfoCollection.size(); i++) {
 			// Display all the folders
-			FolderInfo folderInfo = (FolderInfo) folderInfoCollection.get_Item(i);
+			FolderInfo folderInfo = folderInfoCollection.get_Item(i);
 			System.out.println(folderInfo.getDisplayName());
 		}
 	}

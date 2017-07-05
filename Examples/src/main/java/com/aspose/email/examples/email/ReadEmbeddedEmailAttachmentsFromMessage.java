@@ -21,7 +21,7 @@ public class ReadEmbeddedEmailAttachmentsFromMessage {
 		System.out.println("Subject: " + message.getSubject());
 		System.out.println("Extracting attachments....");
 		for (int i = 0; i < message.getAttachments().size(); i++) {
-			Attachment att = (Attachment) message.getAttachments().get_Item(i);
+			Attachment att = message.getAttachments().get_Item(i);
 			System.out.println("Attachment Name: " + att.getName());
 
 			// Get the name of attachment. If msg subject contains characters like :, /, \ etc., replace with space

@@ -32,6 +32,7 @@ public class PerformMailMerge {
 
 		//register the GetSignment as a template routine, for we use it in the template.
 		engine.registerRoutine("GetSignature", new TemplateRoutine() {
+			@Override
 			public Object invoke(Object[] args) {
 				return getSignature(args);
 			}

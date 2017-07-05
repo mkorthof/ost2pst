@@ -13,6 +13,7 @@ public class MapiMessageCollection implements Iterable<MapiMessage> {
 		this.path = path;
 	}
 
+	@Override
 	public Iterator<MapiMessage> iterator() {
 		return new MapiMessageEnumerator(this.path);
 	}
@@ -26,6 +27,7 @@ public class MapiMessageCollection implements Iterable<MapiMessage> {
 			this.files = Directory.getFiles(path);
 		}
 
+		@Override
 		public boolean hasNext() {
 			position++;
 			return (position < this.files.length);
@@ -35,6 +37,7 @@ public class MapiMessageCollection implements Iterable<MapiMessage> {
 			position = -1;
 		}
 
+		@Override
 		public MapiMessage next() {
 			try {
 				return MapiMessage.fromFile(files[position]);
@@ -46,6 +49,7 @@ public class MapiMessageCollection implements Iterable<MapiMessage> {
 		public void dispose() {
 		}
 
+		@Override
 		public void remove() {
 			throw new UnsupportedOperationException();
 		}
@@ -96,6 +100,7 @@ class PatternFileFilter implements FilenameFilter {
 		_isFile = isFile;
 	}
 
+	@Override
 	public boolean accept(java.io.File dir, String name) {
 		String filePath = name;
 		java.io.File file = new java.io.File(filePath);

@@ -1,9 +1,15 @@
 package com.aspose.email.examples.exchangeews;
 
-import com.aspose.email.*;
-import com.aspose.email.system.NetworkCredential;
-
 import java.util.Arrays;
+
+import com.aspose.email.EWSClient;
+import com.aspose.email.ExchangeQueryBuilder;
+import com.aspose.email.ExchangeTask;
+import com.aspose.email.ExchangeTaskStatus;
+import com.aspose.email.IEWSClient;
+import com.aspose.email.MailQuery;
+import com.aspose.email.TaskCollection;
+import com.aspose.email.system.NetworkCredential;
 
 /**
  * Created by hp on 1/27/2017.

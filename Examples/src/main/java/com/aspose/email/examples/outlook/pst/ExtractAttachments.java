@@ -21,7 +21,7 @@ public class ExtractAttachments {
 				MapiAttachmentCollection attachments = pst.extractAttachments(entryId);
 
 				if (attachments.size() != 0) {
-					for (MapiAttachment attachment : (Iterable<MapiAttachment>) attachments) {
+					for (MapiAttachment attachment : attachments) {
 						attachment.save(attachment.getLongFileName());
 					}
 				}

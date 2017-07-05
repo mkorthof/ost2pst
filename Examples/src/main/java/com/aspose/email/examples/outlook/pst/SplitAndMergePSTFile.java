@@ -55,11 +55,13 @@ public class SplitAndMergePSTFile {
 		final PersonalStorage pst = PersonalStorage.fromFile(sourceFileName);
 		try {
 			pst.StorageProcessed.add(new StorageProcessedEventHandler() {
+				@Override
 				public void invoke(Object sender, StorageProcessedEventArgs e) {
 					pstSplit_OnStorageProcessed(sender, e);
 				}
 			});
 			pst.ItemMoved.add(new ItemMovedEventHandler() {
+				@Override
 				public void invoke(Object sender, ItemMovedEventArgs e) {
 					pstSplit_OnItemMoved(sender, e);
 				}
@@ -87,11 +89,13 @@ public class SplitAndMergePSTFile {
 		final PersonalStorage pst = PersonalStorage.fromFile(mergeIntoFolderPath + "source.pst");
 		try {
 			pst.StorageProcessed.add(new StorageProcessedEventHandler() {
+				@Override
 				public void invoke(Object sender, StorageProcessedEventArgs e) {
 					pstMerge_OnStorageProcessed(sender, e);
 				}
 			});
 			pst.ItemMoved.add(new ItemMovedEventHandler() {
+				@Override
 				public void invoke(Object sender, ItemMovedEventArgs e) {
 					pstMerge_OnItemMoved(sender, e);
 				}
@@ -138,6 +142,7 @@ public class SplitAndMergePSTFile {
 				FolderInfo sourceFolder = sourcePst.getPredefinedFolder(StandardIpmFolder.Inbox);
 
 				destFolder.ItemMoved.add(new ItemMovedEventHandler() {
+					@Override
 					public void invoke(Object sender, ItemMovedEventArgs e) {
 						destinationFolder_ItemMoved(sender, e);
 					}

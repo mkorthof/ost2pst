@@ -36,7 +36,7 @@ public class ReadOutlookPSTFile {
 		FolderInfoCollection folderInfoCollection = pst.getRootFolder().getSubFolders();
 		// Browse through each folder to display folder name and number of messages
 		for (int i = 0; i < folderInfoCollection.size(); i++) {
-			FolderInfo folderInfo = (FolderInfo) folderInfoCollection.get_Item(i);
+			FolderInfo folderInfo = folderInfoCollection.get_Item(i);
 			System.out.println("FolderId: " + folderInfo.getEntryIdString());
 			System.out.println("Folder: " + folderInfo.getDisplayName());
 			System.out.println("Total items: " + folderInfo.getContentCount());
@@ -62,7 +62,7 @@ public class ReadOutlookPSTFile {
 	public static void retrieParentFolderInformationFromMessageInfo(String dataDir) {
 		final PersonalStorage[] pst = { PersonalStorage.fromFile(dataDir + "PersonalStorage.pst") };
 		try {
-			for (FolderInfo folder : (Iterable<FolderInfo>) pst[0].getRootFolder().getSubFolders()) {
+			for (FolderInfo folder : pst[0].getRootFolder().getSubFolders()) {
 				for (MessageInfo msg : (Iterable<MessageInfo>) folder.enumerateMessages()) {
 					FolderInfo fi = pst[0].getParentFolder(msg.getEntryId());
 				}

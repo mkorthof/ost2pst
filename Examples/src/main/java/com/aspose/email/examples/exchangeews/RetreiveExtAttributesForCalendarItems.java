@@ -1,9 +1,15 @@
 package com.aspose.email.examples.exchangeews;
 
-import com.aspose.email.*;
-import com.aspose.email.system.collections.generic.IGenericList;
-
 import java.util.UUID;
+
+import com.aspose.email.EWSClient;
+import com.aspose.email.IEWSClient;
+import com.aspose.email.MapiCalendar;
+import com.aspose.email.MapiNamedProperty;
+import com.aspose.email.PidNamePropertyDescriptor;
+import com.aspose.email.PropertyDataType;
+import com.aspose.email.PropertyDescriptor;
+import com.aspose.email.system.collections.generic.IGenericList;
 
 /**
  * Created by hp on 2/20/2017.

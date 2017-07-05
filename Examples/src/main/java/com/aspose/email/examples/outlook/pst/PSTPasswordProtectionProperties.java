@@ -58,7 +58,7 @@ public class PSTPasswordProtectionProperties {
 		PersonalStorage pst = PersonalStorage.fromFile(dataDir + "PersonalStorage.pst");
 
 		if (pst.getStore().getProperties().containsKey(MapiPropertyTag.PR_PST_PASSWORD)) {
-			MapiProperty property = new MapiProperty(MapiPropertyTag.PR_PST_PASSWORD, getBytes((int) 0));
+			MapiProperty property = new MapiProperty(MapiPropertyTag.PR_PST_PASSWORD, getBytes(0));
 			pst.getStore().setProperty(property);
 		}
 	}

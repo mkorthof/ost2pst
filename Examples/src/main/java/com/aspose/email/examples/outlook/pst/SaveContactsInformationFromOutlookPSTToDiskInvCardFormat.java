@@ -22,7 +22,7 @@ public class SaveContactsInformationFromOutlookPSTToDiskInvCardFormat {
 		// Loop through all the contacts in this folder
 		MessageInfoCollection messageInfoCollection = folderInfo.getContents();
 		for (int i = 0; i < messageInfoCollection.size(); i++) {
-			MessageInfo messageInfo = (MessageInfo) messageInfoCollection.get_Item(i);
+			MessageInfo messageInfo = messageInfoCollection.get_Item(i);
 			// Get the contact information
 			MapiContact contact = (MapiContact) pst.extractMessage(messageInfo).toMapiMessageItem();
 			// Display some contents on screen

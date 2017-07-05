@@ -1,6 +1,17 @@
 package com.aspose.email.examples.exchangeews;
 
-import com.aspose.email.*;
+import com.aspose.email.AssociatedPerson;
+import com.aspose.email.AssociatedPersonCategory;
+import com.aspose.email.Contact;
+import com.aspose.email.EWSClient;
+import com.aspose.email.EmailAddress;
+import com.aspose.email.EmailAddressCategory;
+import com.aspose.email.Gender;
+import com.aspose.email.IEWSClient;
+import com.aspose.email.PhoneNumber;
+import com.aspose.email.PhoneNumberCategory;
+import com.aspose.email.Url;
+import com.aspose.email.UrlCategory;
 import com.aspose.email.system.NetworkCredential;
 import com.aspose.email.system.exceptions.Exception;
 
@@ -67,7 +78,8 @@ public class AddContactsInformation {
 		EmailAddress address = new EmailAddress();
 		address.setAddress("Frank.Lin@Abc.com");
 		address.setDisplayName("Frank Lin");
-		address.setCategory(EmailAddressCategory.getCustom().getEmail1());
+		EmailAddressCategory.getCustom();
+		address.setCategory(EmailAddressCategory.getEmail1());
 
 		try
 		{

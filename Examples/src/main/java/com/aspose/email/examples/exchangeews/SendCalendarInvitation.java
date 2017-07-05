@@ -1,6 +1,12 @@
 package com.aspose.email.examples.exchangeews;
 
-import com.aspose.email.*;
+import com.aspose.email.EWSClient;
+import com.aspose.email.ExchangeDelegateFolderPermissionLevel;
+import com.aspose.email.ExchangeDelegateUser;
+import com.aspose.email.IEWSClient;
+import com.aspose.email.MailConversionOptions;
+import com.aspose.email.MailMessage;
+import com.aspose.email.MapiMessage;
 
 public class SendCalendarInvitation {
     public  static  void main(String[] args)

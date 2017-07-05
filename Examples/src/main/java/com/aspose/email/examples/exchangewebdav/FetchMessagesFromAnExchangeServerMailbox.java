@@ -1,6 +1,10 @@
 package com.aspose.email.examples.exchangewebdav;
 
-import com.aspose.email.*;
+import com.aspose.email.Attachment;
+import com.aspose.email.ExchangeClient;
+import com.aspose.email.ExchangeMessageInfo;
+import com.aspose.email.ExchangeMessageInfoCollection;
+import com.aspose.email.MailMessage;
 
 public class FetchMessagesFromAnExchangeServerMailbox {
     public static void main(String[] args) {

@@ -45,12 +45,12 @@ public class CalendarItems {
 		appointment.setBody("This is a very important meeting");
 
 		Date startDate = null;
-		Calendar cal = GregorianCalendar.getInstance();
+		Calendar cal = Calendar.getInstance();
 		cal.set(2016, 10, 2);
 		startDate = cal.getTime();
 
 		Date endDate = null;
-		cal = GregorianCalendar.getInstance();
+		cal = Calendar.getInstance();
 		cal.set(2016, 10, 3);
 		endDate = cal.getTime();
 

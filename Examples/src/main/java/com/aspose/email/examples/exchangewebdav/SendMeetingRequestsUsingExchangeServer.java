@@ -1,10 +1,15 @@
 package com.aspose.email.examples.exchangewebdav;
 
-import com.aspose.email.*;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import com.aspose.email.Appointment;
+import com.aspose.email.ExchangeClient;
+import com.aspose.email.ExchangeException;
+import com.aspose.email.MailAddress;
+import com.aspose.email.MailAddressCollection;
+import com.aspose.email.MailMessage;
 
 public class SendMeetingRequestsUsingExchangeServer {
     public static void main(String[] args) throws ParseException {

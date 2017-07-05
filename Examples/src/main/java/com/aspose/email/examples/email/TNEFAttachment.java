@@ -3,7 +3,11 @@ package com.aspose.email.examples.email;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-import com.aspose.email.*;
+import com.aspose.email.Attachment;
+import com.aspose.email.MailConversionOptions;
+import com.aspose.email.MailMessage;
+import com.aspose.email.MapiMessage;
+import com.aspose.email.MsgLoadOptions;
 import com.aspose.email.examples.Utils;
 
 public class TNEFAttachment {

@@ -1,6 +1,9 @@
 package com.aspose.email.examples.email;
 
-import com.aspose.email.*;
+import com.aspose.email.MailMessage;
+import com.aspose.email.MhtFormatOptions;
+import com.aspose.email.MhtSaveOptions;
+import com.aspose.email.MhtTemplateName;
 import com.aspose.email.examples.Utils;
 
 /**

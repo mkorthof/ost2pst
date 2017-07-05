@@ -1,11 +1,15 @@
 package com.aspose.email.examples.exchangewebdav;
 
-import com.aspose.email.*;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
+
+import com.aspose.email.ExchangeClient;
+import com.aspose.email.ExchangeMessageInfoCollection;
+import com.aspose.email.ExchangeQueryBuilder;
+import com.aspose.email.MailQuery;
+import com.aspose.email.MailQueryBuilder;
 
 public class FilterMessagesFromExchangeMailbox {
 

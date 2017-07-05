@@ -1,6 +1,10 @@
 package com.aspose.email.examples.smtp;
 
-import com.aspose.email.*;
+import com.aspose.email.MailAddress;
+import com.aspose.email.MailAddressCollection;
+import com.aspose.email.MailMessage;
+import com.aspose.email.MsgLoadOptions;
+import com.aspose.email.SmtpClient;
 import com.aspose.email.examples.Utils;
 
 public class SendTasksRequests {

@@ -1,6 +1,11 @@
 package com.aspose.email.examples.outlook.msg;
 
-import com.aspose.email.*;
+import com.aspose.email.MailAddress;
+import com.aspose.email.MailAddressCollection;
+import com.aspose.email.MailConversionOptions;
+import com.aspose.email.MailMessage;
+import com.aspose.email.MapiConversionOptions;
+import com.aspose.email.MapiMessage;
 import com.aspose.email.examples.Utils;
 
 public class CreateAndSaveOutlookMessageFile {

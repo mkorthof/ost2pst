@@ -1,8 +1,14 @@
 package com.aspose.email.examples.exchangeews;
 
-import com.aspose.email.*;
-
 import java.util.Arrays;
+
+import com.aspose.email.EWSClient;
+import com.aspose.email.ExchangeMessageInfoCollection;
+import com.aspose.email.ExchangeQueryBuilder;
+import com.aspose.email.ExchangeTask;
+import com.aspose.email.ExchangeTaskStatus;
+import com.aspose.email.IEWSClient;
+import com.aspose.email.MailQuery;
 
 /**
  * Created by hp on 1/27/2017.
@@ -47,7 +53,7 @@ public class FilterTasksFromExchangeServerUsingEWS {
         for (int status : values)
         {
             queryBuilder = new ExchangeQueryBuilder();
-            queryBuilder.getTaskStatus().notEquals((int)status);
+            queryBuilder.getTaskStatus().notEquals(status);
             query = queryBuilder.getQuery();
             messageInfoCol = client.listMessages(client.getMailboxInfo().getTasksUri(), query);
         }

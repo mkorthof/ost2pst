@@ -66,14 +66,14 @@ public class UpdateMessagePropertiesInPSTFile {
 			MapiProperty property = new MapiProperty(MapiPropertyTag.PR_ORG_EMAIL_ADDR_W, "test_address@org.com".getBytes("UTF-8"));
 
 			// Custom named property
-			MapiProperty namedProperty1 = new MapiNamedProperty(generateNamedPropertyTag((long) 0, MapiPropertyType.PT_LONG), 
+			MapiProperty namedProperty1 = new MapiNamedProperty(generateNamedPropertyTag(0, MapiPropertyType.PT_LONG), 
 																	"ITEM_ID", 
 																	UUID.randomUUID(), 
 																	new byte[] { 123, 0, 0, 0 });
 
 			// PidLidLogFlags named property
-			MapiProperty namedProperty2 = new MapiNamedProperty(generateNamedPropertyTag((long) 1, MapiPropertyType.PT_LONG), 
-																(long) 0x0000870C,
+			MapiProperty namedProperty2 = new MapiNamedProperty(generateNamedPropertyTag(1, MapiPropertyType.PT_LONG), 
+																0x0000870C,
 																UUID.fromString("0006200A-0000-0000-C000-000000000046"), 
 																new byte[] { 0, 0, 0, 0 });
 
@@ -88,6 +88,6 @@ public class UpdateMessagePropertiesInPSTFile {
 	}
 
 	private static long generateNamedPropertyTag(long index, /* MapiPropertyType */int dataType) {
-		return (((0x8000 | index) << 16) | (long) dataType) & 0x00000000FFFFFFFFL;
+		return (((0x8000 | index) << 16) | dataType) & 0x00000000FFFFFFFFL;
 	}
 }

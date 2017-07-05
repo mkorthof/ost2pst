@@ -1,9 +1,13 @@
 package com.aspose.email.examples.exchangeews;
 
-import com.aspose.email.*;
-
 import java.util.Calendar;
 import java.util.UUID;
+
+import com.aspose.email.Appointment;
+import com.aspose.email.EWSClient;
+import com.aspose.email.IEWSClient;
+import com.aspose.email.MailAddress;
+import com.aspose.email.MailAddressCollection;
 
 public class CreatingUpdatingAndDeletingCalendarItemsUsingEWS {
     public static void main(String[] args)

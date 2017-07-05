@@ -1,10 +1,14 @@
 package com.aspose.email.examples.exchangewebdav;
 
-import com.aspose.email.*;
-import com.aspose.email.examples.Utils;
-
 import java.io.FileOutputStream;
 import java.io.OutputStream;
+
+import com.aspose.email.ExchangeClient;
+import com.aspose.email.ExchangeMessageInfo;
+import com.aspose.email.ExchangeMessageInfoCollection;
+import com.aspose.email.MailMessage;
+import com.aspose.email.SaveOptions;
+import com.aspose.email.examples.Utils;
 
 public class SaveMessagesFromExchangeServerMailbox {
     // The path to the resource directory.

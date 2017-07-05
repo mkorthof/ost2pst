@@ -25,7 +25,7 @@ public class ParseAndSaveAttachment {
 		//Loop through the attachments collection associated with the MapiMessage object
 		for (int i = 0; i < outlookMessageFile.getAttachments().size(); i++) {
 			//Set a reference to the MapiAttachment object
-			MapiAttachment outlookMessageAttachment = (MapiAttachment) outlookMessageFile.getAttachments().get_Item(i);
+			MapiAttachment outlookMessageAttachment = outlookMessageFile.getAttachments().get_Item(i);
 			//Display attachment type
 			System.out.println("Att Type : " + outlookMessageAttachment.getMimeTag());
 			//Display attached file name

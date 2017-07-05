@@ -30,7 +30,7 @@ public class GetExchangeMessageInfoFromMessageURI {
 			}
 
 			ExchangeMessageInfoCollection messageInfoCol = client.listMessages(ids);
-			for (ExchangeMessageInfo messageInfo : (Iterable<ExchangeMessageInfo>) messageInfoCol) {
+			for (ExchangeMessageInfo messageInfo : messageInfoCol) {
 				// Do something ...
 			}
 		} finally {

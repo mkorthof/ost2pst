@@ -1,6 +1,5 @@
 package com.aspose.email.examples.smtp;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 

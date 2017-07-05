@@ -21,7 +21,7 @@ public class ExtractAttachments {
 		//Iterate over the AttachmentCollection
 		for (int index = 0; index < attachments.size(); index++) {
 			//Initialize Attachment object and Get the indexed Attachment reference
-			Attachment attachment = (Attachment) attachments.get_Item(index);
+			Attachment attachment = attachments.get_Item(index);
 			//Display Attachment Name
 			System.out.println(attachment.getName());
 			//Save Attachment to disk

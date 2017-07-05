@@ -1,6 +1,8 @@
 package com.aspose.email.examples.exchangewebdav;
 
-import com.aspose.email.*;
+import com.aspose.email.ExchangeClient;
+import com.aspose.email.ExchangeMessageInfo;
+import com.aspose.email.ExchangeMessageInfoCollection;
 
 public class ListMessages {
     public static void main(String[] args) {

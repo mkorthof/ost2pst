@@ -1,18 +1,11 @@
 package com.aspose.email.examples.outlook.msg;
 
-import java.util.UUID;
-
 import com.aspose.email.BodyContentType;
 import com.aspose.email.MapiMessage;
-import com.aspose.email.MapiNamedProperty;
 import com.aspose.email.MapiProperty;
 import com.aspose.email.MapiPropertyCollection;
 import com.aspose.email.MapiPropertyTag;
-import com.aspose.email.MapiPropertyType;
 import com.aspose.email.examples.Utils;
-import com.aspose.email.system.BitConverter;
-import com.aspose.email.system.collections.ArrayList;
-import com.aspose.email.system.collections.IList;
 
 public class SetAndAccessOutlookMAPIProperties {
 
@@ -34,12 +27,12 @@ public class SetAndAccessOutlookMAPIProperties {
 		MapiPropertyCollection coll = outlookMessageFile.getProperties();
 
 		//Access the MapiPropertyTag.PR_SUBJECT property
-		MapiProperty prop = (MapiProperty) coll.get_Item(MapiPropertyTag.PR_SUBJECT);
+		MapiProperty prop = coll.get_Item(MapiPropertyTag.PR_SUBJECT);
 
 		//If the MapiProperty is not found, check the MapiProperty.PR_SUBJECT_W
 		//which is a unicode peer of MapiPropertyTag.PR_SUBJECT
 		if (prop == null) {
-			prop = (MapiProperty) coll.get_Item(MapiPropertyTag.PR_SUBJECT_W);
+			prop = coll.get_Item(MapiPropertyTag.PR_SUBJECT_W);
 		}
 
 		//If it cannot be found
@@ -52,7 +45,7 @@ public class SetAndAccessOutlookMAPIProperties {
 		}
 
 		//Read internet code page property
-		prop = (MapiProperty) coll.get_Item(MapiPropertyTag.PR_INTERNET_CPID);
+		prop = coll.get_Item(MapiPropertyTag.PR_INTERNET_CPID);
 		if (prop != null) {
 			System.out.println("Code page: " + prop.getLong());
 		}

@@ -29,7 +29,7 @@ public class DeleteMessagesFromPST {
 		FolderInfo folderInfo = pst.getPredefinedFolder(StandardIpmFolder.Contacts);
 		MessageInfoCollection messageInfoCollection = folderInfo.getContents();
 		for (int i = 0; i < messageInfoCollection.size(); i++) {
-			MessageInfo messageInfo = (MessageInfo) messageInfoCollection.get_Item(i);
+			MessageInfo messageInfo = messageInfoCollection.get_Item(i);
 			System.out.println("Deleting " + messageInfo.getSubject() + ".....\n");
 			if (messageInfo.getSubject().contains("Sebastian")) { //== "some delete condition")
 				// Delete this item

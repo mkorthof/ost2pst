@@ -1,9 +1,10 @@
+// import com.aspose.email.examples.Utils;
+import java.io.File;
+
 import com.aspose.email.FileFormat;
 import com.aspose.email.FolderInfo;
 import com.aspose.email.FolderInfoCollection;
 import com.aspose.email.PersonalStorage;
-// import com.aspose.email.examples.Utils;
-import java.io.File;
 
 public class LoadAndConvertOSTFileCLI {
 
@@ -52,7 +53,7 @@ public class LoadAndConvertOSTFileCLI {
 		// Loop over all the-sub folders
 		for (int i = 0; i < folderInfoCollection.size(); i++) {
 			// Display all the folders
-			FolderInfo folderInfo = (FolderInfo) folderInfoCollection.get_Item(i);
+			FolderInfo folderInfo = folderInfoCollection.get_Item(i);
 			System.out.println("INFO: Folder " + i + " " + folderInfo.getDisplayName());
 		}
 	}

@@ -2,7 +2,6 @@ package com.aspose.email.examples.email;
 
 import com.aspose.email.Attachment;
 import com.aspose.email.MailMessage;
-import com.aspose.email.SaveOptions;
 import com.aspose.email.examples.Utils;
 
 /*
