@@ -5,15 +5,16 @@ Had not touched Java for 10 years but got things sorted within a few hours thank
 
 ## Download 
 
-Jar and batch wrapper:
-* [ost2pst.jar](ost2pst.jar)
-* [ost2pst.bat](ost2pst.bat)
+Jar and wrappers:
+* [ost2pst.jar](ost2pst.jar) Main executable
+* [ost2pst.bat](ost2pst.bat) Windows batch file
+* [ost2pst.bat](ost2pst.sh) Linux shell script
 * [SHA512SUMS](SHA512SUMS)
 * [JRE8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
 
 Usage: 
-* ```ost2pst.bat <input.ost> <output.pst>```
-* or run the jar directly with ```java -jar ost2pst.jar```
+* ```ost2pst.sh <input.ost> <output.pst>```
+* same for .bat, or run the jar directly with ```java -jar ost2pst.jar```
 * currently the jar needs JRE8 but I might try to lower that requirement.
 
 ## Source
