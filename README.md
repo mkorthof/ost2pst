@@ -6,9 +6,9 @@ Had not touched Java for 10 years but got things sorted within a few hours thank
 ## Download 
 
 Jar and wrappers:
-* [ost2pst.jar](ost2pst.jar) Main executable
-* [ost2pst.bat](ost2pst.bat) Windows batch file
-* [ost2pst.bat](ost2pst.sh) Linux shell script
+* Main executable [ost2pst.jar](ost2pst.jar) 
+* Windows batch file [ost2pst.bat](ost2pst.bat) 
+* Linux shell script [ost2pst.bat](ost2pst.sh) 
 * [SHA512SUMS](SHA512SUMS)
 * [JRE8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
 
