@@ -3,7 +3,7 @@
 Needed something to convert a 5gb ost file to pst. Turned out Aspose has a good (commercial) API/library for Java to do exactly that.
 Had not touched Java for 10 years but got things sorted within a few hours thanks to clear instructions and good examples and docs. I just used the example and made minimal changes, nothing more.
 
-## Download:
+## Download
 
 ### Jar and wrappers:
 
@@ -28,6 +28,8 @@ Had not touched Java for 10 years but got things sorted within a few hours thank
 * To create runnable jar in eclipse: Export > Runnable JAR file
 * What lead me to Aspose: http://wiki.opf-labs.org/pages/viewpage.action?pageId=25887031
 * Possible  alternative https://github.com/rjohnsondev/java-libpst
+
+---
 
 # Aspose.Email for Java
 
