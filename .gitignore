@@ -1,6 +1,8 @@
 # Eclipse project files
 .classpath
 .project
+.project-filter
+.project-orig
 .settings/
 test-output/
 
