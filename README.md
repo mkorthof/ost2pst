@@ -8,7 +8,7 @@ Needed something to convert a 5GB Outlook OST file to PST format. Turned out Asp
 
 * Main executable: [ost2pst.jar](ost2pst.jar) 
 * Windows batch file: [ost2pst.bat](ost2pst.bat) 
-* Linux shell script: [ost2pst.bat](ost2pst.sh) 
+* Linux shell script: [ost2pst.sh](ost2pst.sh) 
 * [SHA512SUMS](SHA512SUMS)
 * [JRE8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
 
