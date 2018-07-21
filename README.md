@@ -30,3 +30,6 @@ Needed something to convert a 5GB Outlook OST file to PST format. Turned out Asp
 * Aspose.Email for Java API/lib:
   * https://github.com/asposeemail/Aspose_Email_Java
   * [Aspose.Email-for-Java/README.md](Aspose.Email-for-Java/README.md)
+  
+> moved from old repo mkorthof/Aspose.Email-for-Java
+
