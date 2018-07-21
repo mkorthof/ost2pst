@@ -1,6 +1,0 @@
-setup.py
-aspose_email_java_for_jython.egg-info/PKG-INFO
-aspose_email_java_for_jython.egg-info/SOURCES.txt
-aspose_email_java_for_jython.egg-info/dependency_links.txt
-aspose_email_java_for_jython.egg-info/top_level.txt
-asposeemail/__init__.py

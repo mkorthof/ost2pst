@@ -38,4 +38,6 @@ Out/
 Data/*Out*
 *_out.*
 /dist/
+*.class
 *.bak
+VERSION

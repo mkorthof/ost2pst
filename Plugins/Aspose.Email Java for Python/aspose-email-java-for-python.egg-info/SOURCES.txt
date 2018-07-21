@@ -1,7 +1,0 @@
-setup.py
-ProgrammingEmail/__init__.py
-ProgrammingOutlook/__init__.py
-aspose_email_java_for_python.egg-info/PKG-INFO
-aspose_email_java_for_python.egg-info/SOURCES.txt
-aspose_email_java_for_python.egg-info/dependency_links.txt
-aspose_email_java_for_python.egg-info/top_level.txt
