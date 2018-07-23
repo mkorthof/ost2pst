@@ -1,31 +1,22 @@
+package com.ost2pst;
 import com.aspose.email.FileFormat;
 import com.aspose.email.FolderInfo;
 import com.aspose.email.FolderInfoCollection;
 import com.aspose.email.PersonalStorage;
 //import com.aspose.email.examples.Utils;
 import java.io.File;
-import java.io.IOException;
-import java.util.Scanner;
 
 public class LoadAndConvertOSTFileCLI {
-
-  	public static void main(String[] args) {
-		LoadAndConvertOSTFileCLI l = new LoadAndConvertOSTFileCLI();
-/*
-		Class <? extends LoadAndConvertOSTFileCLI> c = t.getClass();
-		String className = c.getName();
-		String gitVer = System.getenv("GIT_VER");
-*/
-		//String gitVer = "";
-		String gitVer = "";
-		try { gitVer = l.readFile("VERSION");	} catch (IOException e) { e.printStackTrace(); }
-		System.out.println("\nOST2PST (git-" + gitVer + ")\n");
+	
+	public static void main(String[] args) {
+		
+		System.out.println("\nOST2PST (" + Version.VERSION + ")\n");
 		String inputFile = "";
 		String outputFile = "";
 		boolean debug = false;
 		if (args.length == 0) {
 			System.out.println("Usage: ost2pst.jar <input.ost> <output.pst>"); System.exit(0);
-		} else {
+		} else 
 			try { inputFile = args[0]; } catch(Exception e) {
 				System.out.println("ERROR: missing input file");
 				System.out.println("Usage: ost2pst.jar <input.ost> <output.pst>"); System.exit(2);
@@ -50,7 +41,6 @@ public class LoadAndConvertOSTFileCLI {
 		
 		//Converting OST to PST
 		convertOSTToPST(inputFile, outputFile);
-		}
 	}
 
 	public static void readAnOSTFile(String inputFile) {
@@ -94,23 +84,5 @@ public class LoadAndConvertOSTFileCLI {
 	    int exp = (int) (Math.log(bytes) / Math.log(unit));
 	    String pre = (si ? "kMGTPE" : "KMGTPE").charAt(exp-1) + (si ? "" : "i");
 	    return String.format("%.1f %sB", bytes / Math.pow(unit, exp), pre);
-	}
-
-	private String readFile(String pathname) throws IOException {
-
-    	File file = new File(pathname);
-    	StringBuilder fileContents = new StringBuilder((int)file.length());
-    	Scanner scanner = new Scanner(file);
-    	//String lineSeparator = System.getProperty("line.separator");
-	
-    	try {
-    	    while(scanner.hasNextLine()) {
-    	        //fileContents.append(scanner.nextLine() + lineSeparator);
-    	        fileContents.append(scanner.nextLine());
-    		}
-		return fileContents.toString();
-    	} finally {
-			scanner.close();
-    	}
-	}  
+	}	  
 }
