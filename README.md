@@ -39,8 +39,8 @@ INFO: Converting input.ost to output.pst - 1225MB/4731MB (26%)
 
 * Import into [Eclipse](https://www.eclipse.org):
     * [pom.xml](pom.xml)
-    * [Loast2pstLoadAndConvertOSTFileCLI.java](src/ost2pst/src/main/java/com/LoadAndConvertOSTFileCLI.java)
- 
+    * [Loast2pstLoadAndConvertOSTFileCLI.java](src/main/java/com/ost2pst/LoadAndConvertOSTFileCLI.java)
+
 * Required: Aspose.Email for Java API (lib)
     * [Aspose Email-for-Java/README.md](Aspose.Email-for-Java/README.md)
     * [GitHub Aspose_Email_Java](https://github.com/asposeemail/Aspose_Email_Java)
