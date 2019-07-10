@@ -16,7 +16,7 @@ Needed something to convert a 5GB Outlook OST file to PST format. Turned out Asp
 ```ost2pst.bat <input.ost> <output.pst>```
 * same for .sh, or run the jar directly with ```java -jar ost2pst.jar```
 * the jar needs JRE8 
-* Outlook 2013/2016 OST files are not supported
+* **Outlook 2013/2016 OST files are not supported**
 
 ### Example:
 
