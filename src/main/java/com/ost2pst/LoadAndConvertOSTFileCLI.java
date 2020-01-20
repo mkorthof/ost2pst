@@ -14,43 +14,55 @@ public class LoadAndConvertOSTFileCLI {
 	}
 	
 	public static void main(String[] args) {		
-		// Print version from pom.xml
-		System.out.println("\nOST2PST (" + Version.VERSION + ")\n");
 		String inputFile = "";
 		String outputFile = "";
 		boolean debug = false;
+		// Print version from pom.xml
+		String sVer = String.format("\nOST2PST (%s)\n", Version.VERSION); 
+		System.out.println(sVer);
 		// Handle arguments
 		if (args.length == 0) {
 			showUsage(0);
 		} else {
 			try { inputFile = args[0]; } catch(Exception e) {
-				System.out.println("ERROR: missing input file"); showUsage(2);
+				System.out.println("ERROR: no input file specified");
+				showUsage(2);
 			}
 			try { outputFile = args[1]; } catch(Exception e) {
-				System.out.println("ERROR: missing output file"); showUsage(2);
+				System.out.println("ERROR: nooutput file specified");
+				showUsage(2);
 			}
- 			if (debug) { System.out.println("DEBUG: args.length " + args.length + "args[0] " + args[0] + " args[1] " + args[1]); }
+ 			if (debug) {
+ 				System.out.println("DEBUG: args.length=" + args.length + " args[0]=" + args[0] + " args[1]=" + args[1]);
+ 			}
 		}
 		File fIn = new File(inputFile);	
 		File fOut = new File(outputFile);
-		if (debug) { System.out.println("DEBUG: inputfile exists " + fIn.exists() + " inputfile isFile " + fIn.isFile()); }
+		if (debug) {
+			System.out.println("DEBUG: fIn.exists=" + fIn.exists() + " fIn.isFile=" + fIn.isFile());
+		}
 		// Check if input and output file exist
 		if ( !(fIn.exists() && fIn.isFile()) ) {
-			System.out.println("ERROR: input file " + inputFile + " does not exist"); System.exit(2);
+			String sInErr = String.format("ERROR: input file \"%s\" does not exist", inputFile);
+			System.out.println(sInErr);
+			System.exit(2);
 		}
 		if ( fOut.exists() || fOut.isFile() ) {
-			System.out.println("ERROR: output file " + outputFile + " already exists"); System.exit(2);
-		}		
+			String sOutErr = String.format("ERROR: output file \"%s\" already exists", outputFile);
+			System.out.println(sOutErr);
+			System.exit(2);
+		}
 		//Read an OST file
-		readAnOSTFile(inputFile);
+		readAnOSTFile(debug, inputFile);
 		//Converting OST to PST
-		convertOSTToPST(inputFile, outputFile);
+		convertOSTToPST(debug, inputFile, outputFile);
 	}
 
-	public static void readAnOSTFile(String inputFile) {
+	public static void readAnOSTFile(final boolean debug, String inputFile) {
 		// Load the Outlook PST file
-		File f = new File(inputFile);
-		System.out.println("INFO: Loading OST file " + inputFile + " (" + humanReadableByteCount(f.length(), true) + ")");
+		File fIn = new File(inputFile);
+		String sLoad = String.format("INFO: Loading OST file \"%s\" (%s)", inputFile, humanReadableByteCount(fIn.length(), true));
+		System.out.println(sLoad);
 		PersonalStorage pst = PersonalStorage.fromFile(inputFile);
 		// Get sub-folders of Root
 		FolderInfoCollection folderInfoCollection = pst.getRootFolder().getSubFolders();
@@ -58,11 +70,12 @@ public class LoadAndConvertOSTFileCLI {
 		for (int i = 0; i < folderInfoCollection.size(); i++) {
 			// Display all the folders
 			FolderInfo folderInfo = folderInfoCollection.get_Item(i);
-			System.out.println("INFO: Folder " + i + " " + folderInfo.getDisplayName());
+			System.out.printf("%5s Folder [%02d] \"%s\"\n", " ", i, folderInfo.getDisplayName());
 		}
+		System.out.println("");
 	}
 				
-	public static void convertOSTToPST(final String inputFile, final String outputFile) {
+	public static void convertOSTToPST(final boolean debug, final String inputFile, final String outputFile) {
 		// Prepare task to convert and save
         Runnable r = new Runnable() {
             public void run() {
@@ -74,13 +87,26 @@ public class LoadAndConvertOSTFileCLI {
         new Thread(r).start();
 		File fIn = new File(inputFile);
 		File fOut = new File(outputFile);
+		
 		// Show progress
+		String spin = ".oO@";  //"-\\|/"
+		int i = 0;
+		System.out.printf("INFO: Converting \"%s\" to \"%s\"\n", inputFile, outputFile);
 		while (fIn.length() > fOut.length()) {
-			String l = String.format("INFO: Converting %s to %s - %sMB/%sMB (%.0f%%)", inputFile, outputFile,
-					(int)(fOut.length() / 1024 / 1024), (int)(fIn.length() / 1024 / 1024),
-					(double)(100.0 * fOut.length() / fIn.length()) );
-            String s = String.format("%" + (80 - l.length()) + "s", " ");
-			System.out.print(l + s + "\r");
+			if (debug) {
+				System.out.println("DEBUG: fIn.length=" + fIn.length() + " fOut.length=" + fOut.length());
+			}
+			String sConv = String.format("%5s %dMB/%dMB (%d%%) %s", " ",
+				(int)(fOut.length() / 1024 / 1024),
+				(int)(fIn.length() / 1024 / 1024),
+				(int)Math.round((100.0 * fOut.length() / fIn.length())),
+				spin.charAt(i % 4));
+			int sLen = (int)(80 - sConv.length());
+			if (sLen != 0) {
+				String sPad = String.format("%" + sLen + "s", " ");
+				System.out.print(sConv + sPad + "\r");
+			}
+            i++;         
 		}
 		System.out.println("");
 	}
