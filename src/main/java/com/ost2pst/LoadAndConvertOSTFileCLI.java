@@ -1,4 +1,6 @@
 package com.ost2pst;
+
+/* https://github.com/aspose-email/Aspose.Email-for-Java */
 import com.aspose.email.FileFormat;
 import com.aspose.email.FolderInfo;
 import com.aspose.email.FolderInfoCollection;
@@ -40,10 +42,15 @@ public class LoadAndConvertOSTFileCLI {
 		File fOut = new File(outputFile);
 		if (debug) {
 			System.out.println("DEBUG: fIn.exists=" + fIn.exists() + " fIn.isFile=" + fIn.isFile());
-		}
+		}	
 		// Check if input and output file exist
 		if ( !(fIn.exists() && fIn.isFile()) ) {
 			String sInErr = String.format("ERROR: input file \"%s\" does not exist", inputFile);
+			System.out.println(sInErr);
+			System.exit(2);
+		}
+		if (fIn.length() == 0) {
+			String sInErr = String.format("ERROR: input file \"%s\" is empty", inputFile);
 			System.out.println(sInErr);
 			System.exit(2);
 		}
@@ -61,11 +68,16 @@ public class LoadAndConvertOSTFileCLI {
 	public static void readAnOSTFile(final boolean debug, String inputFile) {
 		// Load the Outlook PST file
 		File fIn = new File(inputFile);
+		PersonalStorage pst = null;
+		FolderInfoCollection folderInfoCollection = null;
 		String sLoad = String.format("INFO: Loading OST file \"%s\" (%s)", inputFile, humanReadableByteCount(fIn.length(), true));
 		System.out.println(sLoad);
-		PersonalStorage pst = PersonalStorage.fromFile(inputFile);
-		// Get sub-folders of Root
-		FolderInfoCollection folderInfoCollection = pst.getRootFolder().getSubFolders();
+    	try {
+    		pst = PersonalStorage.fromFile(inputFile);
+    	} catch (Exception e) {
+    		System.out.printf("ERROR: %s", e);
+    	}
+  		folderInfoCollection = pst.getRootFolder().getSubFolders();
 		// Loop over all the-sub folders
 		for (int i = 0; i < folderInfoCollection.size(); i++) {
 			// Display all the folders
@@ -80,7 +92,14 @@ public class LoadAndConvertOSTFileCLI {
         Runnable r = new Runnable() {
             public void run() {
             	PersonalStorage ost = PersonalStorage.fromFile(inputFile);
-            	ost.saveAs(outputFile, FileFormat.Pst);
+            	try {
+            		ost.saveAs(outputFile, FileFormat.Pst);
+            	} catch (com.aspose.email.system.exceptions.NotImplementedException e) {
+            		System.out.printf("\nERROR: note that saving Outlook 2013/2016 files is not supported\n");
+            		System.out.printf("ERROR: %s", e);
+            	} catch (Exception e) {
+            		System.out.printf("\nERROR: %s", e);
+            	}
             }
         };
         // Start thread and task
@@ -89,7 +108,7 @@ public class LoadAndConvertOSTFileCLI {
 		File fOut = new File(outputFile);
 		
 		// Show progress
-		String spin = ".oO@";  //"-\\|/"
+		String spin = "....ooooOOOO@@@@";  // "-\\|/"
 		int i = 0;
 		System.out.printf("INFO: Converting \"%s\" to \"%s\"\n", inputFile, outputFile);
 		while (fIn.length() > fOut.length()) {
@@ -100,18 +119,19 @@ public class LoadAndConvertOSTFileCLI {
 				(int)(fOut.length() / 1024 / 1024),
 				(int)(fIn.length() / 1024 / 1024),
 				(int)Math.round((100.0 * fOut.length() / fIn.length())),
-				spin.charAt(i % 4));
+				spin.charAt(i % 16)
+			);
 			int sLen = (int)(80 - sConv.length());
 			if (sLen != 0) {
 				String sPad = String.format("%" + sLen + "s", " ");
 				System.out.print(sConv + sPad + "\r");
 			}
-            i++;         
+            i++;
 		}
 		System.out.println("");
 	}
 	
-	// http://programming.guide/java/formatting-byte-size-to-human-readable-format.html
+	/* http://programming.guide/java/formatting-byte-size-to-human-readable-format.html */
 	public static String humanReadableByteCount(long bytes, boolean si) {
 	    int unit = si ? 1000 : 1024;
 	    if (bytes < unit) return bytes + "B";
