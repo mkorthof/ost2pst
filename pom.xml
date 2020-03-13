@@ -30,8 +30,8 @@
 	    <dependency>
 	    	<groupId>com.aspose</groupId>
 	    	<artifactId>aspose-email</artifactId>
-	    	<!-- prev version: 18.3 -->
-	    	<version>19.12</version>
+	    	<!-- prev version: 19.12 -->
+	    	<version>20.2</version>
 	    	<classifier>jdk16</classifier>
   		</dependency>
   	</dependencies>
@@ -120,5 +120,5 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-	<version>200119</version>
+	<version>200313</version>
 </project>
