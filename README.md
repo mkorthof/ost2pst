@@ -17,14 +17,14 @@ A while ago I needed something to convert a 5GB Outlook OST file to PST format. 
 
 * same for .sh, or run the jar directly with `java -jar ost2pst.jar`
 * the jar needs JRE8
-* [**Outlook 2013/2016 OST files are not supported**](https://docs.aspose.com/display/emailjava/Read+and+Convert+Outlook+OST+File#ReadandConvertOutlookOSTFile-ConvertingOSTtoPST)
+* [**Saving to Outlook 2013/2016 PST files is not supported**](https://docs.aspose.com/display/emailjava/Read+and+Convert+Outlook+OST+File#ReadandConvertOutlookOSTFile-ConvertingOSTtoPST)
 
 ### Example
 
 ``` batch
 C:\src\ost2pst>ost2pst.bat input.ost output.pst
 
-OST2PST (200119)
+OST2PST (200313)
 
 INFO: Loading OST file "input.pst" (5GB)
       Folder [00] "Public"
@@ -36,6 +36,11 @@ INFO: Converting "input.pst" to "output.ost" 511MB/4751MB (11%) o
 ```
 
 ## Changelog
+
+### 20200313
+
+* error handling, added notice about outlook '13/16 files
+* updated aspose-email lib to 20.2
 
 ### 20200119
 
@@ -57,7 +62,7 @@ Import into [Eclipse](https://www.eclipse.org):
 
 Required: Aspose.Email for Java API (lib)
 
-* [GitHub Aspose_Email_Java](https://github.com/aspose-email/Aspose_Email_Java)
+* [GitHub Aspose Email-for-Java](https://github.com/aspose-email/Aspose.Email-for-Java)
 * [docs.aspose.com Installation (Maven)](https://docs.aspose.com/display/emailjava/Installation)
 * [docs.aspose.com Aspose.Email java for Eclipse  (Maven)](https://docs.aspose.com/display/emailjava/Aspose.Email+Java+for+Eclipse+-+Maven)
   
