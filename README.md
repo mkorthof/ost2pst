@@ -4,7 +4,7 @@ A while ago I needed something to convert a 5GB Outlook OST file to PST format. 
 
 ## Download
 
-Get files below or from [Releases page](releases)
+Get files below or from [Releases page](../../releases/latest)
 
 ### Jar and wrappers
 
