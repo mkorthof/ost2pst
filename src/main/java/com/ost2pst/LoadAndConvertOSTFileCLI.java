@@ -5,8 +5,10 @@ import com.aspose.email.FileFormat;
 import com.aspose.email.FolderInfo;
 import com.aspose.email.FolderInfoCollection;
 import com.aspose.email.PersonalStorage;
+
 //import com.aspose.email.examples.Utils;
 import java.io.File;
+import java.io.RandomAccessFile;
 
 public class LoadAndConvertOSTFileCLI {
 	
@@ -20,21 +22,24 @@ public class LoadAndConvertOSTFileCLI {
 		String outputFile = "";
 		boolean debug = false;
 		// Print version from pom.xml
-		String sVer = String.format("\nOST2PST (%s)\n", Version.VERSION); 
+		String sVer = String.format("OST2PST (%s)\n", Version.VERSION); 
+		System.out.println("");
 		System.out.println(sVer);
 		// Handle arguments
 		if (args.length == 0) {
 			showUsage(0);
 		} else {
-			try { inputFile = args[0]; } catch(Exception e) {
+			try { inputFile = args[0]; }
+			catch(Exception e) {
 				System.out.println("ERROR: no input file specified");
 				showUsage(2);
 			}
-			try { outputFile = args[1]; } catch(Exception e) {
-				System.out.println("ERROR: nooutput file specified");
+			try { outputFile = args[1]; }
+			catch(Exception e) {
+				System.out.println("ERROR: no output file specified");
 				showUsage(2);
 			}
- 			if (debug) {
+			if (debug) {
  				System.out.println("DEBUG: args.length=" + args.length + " args[0]=" + args[0] + " args[1]=" + args[1]);
  			}
 		}
@@ -59,6 +64,7 @@ public class LoadAndConvertOSTFileCLI {
 			System.out.println(sOutErr);
 			System.exit(2);
 		}
+
 		//Read an OST file
 		readAnOSTFile(debug, inputFile);
 		//Converting OST to PST
@@ -72,12 +78,12 @@ public class LoadAndConvertOSTFileCLI {
 		FolderInfoCollection folderInfoCollection = null;
 		String sLoad = String.format("INFO: Loading OST file \"%s\" (%s)", inputFile, humanReadableByteCount(fIn.length(), true));
 		System.out.println(sLoad);
-    	try {
-    		pst = PersonalStorage.fromFile(inputFile);
-    	} catch (Exception e) {
-    		System.out.printf("ERROR: %s", e);
-    	}
-  		folderInfoCollection = pst.getRootFolder().getSubFolders();
+		try {
+			pst = PersonalStorage.fromFile(inputFile);
+		} catch (Exception e) {
+			System.out.printf("ERROR: %s", e);
+		}
+		folderInfoCollection = pst.getRootFolder().getSubFolders();
 		// Loop over all the-sub folders
 		for (int i = 0; i < folderInfoCollection.size(); i++) {
 			// Display all the folders
@@ -86,49 +92,93 @@ public class LoadAndConvertOSTFileCLI {
 		}
 		System.out.println("");
 	}
-				
-	public static void convertOSTToPST(final boolean debug, final String inputFile, final String outputFile) {
-		// Prepare task to convert and save
-        Runnable r = new Runnable() {
-            public void run() {
-            	PersonalStorage ost = PersonalStorage.fromFile(inputFile);
-            	try {
-            		ost.saveAs(outputFile, FileFormat.Pst);
-            	} catch (com.aspose.email.system.exceptions.NotImplementedException e) {
-            		System.out.printf("\nERROR: note that saving Outlook 2013/2016 files is not supported\n");
-            		System.out.printf("ERROR: %s", e);
-            	} catch (Exception e) {
-            		System.out.printf("\nERROR: %s", e);
-            	}
-            }
-        };
-        // Start thread and task
-        new Thread(r).start();
-		File fIn = new File(inputFile);
-		File fOut = new File(outputFile);
-		
-		// Show progress
-		String spin = "....ooooOOOO@@@@";  // "-\\|/"
-		int i = 0;
-		System.out.printf("INFO: Converting \"%s\" to \"%s\"\n", inputFile, outputFile);
-		while (fIn.length() > fOut.length()) {
-			if (debug) {
-				System.out.println("DEBUG: fIn.length=" + fIn.length() + " fOut.length=" + fOut.length());
-			}
-			String sConv = String.format("%5s %dMB/%dMB (%d%%) %s", " ",
-				(int)(fOut.length() / 1024 / 1024),
-				(int)(fIn.length() / 1024 / 1024),
-				(int)Math.round((100.0 * fOut.length() / fIn.length())),
-				spin.charAt(i % 16)
-			);
-			int sLen = (int)(80 - sConv.length());
-			if (sLen != 0) {
-				String sPad = String.format("%" + sLen + "s", " ");
-				System.out.print(sConv + sPad + "\r");
-			}
-            i++;
+
+	// Get data version (NDB version) from offset 10
+	public static int typeOSTFile(final boolean debug, String inputFile) {
+		RandomAccessFile raf = null;
+		final byte[] fileTypeBytes = new byte[2];
+		try {
+            raf = new RandomAccessFile(inputFile, "r");
+			raf.seek(10);
+			raf.readFully(fileTypeBytes);
+		} catch (Exception e) {
+			System.out.printf("ERROR: %s", e);
 		}
-		System.out.println("");
+		finally {
+			try {
+				raf.close();
+			}
+			catch (Exception e){
+				System.out.printf("ERROR: %s", e);
+			}
+		}
+		return (int) fileTypeBytes[0];
+	}
+
+	public static void convertOSTToPST(final boolean debug, final String inputFile, final String outputFile) {
+		// Get file format type: array index is 'wVer' and maps to description String 
+		int fmtTypeNum = typeOSTFile(debug, inputFile);
+		String[] arr = new String[50];
+		String fmtTypeStr = "Unknown";
+		arr[14] = "32-bit ANSI";
+		arr[15] = "32-bit ANSI";
+		arr[21] = "64-bit Unicode, Visual Recovery";
+		arr[23] = "64-bit Unicode";
+		arr[36] = "64-bit Unicode 4k, Outlook 2013";
+		if (arr[fmtTypeNum] != null) {
+			fmtTypeStr = arr[fmtTypeNum];
+		}
+		System.out.printf("INFO: File format is \"%s\" (%d)\n", fmtTypeStr, fmtTypeNum);
+		if (fmtTypeNum != 36) {
+			// Prepare task to convert and save
+	        Runnable r = new Runnable() {
+	            public void run() {
+	            	PersonalStorage ost = PersonalStorage.fromFile(inputFile);
+	            	try {
+	            		ost.saveAs(outputFile, FileFormat.Pst);
+	            	} catch (com.aspose.email.system.exceptions.NotImplementedException e) {
+	            		System.out.println("");
+	            		System.out.printf("ERROR: unable to save file, make sure input file format is supported\n");
+	            		System.out.printf("ERROR: %s", e);
+	            	} catch (Exception e) {
+	            		System.out.println("");
+	            		System.out.printf("ERROR: %s", e);
+	            	}
+	            }
+	        };
+	        // Start thread and task
+	        new Thread(r).start();
+			File fIn = new File(inputFile);
+			File fOut = new File(outputFile);
+			// Show progress
+			String spin = "----\\\\\\\\||||////";  // ".oO@"
+			int i = 0;
+			System.out.printf("INFO: Converting \"%s\" to \"%s\"\n", inputFile, outputFile);
+			while (fIn.length() > fOut.length()) {
+				if (debug) {
+					System.out.println("DEBUG: fIn.length=" + fIn.length() + " fOut.length=" + fOut.length());
+				}
+				if ((int)Math.round((100.0 * fOut.length() / fIn.length())) >= 99) {
+					spin = String.format("%16s", " ");
+				}
+				String sConv = String.format("%5s %dMB/%dMB (%d%%) %s", " ",
+					(int)(fOut.length() / 1024 / 1024),
+					(int)(fIn.length() / 1024 / 1024),
+					(int)Math.round((100.0 * fOut.length() / fIn.length())),
+					spin.charAt(i % 16)
+				);
+				int sLen = (int)(80 - sConv.length());
+				if (sLen != 0) {
+					String sPad = String.format("%" + sLen + "s", " ");
+					System.out.print(sConv + sPad + "\r");
+				}
+	            i++;
+			}
+			System.out.println("");
+		} else {
+			System.out.printf("INFO: Saving Outlook 2013/2016 files is not supported, exiting...\n");
+			System.exit(1);
+		}
 	}
 	
 	/* http://programming.guide/java/formatting-byte-size-to-human-readable-format.html */
