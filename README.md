@@ -18,7 +18,7 @@ Usage:
 
 ## Source
 
-[LoadAndConvertOSTFileCLI.java](Examples/src/main/java/LoadAndConvertOSTFileCLI.java)
+[LoadAndConvertOSTFileCLI.java](Examples/ost2pst/LoadAndConvertOSTFileCLI.java)
 
 ## Notes
 
