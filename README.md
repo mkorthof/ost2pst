@@ -9,10 +9,12 @@ Jar and batch wrapper:
 * [ost2pst.jar](ost2pst.jar)
 * [ost2pst.bat](ost2pst.bat)
 * [SHA512SUMS](SHA512SUMS)
+* [JRE8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
 
 Usage: 
 * ```ost2pst.bat <input.ost> <output.pst>```
 * or run the jar directly with ```java -jar ost2pst.jar```
+* currently the jar needs JRE8 but I might try to lower that requirement.
 
 ## Source
 
