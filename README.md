@@ -1,3 +1,28 @@
+# ost2pst
+
+Needed something to convert a 5gb ost file to pst. Turned out Aspose has a good API/library for Java to do exactly that.
+Had not touched Java for 10 years but got things sorted within a few hours thanks to clear instructions and good examples and docs. I just used the example and made minimal changes, nothing more.
+
+## Download 
+
+Jar and batch wrapper:
+* [ost2pst.jar](ost2pst.jar)
+* [ost2pst.bat](ost2pst.bat)
+
+Usage: 
+* ```ost2pst.bat <input.ost> <output.pst>```
+* or run the jar directly with ```java -jar ost2pst```
+
+## Source
+
+[LoadAndConvertOSTFileCLI.java](src/main/java/LoadAndConvertOSTFileCLI.java)
+
+## Notes
+
+* To create runnable jar in eclipse: Export > Runnable JAR file, cmd: java -jar ost2pst.jar
+* What lead me to Aspose: http://wiki.opf-labs.org/pages/viewpage.action?pageId=25887031
+* Possible  alternative https://github.com/rjohnsondev/java-libpst
+
 # Aspose.Email for Java
 
 This repository contains [Examples](Examples), [Plugins](Plugins) and projects that will help you to write your own application using [Aspose.Email for Java](https://www.aspose.com/products/email/java).
@@ -23,9 +48,3 @@ Directory  | Description
 + **Documentation:** [Aspose.Email for Java Documentation](https://docs.aspose.com/display/emailjava/Home)
 + **Forum:** [Aspose.Email for Java Forum](http://www.aspose.com/community/forums/aspose.email-product-family/188/showforum.aspx)
 + **Blog:** [Aspose.Email for Java Blog](http://www.aspose.com/blogs/aspose-products/aspose-email-product-family.html)
-
-## Notes
-
-* In eclipse: > Export > Runnable JAR file, cmd: java -jar ost2pst.jar
-* http://wiki.opf-labs.org/pages/viewpage.action?pageId=25887031
-* https://github.com/rjohnsondev/java-libpst
