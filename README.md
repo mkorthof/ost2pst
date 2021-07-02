@@ -2,6 +2,9 @@
 
 A while ago I needed something to convert a 5GB Outlook OST file to PST format. Turned out Aspose has a good (commercial) API/library for Java to do exactly that. I had not touched Java for 10 years but got things sorted within a few hours thanks to clear instructions and good examples and docs. I just used the example and made minimal changes, nothing more.
 
+[**Saving to Outlook 2013/2016 PST files is not supported**](https://docs.aspose.com/display/emailjava/Read+and+Convert+Outlook+OST+File#ReadandConvertOutlookOSTFile-ConvertingOSTtoPST)
+
+
 ## Download
 
 Get files below or from [Releases page](../../releases/latest)
@@ -19,7 +22,6 @@ Windows: `ost2pst.bat <input.ost> <output.pst>` _(same for .sh)_
 
 * you can also run the jar directly: `java -jar ost2pst.jar`
 * the jar needs JRE8
-* [**Saving to Outlook 2013/2016 PST files is not supported**](https://docs.aspose.com/display/emailjava/Read+and+Convert+Outlook+OST+File#ReadandConvertOutlookOSTFile-ConvertingOSTtoPST)
 
 ### Example
 
