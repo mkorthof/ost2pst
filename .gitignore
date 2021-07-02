@@ -41,3 +41,4 @@ Data/*Out*
 *.class
 *.bak
 VERSION
+pack.bat
