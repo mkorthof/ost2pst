@@ -1,0 +1,39 @@
+# Eclipse project files
+.classpath
+.project
+.settings/
+test-output/
+
+# IntelliJ project files
+#.idea/
+*.iws
+#*.iml
+*.ipr
+
+# Mac
+.DS_Store
+
+# Others
+Temp/
+obj/
+classes/
+generated/
+bin/
+*.ldb
+_ReSharper*/
+*.eml
+out/
+*.user
+*.resx
+nbproject/
+target/
+build/
+build.xml
+Thumbs.db
+manifest.mf
+Out/
+*.lic
+Data/*Out*
+*_out.*
+/dist/
+*.bak
