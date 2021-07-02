@@ -18,18 +18,25 @@ Needed something to convert a 5GB Outlook OST file to PST format. Turned out Asp
 * same for .sh, or run the jar directly with ```java -jar ost2pst.jar```
 * currently the jar needs JRE8 but I might try to lower that requirement.
 
-## Source
+## Source:
 
-[LoadAndConvertOSTFileCLI.java](Examples/ost2pst/LoadAndConvertOSTFileCLI.java)
+* [LoadAndConvertOSTFileCLI.java](LoadAndConvertOSTFileCLI.java)
 
-## Notes
+* Required: Aspose.Email for Java API (lib):
 
-* To create runnable jar in eclipse: Export > Runnable JAR file
+  * [Aspose Email-for-Java/README.md](Aspose.Email-for-Java/README.md)
+  * [GitHub Aspose_Email_Java](https://github.com/asposeemail/Aspose_Email_Java)
+  * [docs.aspose.com Installation (Maven)](https://docs.aspose.com/display/emailjava/Installation)
+  * [docs.aspose.com Aspose.Email java for Eclipse  (Maven)](https://docs.aspose.com/display/emailjava/Aspose.Email+Java+for+Eclipse+-+Maven)
+  
+* To create runnable jar in Eclipse: Export > Runnable JAR file
+  
+## More info
+
+* Aspose.Email for Java: https://products.aspose.com/email/java 
 * What lead me to Aspose: http://wiki.opf-labs.org/pages/viewpage.action?pageId=25887031
 * Possible alternative https://github.com/rjohnsondev/java-libpst
-* Aspose.Email for Java API/lib:
-  * https://github.com/asposeemail/Aspose_Email_Java
-  * [Aspose.Email-for-Java/README.md](Aspose.Email-for-Java/README.md)
-  
+
+---
 > moved from old repo mkorthof/Aspose.Email-for-Java
 
