@@ -8,10 +8,11 @@ Had not touched Java for 10 years but got things sorted within a few hours thank
 Jar and batch wrapper:
 * [ost2pst.jar](ost2pst.jar)
 * [ost2pst.bat](ost2pst.bat)
+* [SHA512SUMS](SHA512SUMS)
 
 Usage: 
 * ```ost2pst.bat <input.ost> <output.pst>```
-* or run the jar directly with ```java -jar ost2pst```
+* or run the jar directly with ```java -jar ost2pst.jar```
 
 ## Source
 
@@ -19,7 +20,7 @@ Usage:
 
 ## Notes
 
-* To create runnable jar in eclipse: Export > Runnable JAR file, cmd: java -jar ost2pst.jar
+* To create runnable jar in eclipse: Export > Runnable JAR file
 * What lead me to Aspose: http://wiki.opf-labs.org/pages/viewpage.action?pageId=25887031
 * Possible  alternative https://github.com/rjohnsondev/java-libpst
 
