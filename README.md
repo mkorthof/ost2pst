@@ -51,3 +51,9 @@ Directory  | Description
 + **Documentation:** [Aspose.Email for Java Documentation](https://docs.aspose.com/display/emailjava/Home)
 + **Forum:** [Aspose.Email for Java Forum](http://www.aspose.com/community/forums/aspose.email-product-family/188/showforum.aspx)
 + **Blog:** [Aspose.Email for Java Blog](http://www.aspose.com/blogs/aspose-products/aspose-email-product-family.html)
+
+## Notes
+
+* In eclipse: > Export > Runnable JAR file
+* http://wiki.opf-labs.org/pages/viewpage.action?pageId=25887031
+* https://github.com/rjohnsondev/java-libpst
