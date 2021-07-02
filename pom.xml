@@ -1,21 +1,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>ost2pst</groupId>
-  <artifactId>com.ost2pst</artifactId>
-  <packaging>jar</packaging>
+	<groupId>ost2pst</groupId>
+	<artifactId>com.ost2pst</artifactId>
+	<packaging>jar</packaging>
 
-  <name>ost2pst</name>
-  <url>http://maven.apache.org</url>
+	<name>ost2pst</name>
+	<url>https://git.io/JviNA</url>
+	<version>200316</version>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- v1.5 is no longer supported https://stackoverflow.com/a/49028811 -->
+		<maven.compiler.source>1.6</maven.compiler.source>
+		<maven.compiler.target>1.6</maven.compiler.target>
+	</properties>
 
 	<repositories>
     	<repository>
-	    	<id>AsposeJavaAPI</id>
+			<id>AsposeJavaAPI</id>
 	     	<name>Aspose Java API</name>
 	    	<url>http://artifact.aspose.com/repo/</url>
     	</repository>
@@ -30,12 +34,14 @@
 	    <dependency>
 	    	<groupId>com.aspose</groupId>
 	    	<artifactId>aspose-email</artifactId>
-	    	<!-- prev version: 19.12 -->
+			<!-- previous version: 19.12 -->
 	    	<version>20.2</version>
 	    	<classifier>jdk16</classifier>
   		</dependency>
   	</dependencies>
+
 	<build>
+		<defaultGoal>clean package assembly:single</defaultGoal>
 		<resources>
 		    <resource>
 		        <directory>src/main/templates</directory>
@@ -66,6 +72,20 @@
 			        </execution>
 			    </executions>
 			</plugin>
+		    <plugin>
+		    <!-- runnable jar -->
+		    <artifactId>maven-assembly-plugin</artifactId>
+		      <configuration>
+		        <archive>
+		          <manifest>
+		            <mainClass>com.ost2pst.LoadAndConvertOSTFileCLI</mainClass>
+		          </manifest>
+		        </archive>
+		        <descriptorRefs>
+		          <descriptorRef>jar-with-dependencies</descriptorRef>
+		        </descriptorRefs>
+		      </configuration>
+		    </plugin>
 		</plugins>
 		<pluginManagement>
 	    	<plugins>
@@ -120,5 +140,4 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-	<version>200313</version>
 </project>
