@@ -11,7 +11,7 @@ Get files below or from [Releases page](../../releases/latest)
 * Main executable: [ost2pst.jar](ost2pst.jar) verify: [SHA512SUMS](SHA512SUMS)
 * Windows batch file: [ost2pst.bat](ost2pst.bat)
 * Linux/BSD shell script: [ost2pst.sh](ost2pst.sh)
-* Download Java: [JRE8](https://java.com/en/download/manual.jsp) or alternative: [JavaSE-RE-8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
+* If needed download Java here: [JRE8](https://java.com/en/download/manual.jsp) or alternatively: [JavaSE-RE-8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
 
 ### Usage
 
