@@ -32,7 +32,7 @@ INFO: Loading OST file "input.pst" (5GB)
       Folder [02] "Outbox"
       Folder [03] "Sent Items"
 
-INFO: Converting "input.pst" to "output.ost" 511MB/4751MB (11%) /
+INFO: Converting "input.pst" to "output.ost" 511MB/4751MB (11%) o
 ```
 
 ## Changelog
