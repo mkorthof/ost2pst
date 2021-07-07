@@ -1,59 +1,112 @@
 # OST2PST
 
-Needed something to convert a 5GB Outlook OST file to PST format. Turned out Aspose has a good (commercial) API/library for Java to do exactly that. I had not touched Java for 10 years but got things sorted within a few hours thanks to clear instructions and good examples and docs. I just used the example and made minimal changes, nothing more.
+A while ago I needed something to convert a 5GB Outlook OST file to PST format. Turned out [Aspose](https://products.aspose.com/email) has a good (commercial) API/library for Java to do exactly that. I had not touched Java for 10 years but got things sorted within a few hours thanks to clear instructions and good examples and docs. I just used the example and made minimal changes, nothing more.
 
-## Download 
+[**Saving to Outlook 2013/2016 PST files is not supported**](https://docs.aspose.com/email/java/read-and-convert-outlook-ost-file/#converting-ost-to-pst)
 
-Jar and wrappers:
-* Main executable [ost2pst.jar](ost2pst.jar) 
-* Windows batch file [ost2pst.bat](ost2pst.bat) 
-* Linux shell script [ost2pst.bat](ost2pst.sh) 
-* [SHA512SUMS](SHA512SUMS)
-* [JRE8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
+## Download
 
-Usage: 
-* ```ost2pst.sh <input.ost> <output.pst>```
-* same for .bat, or run the jar directly with ```java -jar ost2pst.jar```
-* currently the jar needs JRE8 but I might try to lower that requirement.
+Get files below or from [Releases page](../../releases/latest)
 
-## Source
+**Jar and wrappers:**
 
-[LoadAndConvertOSTFileCLI.java](Examples/ost2pst/LoadAndConvertOSTFileCLI.java)
+* Main executable: [ost2pst.jar](ost2pst.jar) (verify [SHA512SUMS](SHA512SUMS))
+* Windows batch file: [ost2pst.bat](ost2pst.bat)
+* Linux/BSD shell script: [ost2pst.sh](ost2pst.sh)
 
-## Notes
 
-* To create runnable jar in eclipse: Export > Runnable JAR file
-* What lead me to Aspose: http://wiki.opf-labs.org/pages/viewpage.action?pageId=25887031
-* Possible  alternative https://github.com/rjohnsondev/java-libpst
+If you need to install Java use your OS package manager or download it here: [JRE8](https://java.com/en/download/manual.jsp) or alternatively [JavaSE-RE-8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html).
 
-# Aspose.Email for Java
+### Usage
 
-This repository contains [Examples](Examples), [Plugins](Plugins) and projects that will help you to write your own application using [Aspose.Email for Java](https://www.aspose.com/products/email/java).
+* Windows: `ost2pst.bat <input.ost> <output.pst>`
+* Linux: `ost2pst.sh <input.ost> <output.pst>`
 
-<p align="center">
-  <a title="Download complete Aspose.Email for Java source code" href="https://github.com/asposeemail/Aspose_Email_Java/archive/master.zip">
-    <img src="http://i.imgur.com/hwNhrGZ.png" />
-  </a>
-</p>
+Or run the jar directly: `java -jar ost2pst.jar <input.ost> <output.pst>`
 
-Following is short description of contents of the repository: 
+_Remember you need to have at least JRE8 installed, OpenJDK is untested but should work_
 
-Directory  | Description
----------- | -----------
-[Examples](Examples)  | A collection of Java examples that help you learn how to use product features
-[Plugins](Plugins)  | Plugins that will demonstrate one or more features of Aspose.Email for Java
+### Example
 
-## Resources
+``` batch
 
-+ **Website:** [www.aspose.com](http://www.aspose.com)
-+ **Product Home:** [Aspose.Email for Java](https://www.aspose.com/products/email/java)
-+ **Download:** [Download Aspose.Email for Java](https://downloads.aspose.com/email/java)
-+ **Documentation:** [Aspose.Email for Java Documentation](https://docs.aspose.com/display/emailjava/Home)
-+ **Forum:** [Aspose.Email for Java Forum](http://www.aspose.com/community/forums/aspose.email-product-family/188/showforum.aspx)
-+ **Blog:** [Aspose.Email for Java Blog](http://www.aspose.com/blogs/aspose-products/aspose-email-product-family.html)
+C:\src\ost2pst>ost2pst.bat input.ost output.pst
 
-## Notes
+OST2PST (210619)
 
-* In eclipse: > Export > Runnable JAR file
-* http://wiki.opf-labs.org/pages/viewpage.action?pageId=25887031
-* https://github.com/rjohnsondev/java-libpst
+INFO: File format is "64-bit Unicode" (23)
+INFO: Loading file "input.pst" (5GB)
+      Folder [00] "Public"
+      Folder [01] "Inbox"
+      Folder [02] "Outbox"
+      Folder [03] "Sent Items"
+
+INFO: Converting "input.pst" to "output.ost" 511MB/4751MB (11%) |
+
+```
+
+## Building from source
+
+### Import into [Eclipse](https://www.eclipse.org):
+
+* [pom.xml](pom.xml)
+* [Loast2pstLoadAndConvertOSTFileCLI.java](src/main/java/com/ost2pst/LoadAndConvertOSTFileCLI.java)
+
+### Get Aspose.Email for Java API/lib (*required*)
+
+* [GitHub Aspose Email-for-Java](https://github.com/aspose-email/Aspose.Email-for-Java)
+* [docs.aspose.com Installation (Maven)](https://docs.aspose.com/display/emailjava/Installation)
+* [docs.aspose.com Aspose.Email java for Eclipse  (Maven)](https://docs.aspose.com/display/emailjava/Aspose.Email+Java+for+Eclipse+-+Maven)
+
+### Create runnable Jar in Eclipse
+
+* use Ant to 'Export', 'Java', 'Runnable JAR file' (used for [ost2pst.jar](ost2pst.jar))
+* or alternatively use Maven to build project
+
+## TODO
+
+Add new option that tries to read corrupted ost/pst files. See [here](https://docs.aspose.com/email/java/aspose-email-for-java-20-10-release-notes/#reading-corrupted-pstost-files) for more info.
+
+``` batch
+C:\src\ost2pst>ost2pst.bat -c broken.ost
+```
+
+## Changelog
+
+### 20210702
+
+* fixed file size formatting: [programming.guide](https://programming.guide/java/formatting-byte-size-to-human-readable-format.html) :)
+* updated aspose-email lib to 21.5
+* removed aspose-email submodule from git repo
+
+### 20200317
+
+* show file format info
+* exits instead of trying to save outlook 2013+ files
+* jar also builds in maven now
+
+### 20200313
+
+* error handling, added notice about outlook '13/16 files
+* updated aspose-email lib to 20.2
+
+### 20200119
+
+* fixed (visual) error before convertion
+* improved messages and progress indicator
+* updated aspose-email lib to 19.12  
+
+### 20180915
+
+* improved progress indicator
+* updated aspose-email lib to 18.8
+
+## More info
+
+* Aspose.Email for Java: <https://products.aspose.com/email/java>
+* What lead me to Aspose: <http://wiki.opf-labs.org/pages/viewpage.action?pageId=25887031>
+* Possible alternative <https://github.com/rjohnsondev/java-libpst>
+
+---
+> moved from old repo mkorthof/Aspose.Email-for-Java
+---
