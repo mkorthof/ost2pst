@@ -15,7 +15,7 @@ Get files below or from [Releases page](../../releases/latest)
 * Linux/BSD shell script: [ost2pst.sh](ost2pst.sh)
 
 
-If you need to install Java use your OS package manager or download it here: [JRE8](https://java.com/en/download/manual.jsp) or alternatively [JavaSE-RE-8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html).
+If you need to install Java use your OS package manager or download it here: [JRE8+](https://java.com/en/download/manual.jsp) or alternatively [JavaSE-RE-8+](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html).
 
 ### Usage
 
@@ -50,7 +50,7 @@ INFO: Converting "input.pst" to "output.ost" 511MB/4751MB (11%) |
 ### Import into [Eclipse](https://www.eclipse.org):
 
 * [pom.xml](pom.xml)
-* [Loast2pstLoadAndConvertOSTFileCLI.java](src/main/java/com/ost2pst/LoadAndConvertOSTFileCLI.java)
+* [LoadAndConvertOSTFileCLI.java](src/main/java/com/ost2pst/LoadAndConvertOSTFileCLI.java)
 
 ### Get Aspose.Email for Java API/lib (*required*)
 
