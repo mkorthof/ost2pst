@@ -106,6 +106,7 @@ C:\src\ost2pst>ost2pst.bat -c broken.ost
 * Aspose.Email for Java: <https://products.aspose.com/email/java>
 * What lead me to Aspose: <http://wiki.opf-labs.org/pages/viewpage.action?pageId=25887031>
 * Possible alternative <https://github.com/rjohnsondev/java-libpst>
+* Commercial alternative: EdbMails OST to PST Converter (https://www.edbmails.com/pages/ost-to-pst-converter.html)
 
 ---
 > moved from old repo mkorthof/Aspose.Email-for-Java
